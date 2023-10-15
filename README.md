@@ -1,3 +1,9 @@
+
+
+# TEEOTA
+a TEE based project to achieve something. For collaboration on our Capstone project.
+
+
 ## <b>Nx_Network_Basics_wifi Application Description</b>
 
 This application demonstrates WiFi connectivity on MXCHIP EMW3080 module for the STM32H573I-DK board from STMicroelectronics.
@@ -122,3 +128,5 @@ In order to make the program work, you must do the following:
  - Build all files and load your image into target memory
 
  - Run the application
+
+
