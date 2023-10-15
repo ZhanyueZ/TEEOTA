@@ -1,0 +1,5 @@
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/NetXDuo/App/app_netxduo.c:506:13:App_Main2_Thread_Entry	3
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/NetXDuo/App/app_netxduo.c:370:13:App_Main_Thread_Entry	9
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/NetXDuo/App/app_netxduo.c:353:13:ip_address_change_notify_callback	1
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/NetXDuo/App/app_netxduo.c:589:13:App_WiFi_Thread_Entry	4
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/NetXDuo/App/app_netxduo.c:109:6:MX_NetXDuo_Init	20

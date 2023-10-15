@@ -1,0 +1,9 @@
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/NetXDuo/App/http_download.c:72:13:http_split_host_request	6
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/NetXDuo/App/http_download.c:109:16:http_read_response	7
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/NetXDuo/App/http_download.c:154:17:service_lines	7
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/NetXDuo/App/http_download.c:181:14:http_seek_to	4
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/NetXDuo/App/http_download.c:196:14:http_seek_while	4
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/NetXDuo/App/http_download.c:209:14:http_seek_while_not	4
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/NetXDuo/App/http_download.c:222:16:http_check_response	7
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/NetXDuo/App/http_download.c:269:16:http_file_download	12
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/NetXDuo/App/http_download.c:427:9:http_download_cmd	12

@@ -1,0 +1,7 @@
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Core/Src/stm32h5xx_hal_msp.c:67:6:HAL_MspInit	1
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Core/Src/stm32h5xx_hal_msp.c:86:6:HAL_RNG_MspInit	3
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Core/Src/stm32h5xx_hal_msp.c:119:6:HAL_RNG_MspDeInit	2
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Core/Src/stm32h5xx_hal_msp.c:141:6:HAL_SPI_MspInit	7
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Core/Src/stm32h5xx_hal_msp.c:247:6:HAL_SPI_MspDeInit	2
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Core/Src/stm32h5xx_hal_msp.c:283:6:HAL_UART_MspInit	3
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Core/Src/stm32h5xx_hal_msp.c:333:6:HAL_UART_MspDeInit	2

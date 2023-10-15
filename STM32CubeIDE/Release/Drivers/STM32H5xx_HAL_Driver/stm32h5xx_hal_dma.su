@@ -1,0 +1,15 @@
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_dma.c:241:19:HAL_DMA_Init	16	static
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_dma.c:321:19:HAL_DMA_DeInit	16	static
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_dma.c:461:19:HAL_DMA_Start	24	static
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_dma.c:516:19:HAL_DMA_Start_IT	24	static
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_dma.c:588:19:HAL_DMA_Abort	16	static
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_dma.c:680:19:HAL_DMA_Abort_IT	0	static
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_dma.c:716:19:HAL_DMA_PollForTransfer	24	static
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_dma.c:888:6:HAL_DMA_IRQHandler	8	static
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_dma.c:1140:19:HAL_DMA_RegisterCallback	8	static
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_dma.c:1219:19:HAL_DMA_UnRegisterCallback	0	static
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_dma.c:1327:22:HAL_DMA_GetState	0	static
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_dma.c:1339:10:HAL_DMA_GetError	0	static
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_dma.c:1383:19:HAL_DMA_ConfigChannelAttributes	16	static
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_dma.c:1471:19:HAL_DMA_GetConfigChannelAttributes	0	static
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_dma.c:1551:19:HAL_DMA_GetLockChannelAttributes	0	static

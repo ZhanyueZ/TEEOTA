@@ -1,0 +1,12 @@
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Middlewares/ST/netxduo/common/drivers/wifi/mxchip/nx_driver_framework.c:1353:13:nx_driver_update_hardware_address	0	static
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Middlewares/ST/netxduo/common/drivers/wifi/mxchip/nx_driver_emw3080.c:287:13:_nx_driver_emw3080_interface_status	0	static
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Middlewares/ST/netxduo/common/drivers/wifi/mxchip/nx_driver_emw3080.c:281:13:_nx_driver_emw3080_packet_received	8	static
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Middlewares/ST/netxduo/common/drivers/wifi/mxchip/nx_driver_emw3080.c:222:6:_nx_driver_emw3080_packet_send	16	static
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Middlewares/ST/netxduo/common/drivers/wifi/mxchip/nx_driver_emw3080.c:130:6:_nx_driver_emw3080_enable	184	static
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Middlewares/ST/netxduo/common/drivers/wifi/mxchip/nx_driver_emw3080.c:301:13:_nx_mx_wifi_status_changed	0	static
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Middlewares/ST/netxduo/common/drivers/wifi/mxchip/nx_driver_emw3080.c:204:6:_nx_driver_emw3080_disable	8	static
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Middlewares/ST/netxduo/common/drivers/wifi/mxchip/nx_driver_emw3080.c:265:13:_nx_netlink_input_callback	16	static
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Middlewares/ST/netxduo/common/drivers/wifi/mxchip/nx_driver_emw3080.c:95:13:_nx_driver_emw3080_initialize	8	static
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Middlewares/ST/netxduo/common/drivers/wifi/mxchip/nx_driver_framework.c:826:13:nx_driver_multicast_join.constprop	0	static
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Middlewares/ST/netxduo/common/drivers/wifi/mxchip/nx_driver_emw3080.c:57:6:nx_driver_emw3080_entry	32	static,ignoring_inline_asm
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Middlewares/ST/netxduo/common/drivers/wifi/mxchip/nx_driver_emw3080.c:75:6:nx_driver_emw3080_interrupt	0	static

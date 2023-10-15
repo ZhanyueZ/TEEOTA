@@ -1,0 +1,7 @@
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/NetXDuo/App/console.c:240:22:local_getc	8	static
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/NetXDuo/App/console.c:95:14:my_strdup	16	static
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/NetXDuo/App/console.c:112:22:cmd_match_list.constprop	48	static
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/NetXDuo/App/console.c:73:9:help_cmd	16	static
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/NetXDuo/App/console.c:87:9:quit_cmd	0	static
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/NetXDuo/App/console.c:487:6:get_cmd	64	static
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/NetXDuo/App/console.c:516:6:console	248	static

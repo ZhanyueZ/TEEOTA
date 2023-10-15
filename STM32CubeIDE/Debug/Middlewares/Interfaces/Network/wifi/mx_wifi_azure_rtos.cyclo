@@ -1,0 +1,12 @@
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Middlewares/ST/netxduo/common/drivers/wifi/mxchip/mx_wifi_azure_rtos.c:18:6:mx_wifi_alloc_init	2
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Middlewares/ST/netxduo/common/drivers/wifi/mxchip/mx_wifi_azure_rtos.c:32:7:mx_wifi_malloc	3
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Middlewares/ST/netxduo/common/drivers/wifi/mxchip/mx_wifi_azure_rtos.c:52:6:mx_wifi_free	3
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Middlewares/ST/netxduo/common/drivers/wifi/mxchip/mx_wifi_azure_rtos.c:63:12:mx_net_buffer_alloc	6
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Middlewares/ST/netxduo/common/drivers/wifi/mxchip/mx_wifi_azure_rtos.c:101:6:mx_net_buffer_free	3
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Middlewares/ST/netxduo/common/drivers/wifi/mxchip/mx_wifi_azure_rtos.c:112:6:mx_wifi_thread_init	3
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Middlewares/ST/netxduo/common/drivers/wifi/mxchip/mx_wifi_azure_rtos.c:135:6:mx_wifi_thread_deinit	3
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Middlewares/ST/netxduo/common/drivers/wifi/mxchip/mx_wifi_azure_rtos.c:146:6:mx_wifi_thread_terminate	1
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Middlewares/ST/netxduo/common/drivers/wifi/mxchip/mx_wifi_azure_rtos.c:152:6:mx_wifi_fifo_init	3
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Middlewares/ST/netxduo/common/drivers/wifi/mxchip/mx_wifi_azure_rtos.c:170:6:mx_wifi_fifo_deinit	3
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Middlewares/ST/netxduo/common/drivers/wifi/mxchip/mx_wifi_azure_rtos.c:181:6:mx_wifi_fifo_push	2
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Middlewares/ST/netxduo/common/drivers/wifi/mxchip/mx_wifi_azure_rtos.c:189:7:mx_wifi_fifo_pop	3

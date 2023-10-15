@@ -1,0 +1,7 @@
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Drivers/BSP/Components/mx_wifi/core/mx_wifi_hci.c:57:13:mx_wifi_hci_pkt_verify	1
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Drivers/BSP/Components/mx_wifi/core/mx_wifi_hci.c:67:9:mx_wifi_hci_init	1
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Drivers/BSP/Components/mx_wifi/core/mx_wifi_hci.c:76:9:mx_wifi_hci_deinit	1
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Drivers/BSP/Components/mx_wifi/core/mx_wifi_hci.c:83:9:mx_wifi_hci_send	2
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Drivers/BSP/Components/mx_wifi/core/mx_wifi_hci.c:129:11:mx_wifi_hci_recv	1
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Drivers/BSP/Components/mx_wifi/core/mx_wifi_hci.c:146:6:mx_wifi_hci_free	2
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Drivers/BSP/Components/mx_wifi/core/mx_wifi_hci.c:160:6:mx_wifi_hci_input	6

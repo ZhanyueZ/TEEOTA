@@ -1,0 +1,15 @@
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_dma.c:241:19:HAL_DMA_Init	160
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_dma.c:321:19:HAL_DMA_DeInit	45
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_dma.c:461:19:HAL_DMA_Start	5
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_dma.c:516:19:HAL_DMA_Start_IT	7
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_dma.c:588:19:HAL_DMA_Abort	7
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_dma.c:680:19:HAL_DMA_Abort_IT	3
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_dma.c:716:19:HAL_DMA_PollForTransfer	18
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_dma.c:888:6:HAL_DMA_IRQHandler	31
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_dma.c:1140:19:HAL_DMA_RegisterCallback	8
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_dma.c:1219:19:HAL_DMA_UnRegisterCallback	9
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_dma.c:1327:22:HAL_DMA_GetState	1
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_dma.c:1339:10:HAL_DMA_GetError	1
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_dma.c:1383:19:HAL_DMA_ConfigChannelAttributes	5
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_dma.c:1471:19:HAL_DMA_GetConfigChannelAttributes	3
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_dma.c:1551:19:HAL_DMA_GetLockChannelAttributes	3

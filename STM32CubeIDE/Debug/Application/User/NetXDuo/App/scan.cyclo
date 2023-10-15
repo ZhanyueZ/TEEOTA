@@ -1,0 +1,4 @@
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/NetXDuo/App/scan.c:45:16:mx_wifi_scan	2
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/NetXDuo/App/scan.c:66:16:mx_wifi_get_scan_result	3
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/NetXDuo/App/scan.c:88:20:wifi_security_to_string	8
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/NetXDuo/App/scan.c:127:9:scan_cmd	4

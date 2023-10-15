@@ -1,0 +1,13 @@
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Core/Src/main.c:528:1:__io_putchar	16	static
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Core/Src/main.c:573:1:__io_getchar	0	static
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Core/Src/main.c:610:6:HAL_SPI_TxCpltCallback	0	static
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Core/Src/main.c:596:6:HAL_SPI_RxCpltCallback	0	static
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Core/Src/main.c:624:6:HAL_SPI_TxRxCpltCallback	0	static
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Core/Src/main.c:637:6:HAL_GPIO_EXTI_Rising_Callback	8	static
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Core/Src/main.c:656:6:HAL_UART_RxCpltCallback	0	static
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Core/Src/main.c:672:5:hardware_rand	0	static
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Core/Src/main.c:690:6:HAL_TIM_PeriodElapsedCallback	0	static
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Core/Src/main.c:707:6:Error_Handler	8	static,ignoring_inline_asm
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Core/Src/main.c:195:6:SystemClock_Config	120	static
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Core/Src/main.c:90:5:main	184	static
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Core/Src/main.c:728:6:assert_failed	8	static

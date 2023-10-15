@@ -1,0 +1,5 @@
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/NetXDuo/App/ping.c:63:17:standard_chksum	6
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/NetXDuo/App/ping.c:110:13:ping_prepare_echo	2
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/NetXDuo/App/ping.c:130:16:icmp_ping	15
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/NetXDuo/App/ping.c:237:16:ping_gethostbyname	3
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/NetXDuo/App/ping.c:263:9:ping_cmd	7

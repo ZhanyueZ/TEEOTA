@@ -1,0 +1,9 @@
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Drivers/BSP/Components/mx_wifi/core/mx_wifi_ipc.c:372:6:mapi_reboot_event_callback	0	static
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Drivers/BSP/Components/mx_wifi/core/mx_wifi_ipc.c:382:6:mapi_fota_status_event_callback	16	static
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Drivers/BSP/Components/mx_wifi/core/mx_wifi_ipc.c:456:6:mapi_wifi_netlink_input_callback	24	static
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Drivers/BSP/Components/mx_wifi/core/mx_wifi_ipc.c:410:6:mapi_wifi_status_event_callback	16	static
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Drivers/BSP/Components/mx_wifi/core/mx_wifi_ipc.c:197:9:mipc_init	8	static
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Drivers/BSP/Components/mx_wifi/core/mx_wifi_ipc.c:210:9:mipc_deinit	8	static
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Drivers/BSP/Components/mx_wifi/core/mx_wifi_ipc.c:222:9:mipc_request	48	static
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Drivers/BSP/Components/mx_wifi/core/mx_wifi_ipc.c:322:6:mipc_poll	16	static
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/Drivers/BSP/Components/mx_wifi/core/mx_wifi_ipc.c:349:9:mipc_echo	16	static
