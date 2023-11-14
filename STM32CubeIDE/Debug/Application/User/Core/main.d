@@ -28,6 +28,8 @@ Application/User/Core/main.o: \
  ../../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_flash_ex.h \
  ../../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_pwr.h \
  ../../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_pwr_ex.h \
+ ../../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_xspi.h \
+ ../../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_ll_dlyb.h \
  ../../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_rng.h \
  ../../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_rng_ex.h \
  ../../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_spi.h \
@@ -43,6 +45,11 @@ Application/User/Core/main.o: \
  ../../Middlewares/ST/netxduo/ports/cortex_m33/gnu/inc/nx_port.h \
  ../../NetXDuo/App/nx_user.h \
  ../../Middlewares/ST/threadx/common/inc/tx_trace.h \
+ F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/STM32CubeIDE/Application/User/Inc/stm32h573i_discovery_ospi.h \
+ F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/STM32CubeIDE/Application/User/Inc/stm32h573i_discovery_conf.h \
+ F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/STM32CubeIDE/Application/User/Inc/stm32h573i_discovery_errno.h \
+ F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/STM32CubeIDE/Application/User/Inc/mx25lm51245g.h \
+ F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/STM32CubeIDE/Application/User/Inc/mx25lm51245g_conf.h \
  ../../Drivers/BSP/Components/mx_wifi/io_pattern/mx_wifi_io.h \
  ../../Drivers/BSP/Components/mx_wifi/mx_wifi.h \
  ../../Core/Inc/mx_wifi_conf.h \
@@ -77,6 +84,8 @@ Application/User/Core/main.o: \
 ../../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_flash_ex.h:
 ../../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_pwr.h:
 ../../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_pwr_ex.h:
+../../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_xspi.h:
+../../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_ll_dlyb.h:
 ../../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_rng.h:
 ../../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_rng_ex.h:
 ../../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_spi.h:
@@ -92,6 +101,11 @@ Application/User/Core/main.o: \
 ../../Middlewares/ST/netxduo/ports/cortex_m33/gnu/inc/nx_port.h:
 ../../NetXDuo/App/nx_user.h:
 ../../Middlewares/ST/threadx/common/inc/tx_trace.h:
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/STM32CubeIDE/Application/User/Inc/stm32h573i_discovery_ospi.h:
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/STM32CubeIDE/Application/User/Inc/stm32h573i_discovery_conf.h:
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/STM32CubeIDE/Application/User/Inc/stm32h573i_discovery_errno.h:
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/STM32CubeIDE/Application/User/Inc/mx25lm51245g.h:
+F:/STM32_CAPSTONE/workspace/Nx_Network_Basics_wifi/STM32CubeIDE/Application/User/Inc/mx25lm51245g_conf.h:
 ../../Drivers/BSP/Components/mx_wifi/io_pattern/mx_wifi_io.h:
 ../../Drivers/BSP/Components/mx_wifi/mx_wifi.h:
 ../../Core/Inc/mx_wifi_conf.h:

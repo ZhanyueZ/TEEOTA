@@ -32,7 +32,7 @@
 #endif /* (__ICCARM__) */
 
 #include "nx_driver_emw3080.h"
-
+#include "stm32h573i_discovery_ospi.h"
 #include "io_pattern/mx_wifi_io.h"
 /* USER CODE END Includes */
 
@@ -50,6 +50,8 @@
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
+
+XSPI_HandleTypeDef hospi1;
 
 RNG_HandleTypeDef hrng;
 
@@ -75,6 +77,7 @@ static void MX_ICACHE_Init(void);
 static void MX_USART1_UART_Init(void);
 static void MX_SPI5_Init(void);
 static void MX_RNG_Init(void);
+static void MX_OCTOSPI1_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -113,6 +116,7 @@ int main(void)
   MX_USART1_UART_Init();
   MX_SPI5_Init();
   MX_RNG_Init();
+  MX_OCTOSPI1_Init();
   /* USER CODE BEGIN 2 */
   {
     {
@@ -302,6 +306,58 @@ static void MX_ICACHE_Init(void)
 }
 
 /**
+  * @brief OCTOSPI1 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_OCTOSPI1_Init(void)
+{
+
+  /* USER CODE BEGIN OCTOSPI1_Init 0 */
+
+  /* USER CODE END OCTOSPI1_Init 0 */
+
+  /* USER CODE BEGIN OCTOSPI1_Init 1 */
+
+  /* USER CODE END OCTOSPI1_Init 1 */
+  /* OCTOSPI1 parameter configuration*/
+  hospi1.Instance = OCTOSPI1;
+  hospi1.Init.FifoThresholdByte = 1;
+  hospi1.Init.MemoryMode = HAL_XSPI_SINGLE_MEM;
+  hospi1.Init.MemoryType = HAL_XSPI_MEMTYPE_MICRON;
+  hospi1.Init.MemorySize = HAL_XSPI_SIZE_128KB;
+  hospi1.Init.ChipSelectHighTimeCycle = 1;
+  hospi1.Init.FreeRunningClock = HAL_XSPI_FREERUNCLK_DISABLE;
+  hospi1.Init.ClockMode = HAL_XSPI_CLOCK_MODE_0;
+  hospi1.Init.WrapSize = HAL_XSPI_WRAP_NOT_SUPPORTED;
+  hospi1.Init.ClockPrescaler = 0;
+  hospi1.Init.SampleShifting = HAL_XSPI_SAMPLE_SHIFT_NONE;
+  hospi1.Init.DelayHoldQuarterCycle = HAL_XSPI_DHQC_DISABLE;
+  hospi1.Init.ChipSelectBoundary = HAL_XSPI_BONDARYOF_NONE;
+  hospi1.Init.DelayBlockBypass = HAL_XSPI_DELAY_BLOCK_BYPASS;
+  hospi1.Init.Refresh = 0;
+  if (HAL_XSPI_Init(&hospi1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN OCTOSPI1_Init 2 */
+  BSP_OSPI_NOR_Init_t Flash;
+  Flash.InterfaceMode = BSP_OSPI_NOR_OPI_MODE;
+  Flash.TransferRate = BSP_OSPI_NOR_DTR_TRANSFER;
+  BSP_OSPI_NOR_DeInit(0);
+  if(BSP_OSPI_NOR_Init(0,&Flash)!=BSP_ERROR_NONE) {
+	  Error_Handler();
+  }
+  if(BSP_OSPI_NOR_Erase_Block(0,0x00000000,MX25LM51245G_ERASE_64K) != BSP_ERROR_NONE) {
+	  Error_Handler();
+  }
+  if(BSP_OSPI_NOR_EnableMemoryMappedMode(0) != BSP_ERROR_NONE){
+	  Error_Handler();
+  }
+  /* USER CODE END OCTOSPI1_Init 2 */
+}
+
+/**
   * @brief RNG Initialization Function
   * @param None
   * @retval None
@@ -437,8 +493,12 @@ static void MX_GPIO_Init(void)
 /* USER CODE END MX_GPIO_Init_1 */
 
   /* GPIO Ports Clock Enable */
+  __HAL_RCC_GPIOG_CLK_ENABLE();
+  __HAL_RCC_GPIOD_CLK_ENABLE();
   __HAL_RCC_GPIOB_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
+  __HAL_RCC_GPIOE_CLK_ENABLE();
+  __HAL_RCC_GPIOC_CLK_ENABLE();
   __HAL_RCC_GPIOF_CLK_ENABLE();
   __HAL_RCC_GPIOH_CLK_ENABLE();
 

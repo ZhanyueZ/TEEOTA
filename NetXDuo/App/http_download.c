@@ -24,7 +24,7 @@
 #include "nx_tcp.h"
 #include "nx_driver_emw3080.h"
 #include "main.h"
-
+#include "stm32h573i_discovery_ospi.h"
 
 #define MAX_BUFFER              (NX_DRIVER_PACKET_SIZE + 1)
 
@@ -277,6 +277,7 @@ static int32_t http_file_download(int32_t socket, const char *pHost, const char 
   uint64_t       len = 0;
   http_context_t http_ctx = {0};
   const uint32_t limited_size = DOWNLOAD_LIMITED_SIZE;
+  uint32_t       writeAddr = 0x00000000;
 
 #ifdef ENABLE_IOT_DEBUG
   static struct
@@ -348,8 +349,12 @@ static int32_t http_file_download(int32_t socket, const char *pHost, const char 
 #ifdef ENABLE_IOT_DEBUG
     uint32_t measure_start = HAL_GetTick();
 #endif /* ENABLE_IOT_DEBUG */
-
+    // copy from socket to p_buffer
     count = recv(socket, (VOID *)p_buffer, (INT)sz_in_byte, 0);
+    // try to store it in the flash
+    BSP_OSPI_NOR_Write(0,p_buffer,writeAddr,sizeof(p_buffer));
+    writeAddr = writeAddr + sizeof(p_buffer);
+
     if (count == -1)
     {
       ret = -1;
