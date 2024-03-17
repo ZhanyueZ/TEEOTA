@@ -128,5 +128,7 @@ In order to make the program work, you must do the following:
  - Build all files and load your image into target memory
 
  - Run the application
+   
+ - *A demonstrative algoithm core and debugger for Connect-Four board game on STM32H5 touchscreen (implemented using TouchGFX API) is provided*
 
 
