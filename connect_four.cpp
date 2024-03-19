@@ -8,29 +8,28 @@
 #define GREEN  "\x1b[32m"
 #define YELLOW "\x1b[33m"
 #define BLUE   "\x1b[34m"
-#define RESET   "\x1b[0m"
-#define FLUSH    "\x1b[K"
+#define RESET  "\x1b[0m"
+#define PLAY   "\x1b[16;H\x1b[K"
+#define INFO   "\x1b[17;H\x1b[K"
 
 void drop(std::vector<std::vector<int>> &b, int c, int p);
 int userGetter();
-int compGetter();
 std::vector<int> minimax(std::vector<std::vector<int>> &, int, int, int, int);
 int heuristic(std::vector<int> &v);
 bool aligned(int, int, int, int, int);
 bool win(int);
-std::vector<std::vector<int>> copyGrid(std::vector<std::vector<int>>);
 
 int COLUMN = 7;
 int HEIGHT = 6;
-int DIFFICULTY = 1;     // depth of minimax search: EXCEEDING 7 NOT RECOMMENDED
-const int PLAYER = -1;
-const int COMPUTER = 1;
-int P = PLAYER;         // set first player
+int DIFFICULTY = 1;     // depth of minimax search: EXCEEDING 6 NOT RECOMMENDED
+const int USER = 1;
+const int COMP = -1;
+int PLAYER = USER;      // set first player
 int moves = 0;
 double t = 0.0;         // average response time by computer
 std::vector<std::vector<int>> board(HEIGHT, std::vector<int>(COLUMN));
+std::vector<int> idx(COLUMN);
 
-// OPTIMIZATION POSSIBLE: unnecessary to start from bottom
 void drop(std::vector<std::vector<int>> &b, int col, int p) {
 	for (int i = 0; i < HEIGHT; i++) {
 		if (b[i][col] == 0) {
@@ -43,22 +42,17 @@ void drop(std::vector<std::vector<int>> &b, int col, int p) {
 int userGetter() {
 	int col;
 	while (true) {  // till legal input
-		std::cout << FLUSH << "YOUR TURN: ";
+		std::cout << PLAY << "YOUR TURN: ";
         std::cin >> col;
 		if (std::cin.peek() != '\n' || col < 1 || col > COLUMN) {   // warn & reenter on void inputs
             std::cin.clear();
             std::cin.ignore(INT_MAX, '\n');
-            std::cout << RED << "INVALID INDEX" << RESET << "\x1b[1A\r";
-        } else if (board[HEIGHT - 1][col - 1] != 0) {
-			std::cout << FLUSH << RED << "FULL STACK" << RESET << "\x1b[1A\r";
+            std::cout << INFO << RED << "INVALID INDEX" << RESET;
+        } else if (idx[col - 1] >= HEIGHT) {
+			std::cout << INFO << RED << "FULL STACK" << RESET;
 		} else break;
 	}
 	return col - 1; // zero-based indexing
-}
-
-int compGetter() {
-	std::cout << "COMPUTER EVALUATING..." << std::endl;
-	return minimax(board, INT_MIN, INT_MAX, DIFFICULTY, COMPUTER)[1];
 }
 
 // REFERENCE: https://github.com/stratzilla/connect-four/blob/master/source.cpp
@@ -69,11 +63,11 @@ std::vector<int> minimax(std::vector<std::vector<int>> &b, int alpha, int beta, 
         std::vector<int> set(4);
         for (int r = 0; r < HEIGHT; r++) {  // horizontal
             for (int c = 0; c < COLUMN; c++) {
-                rowElements[c] = b[r][c]; // this is a distinct row alone
+                rowElements[c] = b[r][c];   // this is a distinct row alone
             }
             for (int c = 0; c < COLUMN - 3; c++) {
                 for (int i = 0; i < 4; i++) {
-                    set[i] = rowElements[c + i]; // for each possible "set" of 4 spots from that row
+                    set[i] = rowElements[c + i]; // for each possible set of 4 spots from that row
                 }
                 scores += heuristic(set);
             }
@@ -113,17 +107,21 @@ std::vector<int> minimax(std::vector<std::vector<int>> &b, int alpha, int beta, 
         }
 		return std::vector<int>{scores, -1};
 	}
-    /// maximizing computer while minimizing player
-    std::vector<int> optima = {p == COMPUTER ? INT_MIN : INT_MAX, -1};
+    std::vector<int> optima = {p == COMP ? INT_MIN : INT_MAX, -1};  // maximizing computer while minimizing user
     if (win(-p)) {
         return optima;  // coerce poorest score to avoid the move
     }
     for (int j = 0; j < COLUMN; j++) {
         if (b[HEIGHT - 1][j] == 0) {    // only when column not full
-            std::vector<std::vector<int>> tmp = copyGrid(b);
-            drop(tmp, j, p);
-            int score = minimax(tmp, alpha, beta, depth - 1, -p)[0];
-            if (p == COMPUTER) {
+            std::vector<std::vector<int>> replica(HEIGHT, std::vector<int>(COLUMN));
+            for (int r = 0; r < HEIGHT; r++) {
+                for (int c = 0; c < COLUMN; c++) {
+                    replica[r][c] = b[r][c];
+                }
+            }
+            drop(replica, j, p);
+            int score = minimax(replica, alpha, beta, depth - 1, -p)[0];
+            if (p == COMP) {
                 if (score > optima[0]) {
                     optima = {score, j};
                 }
@@ -142,13 +140,13 @@ std::vector<int> minimax(std::vector<std::vector<int>> &b, int alpha, int beta, 
     return optima;
 }
 
-// OPTIMIZATION CORE
+/// OPTIMIZATION CORE
 int heuristic(std::vector<int> &v) {
     int favour{0}, neutral{0}, hazard{0}, scores{0};
 	for (int i : v) {
         neutral += (i == 0) ? 1 : 0;
-		favour += (i == COMPUTER) ? 1 : 0;
-        hazard += (i == PLAYER || i == COMPUTER) ? 1 : 0;
+		favour += (i == COMP) ? 1 : 0;
+        hazard += (i == USER || i == COMP) ? 1 : 0;
 	}
     hazard -= favour;
     if (favour == 4) {
@@ -190,59 +188,40 @@ bool win(int p) {
     return false;
 }
 
-std::vector<std::vector<int>> copyGrid(std::vector<std::vector<int>> b) {
-	std::vector<std::vector<int>> replica(HEIGHT, std::vector<int>(COLUMN));
-	for (int i = 0; i < HEIGHT; i++) {
-		for (int j = 0; j < COLUMN; j++) {
-            replica[i][j] = b[i][j];
-		}
-	}
-	return replica;
-}
-
 int main() {
-	while (moves < HEIGHT * COLUMN) {
-        if (P == COMPUTER) {
-            auto start = std::chrono::high_resolution_clock::now();
-            drop(board, compGetter(), P);
-            t += std::chrono::duration<double, std::milli>(std::chrono::high_resolution_clock::now() - start).count();
+    for (int i = 1; i <= COLUMN; i++) { // ui initialization
+        std::cout << "  " << i << " ";
+    }
+    for (int i = 0; i <= HEIGHT; i++) {
+        std::cout << std::endl;
+        for (int j = 0; j <= COLUMN; j++) {
+            std::cout << "+   ";
+        }
+        std::cout << std::endl;
+    }
+    int k;
+	while (moves < HEIGHT * COLUMN) {   // game loop
+        bool P = PLAYER == USER;
+        if (P) {
+            k = userGetter();
+            drop(board, k, PLAYER);
         } else {
-            drop(board, userGetter(), P);
+            std::cout << PLAY << "COMP EVALUATING...";
+            auto start = std::chrono::high_resolution_clock::now();
+            k = minimax(board, INT_MIN, INT_MAX, DIFFICULTY, COMP)[1];
+            t += std::chrono::duration<double, std::milli>(std::chrono::high_resolution_clock::now() - start).count();
+            drop(board, k, PLAYER);
         }
-        system("cls");
-        std::cout << t / int((++moves + (P == COMPUTER)) / 2) << " ms" << std::endl << std::endl;
-        for (int i = 1; i <= COLUMN; i++) {
-            std::cout << "  " << i << " ";
-        }
-        std::cout << std::endl << RESET;
-        for (int i = 1; i <= COLUMN; i++) {
-            std::cout << "+---";
-        }
-        std::cout << "+" << std::endl;
-        for (int i = 0; i < HEIGHT; i++) {
-            std::cout << "| ";
-            for (int j = 0; j < COLUMN; j++) {
-                switch (board[HEIGHT - i - 1][j]) {
-                    case PLAYER: std::cout << YELLOW << "O"; break;
-                    case COMPUTER: std::cout << BLUE << "X"; break;
-                    default: std::cout << " ";
-                }
-                std::cout << RESET << " | ";
-            }
-            std::cout << std::endl;
-            for (int j = 1; j <= COLUMN; j++) {
-                std::cout << "+---";
-            }
-            std::cout << "+" << std::endl;
-        }
-        if (win(P)) {
-            std::cout << FLUSH << GREEN << ((P == PLAYER) ? "WON" : "LOST") << RESET << std::endl;
+        std::cout << INFO << "AVG EVAL " << t / int((++moves + P) / 2) << " ms\x1b[" << 13 - 2 * idx[k]++
+                  << ";" << 4 * k + 3 << "H" << (P ? YELLOW "O" : BLUE "X") << RESET;
+        if (win(PLAYER)) {
+            std::cout << PLAY << GREEN << (P ? "WON" : "LOST") << RESET << std::endl;
             break;
         }
-		P *= -1;
+        PLAYER *= -1;
 	}
 	if (moves == HEIGHT * COLUMN) {
-		std::cout << FLUSH << GREEN << "DRAW" << RESET << std::endl;
+		std::cout << PLAY << GREEN << "DRAW" << RESET << std::endl;
 	}
     system("pause");
 	return 0;
