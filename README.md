@@ -129,6 +129,6 @@ In order to make the program work, you must do the following:
 
  - Run the application
    
- - *Two demonstrative algoithm cores & debuggers, as well as their corresponding STM32H5 onbaord implemenmtations utilizing touchscreen (with TouchGFX API) for Connect-Four / Gomoku board game are provided*
+ - *Two demonstrative algorithm cores & debuggers, as well as their corresponding STM32H5 onbaord implemenmtations utilizing touchscreen (with TouchGFX API) for Connect-Four / Gomoku board game are provided*
 
 
