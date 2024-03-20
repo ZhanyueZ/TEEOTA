@@ -2,13 +2,13 @@
 #include <touchgfx/Color.hpp>
 
 Screen2View::Screen1View():
-    circleClickedCallBack(this,&Screen1View::circleClickHandler) {
+    circleClickedCallBack(this, &Screen1View::circleClickHandler) {
 }
 
 void Screen1View::setupScreen() {
     Screen1ViewBase::setupScreen();
     for (int i = 0; i < HEIGHT * COLUMN; i++) {
-        circle[i].setClickAction(circleClickedCallBack);
+        circles[i].setClickAction(circleClickedCallBack);
     }
 }
 
@@ -72,11 +72,11 @@ std::vector<int> Screen2View::minimax(std::vector<std::vector<int>> &b, int alph
         return optima;  // coerce poorest score to avoid the move
     }
 
-    /// POSSIBLE OPTIMIZATION: ONLY CHECK PERIPHERAL <= 3
+    /// POSSIBLE OPTIMIZATION: ONLY CHECK PERIPHERAL <= 2
 
     for (int i = 0; i < HEIGHT; i++) {
         for (int j = 0; j < COLUMN; j++) {
-            if (b[i][j] == 0) {    // only when column not full
+            if (b[i][j] == 0) {    // only when unoccupied
                 std::vector<std::vector<int>> replica(HEIGHT, std::vector<int>(COLUMN));
                 for (int r = 0; r < HEIGHT; r++) {
                     for (int c = 0; c < COLUMN; c++) {
@@ -105,7 +105,6 @@ std::vector<int> Screen2View::minimax(std::vector<std::vector<int>> &b, int alph
     return optima;
 }
 
-// OPTIMIZATION POSSIBLE
 int Screen2View::heuristic(std::vector<int> &v) {
     int favour{0}, neutral{0}, hazard{0}, scores{0};
 	for (int i : v) {
@@ -162,10 +161,10 @@ bool Screen2View::win(int p) {
 }
 
 void Screen2View::circleClickHandler(const Circle &c, const ClickEvent &evt) {
-	if (turn % 2 == 0) {
+	if (turn % 2 == 0) {    // NOTE: possibly eliminating variable turn
         for (int i = 0; i < COLUMN; i++) {
             for (int j = 0; j < HEIGHT; j++) {
-                if (&c == circles[i]) {
+                if (&c == circles[i][j]) {
                     if (releaseOrPress == 0) {
                         if (board[j][i] != 0) {
                             return;
@@ -180,8 +179,8 @@ void Screen2View::circleClickHandler(const Circle &c, const ClickEvent &evt) {
                             Lose.invalidate();
                             return;
                         }
-                        ColB[i][j]->setVisible(true);
-                        ColB[i][j]->invalidate();
+                        ColB[i][j] -> setVisible(true);
+                        ColB[i][j] -> invalidate();
                         board[j][i] = 1;
                         releaseOrPress++;
                     } else {
@@ -197,8 +196,8 @@ void Screen2View::circleClickHandler(const Circle &c, const ClickEvent &evt) {
                         if (board[row][col] != 0) {
                             return;
                         }
-                        ColW[col][row]->setVisible(true);
-                        ColW[col][row]->invalidate();
+                        ColW[col][row] -> setVisible(true);
+                        ColW[col][row] -> invalidate();
                         board[row][col] = -1;
                         if (win(COMP)) {
                             Lose.setAlpha(255);
