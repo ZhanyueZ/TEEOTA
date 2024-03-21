@@ -1,87 +1,84 @@
 #include <gui/screen1_screen/Screen2View.hpp>
 #include <touchgfx/Color.hpp>
 
-Screen2View::Screen1View():
-    circleClickedCallBack(this, &Screen1View::circleClickHandler) {
+int SIZE = 15;
+int DIFFICULTY = 3; // depth of minimax search: EXCEEDING 6 NOT RECOMMENDED
+int PLAYER = USER;
+int moves = 0;
+std::vector<std::vector<int>> board(SIZE, std::vector<int>(SIZE));
+
+Screen2View::Screen2View():
+    circleClickedCallBack(this, &Screen2View::circleClickHandler) {
 }
 
-void Screen1View::setupScreen() {
-    Screen1ViewBase::setupScreen();
-    for (int i = 0; i < HEIGHT * COLUMN; i++) {
-        circles[i].setClickAction(circleClickedCallBack);
-    }
+void Screen2View::setupScreen() {
+//    Screen1ViewBase::setupScreen();
+//    for (int i = 0; i < SIZE * SIZE; i++) {
+//        circles[i].setClickAction(circleClickedCallBack);
+//    }
 }
 
 void Screen2View::tearDownScreen() {
     Screen1ViewBase::tearDownScreen();
 }
 
+bool Screen2View::peripheral(const std::vector<std::vector<int>> &b, int r, int c, int proximity = 2) {
+    for (int i = -proximity; i <= proximity; i++) {
+        for (int j = -proximity; j <= proximity; j++) {
+            int probe_r = r + i;
+            int probe_c = c + j;
+            if (probe_r >= 0 && probe_r < SIZE && probe_c >= 0 && probe_c < SIZE && b[probe_r][probe_c] != 0) {
+                return true;
+            }
+        }
+    }
+    return false;
+}
+
 std::vector<int> Screen2View::minimax(std::vector<std::vector<int>> &b, int alpha, int beta, int depth, int p) {
-	if (depth == 0 || depth >= (HEIGHT * COLUMN) - moves) {
+	if (depth == 0 || depth >= (SIZE * SIZE) - moves) { // evaluate current grid in every direction
         int scores = 0;
-        std::vector<int> rowElements(COLUMN), colElements(HEIGHT);
-        std::vector<int> set(5);
-        for (int r = 0; r < HEIGHT; r++) {  // horizontal
-            for (int c = 0; c < COLUMN; c++) {
-                rowElements[c] = b[r][c];   // this is a distinct row alone
-            }
-            for (int c = 0; c < COLUMN - 4; c++) {
-                for (int i = 0; i < 5; i++) {
-                    set[i] = rowElements[c + i]; // for each possible set of 4 spots from that row
+        std::vector<int> elements(5);
+        for (int i = 0; i < SIZE; i++) {
+            for (int j = 0; j < SIZE; j++) {
+                if (j < SIZE - 4) {                 // horizontal
+                    for (int k = 0; k < 5; k++) {
+                        elements[k] = b[i][j + k];
+                    }
+                    scores += heuristic(elements);
                 }
-                scores += heuristic(set);
+                if (i < SIZE - 4) {                 // vertical
+                    for (int k = 0; k < 5; k++) {
+                        elements[k] = b[i + k][j];
+                    }
+                    scores += heuristic(elements);
+                }
+                if (i < SIZE - 4 && j < SIZE - 4) { // anti-diagonal
+                    for (int k = 0; k < 5; k++) {
+                        elements[k] = b[i + k][j + k];
+                    }
+                    scores += heuristic(elements);
+                }
+                if (i >= 4 && j < SIZE - 4) {       // diagonal
+                    for (int k = 0; k < 5; k++) {
+                        elements[k] = b[i - k][j + k];
+                    }
+                    scores += heuristic(elements);
+                }
             }
         }
-        for (int c = 0; c < COLUMN; c++) {  // vertical
-            for (int r = 0; r < HEIGHT; r++) {
-                colElements[r] = b[r][c];
-            }
-            for (int r = 0; r < HEIGHT - 4; r++) {
-                for (int i = 0; i < 5; i++) {
-                    set[i] = colElements[r + i];
-                }
-                scores += heuristic(set);
-            }
-        }
-        for (int r = 0; r < HEIGHT - 4; r++) {  // diagonal
-            for (int c = 0; c < COLUMN; c++) {
-                rowElements[c] = b[r][c];
-            }
-            for (int c = 0; c < COLUMN - 4; c++) {
-                for (int i = 0; i < 5; i++) {
-                    set[i] = b[r - i + 4][c + i];
-                }
-                scores += heuristic(set);
-            }
-        }
-        for (int r = 0; r < HEIGHT - 4; r++) {  // anti-diagonal
-            for (int c = 0; c < COLUMN; c++) {
-                rowElements[c] = b[r][c];
-            }
-            for (int c = 0; c < COLUMN - 4; c++) {
-                for (int i = 0; i < 5; i++) {
-                    set[i] = b[r + i][c + i];
-                }
-                scores += heuristic(set);
-            }
-        }
-		return std::vector<int>{scores, -1, -1};
+		return std::vector<int>{scores, -1, -1};    // -1 as placeholder
 	}
     std::vector<int> optima = {p == COMP ? INT_MIN : INT_MAX, -1, -1};  // maximizing computer while minimizing user
     if (win(-p)) {
         return optima;  // coerce poorest score to avoid the move
     }
-
-    /// POSSIBLE OPTIMIZATION: ONLY CHECK PERIPHERAL <= 2
-
-    /// POSSIBLE OPTIMIZATION: INTRODUCE RANDOMNESS IN EARLY STAGES
-
-    for (int i = 0; i < HEIGHT; i++) {
-        for (int j = 0; j < COLUMN; j++) {
-            if (b[i][j] == 0) {    // only when unoccupied
-                std::vector<std::vector<int>> replica(HEIGHT, std::vector<int>(COLUMN));
-                for (int r = 0; r < HEIGHT; r++) {
-                    for (int c = 0; c < COLUMN; c++) {
+    for (int i = 0; i < SIZE; i++) {
+        for (int j = 0; j < SIZE; j++) {
+            if (b[i][j] == 0 && peripheral(b, i, j)) {  // only go down when cell unoccupied and near occupied
+                std::vector<std::vector<int>> replica(SIZE, std::vector<int>(SIZE));
+                for (int r = 0; r < SIZE; r++) {
+                    for (int c = 0; c < SIZE; c++) {
                         replica[r][c] = b[r][c];
                     }
                 }
@@ -139,15 +136,6 @@ int Screen2View::heuristic(std::vector<int> &v) {
     return scores;
 }
 
-bool Screen2View::aligned(int i, int j, int di, int dj, int p) {
-    for (int k = 0; k < 5; k++) {
-        if (board[i + k * di][j + k * dj] != p) {
-            return false;
-        }
-    }
-    return true;
-}
-
 bool Screen2View::win(int p) {
     for (int i = 0; i < HEIGHT; i++) {
         for (int j = 0; j < COLUMN; j++) {
@@ -163,52 +151,52 @@ bool Screen2View::win(int p) {
 }
 
 void Screen2View::circleClickHandler(const Circle &c, const ClickEvent &evt) {
-	if (turn % 2 == 0) {    // NOTE: possibly eliminating variable turn
-        for (int i = 0; i < COLUMN; i++) {
-            for (int j = 0; j < HEIGHT; j++) {
-                if (&c == circles[i][j]) {
-                    if (releaseOrPress == 0) {
-                        if (board[j][i] != 0) {
-                            return;
-                        }
-                        if (win(USER)) {
-                            Win.setAlpha(255);
-                            Win.invalidate();
-                            return;
-                        }
-                        if (win(COMP)) {
-                            Lose.setAlpha(true);
-                            Lose.invalidate();
-                            return;
-                        }
-                        ColB[i][j] -> setVisible(true);
-                        ColB[i][j] -> invalidate();
-                        board[j][i] = 1;
-                        releaseOrPress++;
-                    } else {
-                        releaseOrPress = 0;
-                        if (win(USER)) {
-                            Win.setAlpha(255);
-                            Win.invalidate();
-                            return;
-                        }
-                        std::vector<int> k = minimax(board, DIFFICULTY, INT_MIN, INT_MAX, COMPUTER);
-                        int col = k[1];
-                        int row = k[2];
-                        if (board[row][col] != 0) {
-                            return;
-                        }
-                        ColW[col][row] -> setVisible(true);
-                        ColW[col][row] -> invalidate();
-                        board[row][col] = -1;
-                        if (win(COMP)) {
-                            Lose.setAlpha(255);
-                            Lose.invalidate();
-                            return;
-                        }
-                    }
-                }
-            }
-        }
-	}
+//	if (turn % 2 == 0) {    // NOTE: possibly eliminating variable turn
+//        for (int i = 0; i < SIZE; i++) {
+//            for (int j = 0; j < SIZE; j++) {
+//                if (&c == circles[i][j]) {
+//                    if (releaseOrPress == 0) {
+//                        if (board[j][i] != 0) {
+//                            return;
+//                        }
+//                        if (win(USER)) {
+//                            Win.setAlpha(255);
+//                            Win.invalidate();
+//                            return;
+//                        }
+//                        if (win(COMP)) {
+//                            Lose.setAlpha(true);
+//                            Lose.invalidate();
+//                            return;
+//                        }
+//                        ColB[i][j] -> setVisible(true);
+//                        ColB[i][j] -> invalidate();
+//                        board[j][i] = 1;
+//                        releaseOrPress++;
+//                    } else {
+//                        releaseOrPress = 0;
+//                        if (win(USER)) {
+//                            Win.setAlpha(255);
+//                            Win.invalidate();
+//                            return;
+//                        }
+//                        std::vector<int> k = minimax(board, DIFFICULTY, INT_MIN, INT_MAX, COMP);
+//                        int col = k[1];
+//                        int row = k[2];
+//                        if (board[row][col] != 0) {
+//                            return;
+//                        }
+//                        ColW[col][row] -> setVisible(true);
+//                        ColW[col][row] -> invalidate();
+//                        board[row][col] = -1;
+//                        if (win(COMP)) {
+//                            Lose.setAlpha(255);
+//                            Lose.invalidate();
+//                            return;
+//                        }
+//                    }
+//                }
+//            }
+//        }
+//	}
 }
