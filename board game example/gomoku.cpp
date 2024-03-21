@@ -1,11 +1,13 @@
-#include <random>
 #include "capstone.h"
+
+#define PLAY "\x1b[;70H\x1b[K"
+#define INFO "\x1b[2;70H\x1b[K"
 
 int SIZE = 15;
 int DIFFICULTY = 1; // depth of minimax search: EXCEEDING 6 NOT RECOMMENDED
-int PLAYER = USER;  // set first player
+int PLAYER = USER;
 int moves = 0;
-double t = 0.0;     // average response time by computer
+double t = 0.0;
 std::vector<std::vector<int>> board(SIZE, std::vector<int>(SIZE));
 
 bool peripheral(const std::vector<std::vector<int>> &, int, int, int);
@@ -39,11 +41,11 @@ std::pair<int, int> userGetter() {
  Function to verify if a move is near occupied cell(s)
  * @param b - the board to check
  * @param r, c - given move
- * @param dist - how near is "near" (including diagonals)
+ * @param proximity - how near is "near" (including diagonals)
  */
-bool peripheral(const std::vector<std::vector<int>> &b, int r, int c, int dist = 2) {
-    for (int i = -dist; i <= dist; i++) {
-        for (int j = -dist; j <= dist; j++) {
+bool peripheral(const std::vector<std::vector<int>> &b, int r, int c, int proximity = 2) {
+    for (int i = -proximity; i <= proximity; i++) {
+        for (int j = -proximity; j <= proximity; j++) {
             int probe_r = r + i;
             int probe_c = c + j;
             if (probe_r >= 0 && probe_r < SIZE && probe_c >= 0 && probe_c < SIZE && b[probe_r][probe_c] != 0) {
@@ -86,7 +88,7 @@ std::vector<int> minimax(std::vector<std::vector<int>> &b, int alpha, int beta, 
                 }
             }
         }
-		return std::vector<int>{scores, -1, -1};
+		return std::vector<int>{scores, -1, -1};    // -1 as placeholder
 	}
     std::vector<int> optima = {p == COMP ? INT_MIN : INT_MAX, -1, -1};  // maximizing computer while minimizing user
     if (win(-p)) {
@@ -154,15 +156,6 @@ int heuristic(std::vector<int> &v) {
         scores -= 65537;
     }
     return scores;
-}
-
-bool aligned(int i, int j, int di, int dj, int p) {
-    for (int k = 0; k < 5; k++) {
-        if (board[i + k * di][j + k * dj] != p) {
-            return false;
-        }
-    }
-    return true;
 }
 
 bool win(int p) {
