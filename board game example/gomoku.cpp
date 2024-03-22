@@ -1,10 +1,19 @@
+/* !LIMITATION: THIS ONLY SERVES AS A VISUAL DEBUGGER AND IS NOT ROBUST ENOUGH!
+
+ 1. In cases where your terminal window does not display the entire grid, your input won't
+    travel to the expected cell. To resolve this, you can change to my previous version: use
+    switch-case to refresh the window on every move.
+
+ 2. UseGetter(): given a valid col but invalid row, no longer possible to regret col.
+ */
+
 #include "capstone.h"
 
 #define PLAY "\x1b[;70H\x1b[K"
 #define INFO "\x1b[2;70H\x1b[K"
 
 int SIZE = 15;
-int DIFFICULTY = 1; // depth of minimax search: EXCEEDING 6 NOT RECOMMENDED
+int DIFFICULTY = 1; // depth of minimax search: EXCEEDING 6 MEANINGLESS
 int PLAYER = USER;
 int moves = 0;
 double t = 0.0;
@@ -16,7 +25,7 @@ std::pair<int, int> userGetter() {
 	int row, col;
     char c;
 	while (true) {  // till legal input
-		std::cout << PLAY << "PICK COLUMN: ";   // of course, you can enter column & row together, e.g. h8 as center
+		std::cout << PLAY << "PICK COLUMN: ";   // of course, you may as well enter column & row together
         std::cin >> c;
         col = static_cast<char>(std::toupper(c)) - 'A';
 		if (!std::isalpha(c) || col < 0 || col >= SIZE) { // warn & reenter on void inputs
@@ -57,9 +66,10 @@ bool peripheral(const std::vector<std::vector<int>> &b, int r, int c, int proxim
 }
 
 std::vector<int> minimax(std::vector<std::vector<int>> &b, int alpha, int beta, int depth, int p) { // NOLINT
-	if (depth == 0 || depth >= (SIZE * SIZE) - moves) { // evaluate current grid in every direction
+	if (depth == 0 || depth >= SIZE * SIZE - moves) { // evaluate current grid in every direction
         int scores = 0;
         std::vector<int> elements(5);
+        /// MINOR OPTIMIZATION: dynamically adjust the evaluation window (take advantage of peripheral())
         for (int i = 0; i < SIZE; i++) {
             for (int j = 0; j < SIZE; j++) {
                 if (j < SIZE - 4) {                 // horizontal
@@ -91,8 +101,8 @@ std::vector<int> minimax(std::vector<std::vector<int>> &b, int alpha, int beta, 
 		return std::vector<int>{scores, -1, -1};    // -1 as placeholder
 	}
     std::vector<int> optima = {p == COMP ? INT_MIN : INT_MAX, -1, -1};  // maximizing computer while minimizing user
-    if (win(-p)) {
-        return optima;  // coerce poorest score to avoid the move
+    if (win(-p)) {  // immediate win/loss: extreme scenario, no need to search further
+        return optima;
     }
     for (int i = 0; i < SIZE; i++) {
         for (int j = 0; j < SIZE; j++) {
@@ -125,7 +135,6 @@ std::vector<int> minimax(std::vector<std::vector<int>> &b, int alpha, int beta, 
     return optima;
 }
 
-/// OPTIMIZATION POSSIBLE
 int heuristic(std::vector<int> &v) {
     int favour{0}, neutral{0}, hazard{0}, scores{0};
 	for (int i : v) {
@@ -135,25 +144,25 @@ int heuristic(std::vector<int> &v) {
 	}
     hazard -= favour;
     if (favour == 5) {
-        scores += 65536;
-    } else if (favour == 4 && neutral == 1) {
-        scores += 16384;
-    } else if (favour == 3 && neutral == 2) {
-        scores += 4096;
-    } else if (favour == 2 && neutral == 3) {
         scores += 1024;
-    } else if (favour == 1 && neutral == 4) {
+    } else if (favour == 4 && neutral == 1) {
         scores += 256;
+    } else if (favour == 3 && neutral == 2) {
+        scores += 64;
+    } else if (favour == 2 && neutral == 3) {
+        scores += 16;
+    } else if (favour == 1 && neutral == 4) {
+        scores += 4;
     } else if (hazard == 1 && neutral == 4) {
-        scores -= 512;
+        scores -= 8;
     } else if (hazard == 2 && neutral == 3) {
-        scores -= 2048;
+        scores -= 32;
     } else if (hazard == 3 && neutral == 2) {
-        scores -= 8192;
+        scores -= 128;
     } else if (hazard == 4 && neutral == 1) {
-        scores -= 32768;
+        scores -= 512;
     } else if (hazard == 5) {
-        scores -= 65537;
+        scores -= 1025;
     }
     return scores;
 }
@@ -177,15 +186,18 @@ int main() {
         std::stringstream ss;
         ss << std::setw(2) << std::setfill('0') << i;
         std::string s = ss.str();
-        std::cout << s << "   ";
+        std::cout << GREEN << s << RESET << "   ";
         for (int j = 0; j < SIZE; j++) {
-            std::cout << "+   ";
+            if (i == 8 && j == 7) {
+                std::cout << GREEN;
+            }
+            std::cout << "+   " << RESET;
         }
         std::cout << std::endl << std::endl;
     }
     std::cout << "     ";
     for (int i = 0; i < SIZE; i++) {
-        std::cout << char(i + 65) << "   ";
+        std::cout << GREEN << char(i + 65) << RESET << "   ";
     }
     int row, col;
 	while (moves < SIZE * SIZE) {       // game loop
@@ -203,21 +215,23 @@ int main() {
                 do {                    // ensure not overwriting user's move
                     delta_r = dis(gen);
                     delta_c = dis(gen);
-                } while (delta_r == 0 && delta_c == 0);
+                } while (delta_r == 0 && delta_c == 0 ||
+                         row + delta_r < 0 || row + delta_r >= SIZE ||
+                         col + delta_c < 0 || col + delta_c >= SIZE);
                 row += delta_r;
                 col += delta_c;
             } else {
                 std::cout << PLAY << "COMPUTER EVALUATING...";
                 auto start = std::chrono::high_resolution_clock::now();
-                std::vector<int> coord = minimax(board, INT_MIN, INT_MAX, DIFFICULTY, COMP);
+                std::vector<int> cell = minimax(board, INT_MIN, INT_MAX, DIFFICULTY, COMP);
                 auto end = std::chrono::high_resolution_clock::now();
                 t += std::chrono::duration<double, std::milli>(end - start).count();
-                row = coord[1];
-                col = coord[2];
+                row = cell[1];
+                col = cell[2];
             }
         }
         board[row][col] = PLAYER;
-        std::cout << INFO << "AVG EVAL " << t / int((++moves + P) / 2) << " ms\x1b[" << 2 * (SIZE - row) - 3
+        std::cout << INFO << "AVG EVAL " << t / int((++moves + P) / 2) << " ms\x1b[" << 2 * (SIZE - row) - 1
                   << ";" << 4 * col + 6 << "H" << (P ? YELLOW "O" : BLUE "X") << RESET;
         if (win(PLAYER)) {
             std::cout << PLAY << GREEN << (P ? "WON" : "LOST") << RESET << std::endl;
