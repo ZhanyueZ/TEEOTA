@@ -1,16 +1,17 @@
-/* !LIMITATION: THIS ONLY SERVES AS A VISUAL DEBUGGER AND IS NOT ROBUST ENOUGH!
+/* Author @Ghostook, 2024
 
+ * !LIMITATION: ONLY SERVES AS A VISUAL DEBUGGER, NOT ROBUST ENOUGH!
  1. In cases where your terminal window does not display the entire grid, your input won't
     travel to the expected cell. To resolve this, you can change to my previous version: use
     switch-case to refresh the window on every move.
-
  2. UseGetter(): given a valid col but invalid row, no longer possible to regret col.
+ 3. Rules to restrict the first player have not been implemented.
  */
 
 #include "capstone.h"
 
-#define PLAY "\x1b[;70H\x1b[K"
-#define INFO "\x1b[2;70H\x1b[K"
+#define PLAY "\x1b[;66H\x1b[K"
+#define INFO "\x1b[2;66H\x1b[K"
 
 int SIZE = 15;
 int DIFFICULTY = 1; // depth of minimax search: EXCEEDING 6 MEANINGLESS
@@ -69,7 +70,6 @@ std::vector<int> minimax(std::vector<std::vector<int>> &b, int alpha, int beta, 
 	if (depth == 0 || depth >= SIZE * SIZE - moves) { // evaluate current grid in every direction
         int scores = 0;
         std::vector<int> elements(5);
-        /// MINOR OPTIMIZATION: dynamically adjust the evaluation window (take advantage of peripheral())
         for (int i = 0; i < SIZE; i++) {
             for (int j = 0; j < SIZE; j++) {
                 if (j < SIZE - 4) {                 // horizontal
@@ -135,6 +135,7 @@ std::vector<int> minimax(std::vector<std::vector<int>> &b, int alpha, int beta, 
     return optima;
 }
 
+/// PLAY STYLE CORE
 int heuristic(std::vector<int> &v) {
     int favour{0}, neutral{0}, hazard{0}, scores{0};
 	for (int i : v) {
@@ -182,23 +183,30 @@ bool win(int p) {
 }
 
 int main() {
-    for (int i = SIZE; i > 0; i--) { // grid initialization
-        std::stringstream ss;
-        ss << std::setw(2) << std::setfill('0') << i;
-        std::string s = ss.str();
-        std::cout << GREEN << s << RESET << "   ";
-        for (int j = 0; j < SIZE; j++) {
-            if (i == 8 && j == 7) {
+    for (int i = SIZE; i > 1; i--) {    // grid initialization
+        std::string s = (i < 10) ? "0" + std::to_string(i) : std::to_string(i);
+        std::cout << s << " ";
+        for (int j = 1; j < SIZE; j++) {
+            if (i == 8 && j == 8) {
                 std::cout << GREEN;
             }
-            std::cout << "+   " << RESET;
+            std::cout << "+" << RESET << "---";
         }
-        std::cout << std::endl << std::endl;
+        std::cout << "+" << std::endl;
+        for (int j = 0; j < SIZE; j++) {
+            std::cout << "   |";
+        }
+        std::cout << std::endl;
     }
-    std::cout << "     ";
+    std::cout << "01 ";
+    for (int i = 1; i < SIZE; i++) {
+        std::cout << "+---";
+    }
+    std::cout << "+" << std::endl;
     for (int i = 0; i < SIZE; i++) {
-        std::cout << GREEN << char(i + 65) << RESET << "   ";
+        std::cout << "   " << char(i + 65);
     }
+    std::cout << INFO << "ENSURE UTF-8 ENCODING TO PREVENT GARBLED OUTPUTS";
     int row, col;
 	while (moves < SIZE * SIZE) {       // game loop
         bool P = PLAYER == USER;
@@ -212,7 +220,7 @@ int main() {
                 std::mt19937 gen(std::random_device{}());
                 std::uniform_int_distribution<int> dis(-1, 1);
                 int delta_r, delta_c;
-                do {                    // ensure not overwriting user's move
+                do {                    // ensure legal move
                     delta_r = dis(gen);
                     delta_c = dis(gen);
                 } while (delta_r == 0 && delta_c == 0 ||
@@ -232,7 +240,7 @@ int main() {
         }
         board[row][col] = PLAYER;
         std::cout << INFO << "AVG EVAL " << t / int((++moves + P) / 2) << " ms\x1b[" << 2 * (SIZE - row) - 1
-                  << ";" << 4 * col + 6 << "H" << (P ? YELLOW "O" : BLUE "X") << RESET;
+                  << ";" << 4 * col + 3 << "H" << (moves % 2 == 1 ? "⚫" : "⚪");
         if (win(PLAYER)) {
             std::cout << PLAY << GREEN << (P ? "WON" : "LOST") << RESET << std::endl;
             break;
