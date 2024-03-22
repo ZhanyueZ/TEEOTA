@@ -1,9 +1,9 @@
 /* Author @Ghostook, 2024
 
- * !LIMITATION: ONLY SERVES AS A VISUAL DEBUGGER, NOT ROBUST ENOUGH!
- 1. In cases where your terminal window does not display the entire grid, your input won't
-    travel to the expected cell. To resolve this, you can change to my previous version: use
-    switch-case to refresh the window on every move.
+ !LIMITATION: ONLY SERVES AS A DEBUGGER, NOT ROBUST ENOUGH!
+ 1. In case where your terminal does not display the entire grid, the input won't travel to the expected cell.
+    To resolve this, you can either modify line 240 or use my previous version: refresh the window and convert
+    board with a switch-case on every move. Note this can be visually annoying & slow down evaluation somehow.
  2. UseGetter(): given a valid col but invalid row, no longer possible to regret col.
  3. Rules to restrict the first player have not been implemented.
  */
@@ -19,8 +19,6 @@ int PLAYER = USER;
 int moves = 0;
 double t = 0.0;
 std::vector<std::vector<int>> board(SIZE, std::vector<int>(SIZE));
-
-bool peripheral(const std::vector<std::vector<int>> &, int, int, int);
 
 std::pair<int, int> userGetter() {
 	int row, col;
