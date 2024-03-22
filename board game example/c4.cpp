@@ -4,40 +4,30 @@
 #include <chrono>
 
 // DEBUG: ANSI esc codes
-#define RED    "\x1b[31m"
-#define GREEN  "\x1b[32m"
-#define YELLOW "\x1b[33m"
-#define BLUE   "\x1b[34m"
+#define RED    "\x1b[91m"
+#define GREEN  "\x1b[92m"
+#define YELLOW "\x1b[93m"
+#define BLUE   "\x1b[94m"
 #define RESET  "\x1b[0m"
 #define PLAY   "\x1b[16;H\x1b[K"
 #define INFO   "\x1b[17;H\x1b[K"
 
-void drop(std::vector<std::vector<int>> &b, int c, int p);
-int userGetter();
-std::vector<int> minimax(std::vector<std::vector<int>> &, int, int, int, int);
-int heuristic(std::vector<int> &v);
-bool aligned(int, int, int, int, int);
-bool win(int);
-
-int COLUMN = 7;
-int HEIGHT = 6;
-int DIFFICULTY = 1;     // depth of minimax search: EXCEEDING 6 NOT RECOMMENDED
+const int COLUMN = 7;
+const int HEIGHT = 6;
+const int DIFFICULTY = 1;   // depth of minimax search: EXCEEDING 6 NOT RECOMMENDED
 const int USER = 1;
 const int COMP = -1;
-int PLAYER = USER;      // set first player
+int PLAYER = USER;          // set first player
 int moves = 0;
-double t = 0.0;         // average response time by computer
+double t = 0.0;             // average response time by computer
 std::vector<std::vector<int>> board(HEIGHT, std::vector<int>(COLUMN));
 std::vector<int> idx(COLUMN);
 
-void drop(std::vector<std::vector<int>> &b, int col, int p) {
-	for (int i = 0; i < HEIGHT; i++) {
-		if (b[i][col] == 0) {
-			b[i][col] = p;
-			break;
-		}
-	}
-}
+int userGetter();
+std::vector<int> minimax(std::vector<std::vector<int>> &, int, int, int, int);
+int heuristic(std::vector<int> &);
+bool aligned(int, int, int, int, int);
+bool win(int);
 
 int userGetter() {
 	int col;
@@ -119,7 +109,8 @@ std::vector<int> minimax(std::vector<std::vector<int>> &b, int alpha, int beta, 
                     replica[r][c] = b[r][c];
                 }
             }
-            drop(replica, j, p);
+            std::vector<int> tmp = idx;
+            replica[tmp[j]++][j] = p;
             int score = minimax(replica, alpha, beta, depth - 1, -p)[0];
             if (p == COMP) {
                 if (score > optima[0]) {
@@ -204,14 +195,13 @@ int main() {
         bool P = PLAYER == USER;
         if (P) {
             k = userGetter();
-            drop(board, k, PLAYER);
         } else {
             std::cout << PLAY << "COMP EVALUATING...";
             auto start = std::chrono::high_resolution_clock::now();
             k = minimax(board, INT_MIN, INT_MAX, DIFFICULTY, COMP)[1];
             t += std::chrono::duration<double, std::milli>(std::chrono::high_resolution_clock::now() - start).count();
-            drop(board, k, PLAYER);
         }
+        board[idx[k]][k] = PLAYER;
         std::cout << INFO << "AVG EVAL " << t / int((++moves + P) / 2) << " ms\x1b[" << 13 - 2 * idx[k]++
                   << ";" << 4 * k + 3 << "H" << (P ? YELLOW "O" : BLUE "X") << RESET;
         if (win(PLAYER)) {
@@ -224,5 +214,5 @@ int main() {
 		std::cout << PLAY << GREEN << "DRAW" << RESET << std::endl;
 	}
     system("pause");
-	return 0;
+    return 0;
 }
