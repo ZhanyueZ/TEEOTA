@@ -4,7 +4,7 @@
 3. compile dashboard Web UI;
 4. compile STM32H573I-DK OTA capabilities;
 5. write the generated .elf file to your board in STM32CubeProgrammer (you may perform a full chip erase first);
-6. run the following command to establish connection: (replace ## with your own portal which you can find in device manager);
+6. add the current folder containing esputil to PATH variables and run the following command to establish connection: (replace ## with your own portal which you can find in device manager);
 ```
  .\esputil -p /COM## monitor;
 ```
