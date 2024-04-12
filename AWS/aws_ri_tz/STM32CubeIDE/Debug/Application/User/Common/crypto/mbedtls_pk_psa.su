@@ -1,0 +1,11 @@
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/crypto/mbedtls_pk_psa.c:516:12:psa_ecdsa_can_do	0	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/crypto/mbedtls_pk_psa.c:602:13:psa_ecdsa_debug	8	static,ignoring_inline_asm
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/crypto/mbedtls_pk_psa.c:439:13:psa_pk_ctx_free	8	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/crypto/mbedtls_pk_psa.c:419:15:psa_pk_ctx_alloc	8	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/crypto/mbedtls_pk_psa.c:455:12:psa_ecdsa_sign	48	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/crypto/mbedtls_pk_psa.c:523:12:psa_ecdsa_check_pair	496	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/crypto/mbedtls_pk_psa.c:497:15:psa_ecdsa_get_bitlen	32	static,ignoring_inline_asm
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/crypto/mbedtls_pk_psa.c:119:14:xReadObjectFromPSACrypto	56	static,ignoring_inline_asm
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/crypto/mbedtls_pk_psa.c:196:9:lWriteObjectToPsaIts	16	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/crypto/mbedtls_pk_psa.c:209:9:lReadObjectFromPsaIts	56	static,ignoring_inline_asm
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/crypto/mbedtls_pk_psa.c:334:9:lPsa_initMbedtlsPkContext	32	static,ignoring_inline_asm

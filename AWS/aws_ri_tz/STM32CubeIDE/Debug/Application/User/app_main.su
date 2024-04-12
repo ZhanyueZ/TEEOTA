@@ -1,0 +1,13 @@
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/STM32H573I-DK/aws_ri_tz/Src/app_main.c:141:13:vDetermineResetSource	16	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/STM32H573I-DK/aws_ri_tz/Src/app_main.c:90:6:vInitTask	16	static,ignoring_inline_asm
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/STM32H573I-DK/aws_ri_tz/Src/app_main.c:58:13:vHeartbeatTask	8	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/STM32H573I-DK/aws_ri_tz/Src/app_main.c:189:13:prvInitializeHeap	32	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/STM32H573I-DK/aws_ri_tz/Src/app_main.c:184:10:ulGetResetSource	0	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/STM32H573I-DK/aws_ri_tz/Src/app_main.c:204:5:main	16	static,ignoring_inline_asm
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/STM32H573I-DK/aws_ri_tz/Src/app_main.c:240:13:uxRand	16	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/STM32H573I-DK/aws_ri_tz/Src/app_main.c:257:6:vApplicationGetIdleTaskMemory	0	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/STM32H573I-DK/aws_ri_tz/Src/app_main.c:284:6:vApplicationGetTimerTaskMemory	0	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/STM32H573I-DK/aws_ri_tz/Src/app_main.c:310:6:vApplicationIdleHook	0	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/STM32H573I-DK/aws_ri_tz/Src/app_main.c:318:6:vApplicationMallocFailedHook	8	static,ignoring_inline_asm
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/STM32H573I-DK/aws_ri_tz/Src/app_main.c:329:6:vApplicationStackOverflowHook	24	static,ignoring_inline_asm
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/STM32H573I-DK/aws_ri_tz/Src/app_main.c:348:6:vDoSystemReset	8	static,ignoring_inline_asm

@@ -1,0 +1,5 @@
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/app/emu_sensor_publish.c:199:19:xUpdateData	1
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/app/emu_sensor_publish.c:184:19:xIsMqttConnected	1
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/app/emu_sensor_publish.c:112:19:prvPublishAndWaitForAck	7
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/app/emu_sensor_publish.c:92:13:prvPublishCommandCallback	4
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/app/emu_sensor_publish.c:211:6:vSensorPublishTask	10

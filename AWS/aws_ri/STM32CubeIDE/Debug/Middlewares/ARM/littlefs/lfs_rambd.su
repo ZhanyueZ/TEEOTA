@@ -1,0 +1,7 @@
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/ARM/littlefs/bd/lfs_rambd.c:9:5:lfs_rambd_createcfg	16	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/ARM/littlefs/bd/lfs_rambd.c:45:5:lfs_rambd_create	8	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/ARM/littlefs/bd/lfs_rambd.c:60:5:lfs_rambd_destroy	8	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/ARM/littlefs/bd/lfs_rambd.c:71:5:lfs_rambd_read	16	static,ignoring_inline_asm
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/ARM/littlefs/bd/lfs_rambd.c:90:5:lfs_rambd_prog	24	static,ignoring_inline_asm
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/ARM/littlefs/bd/lfs_rambd.c:117:5:lfs_rambd_erase	8	static,ignoring_inline_asm
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/ARM/littlefs/bd/lfs_rambd.c:134:5:lfs_rambd_sync	0	static

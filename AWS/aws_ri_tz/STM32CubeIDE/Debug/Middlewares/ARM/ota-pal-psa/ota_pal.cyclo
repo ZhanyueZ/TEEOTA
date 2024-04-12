@@ -1,0 +1,13 @@
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/ARM/ota-pal-psa/ota_pal.c:199:23:CalculatePSAImageID	7
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/ARM/ota-pal-psa/ota_pal.c:398:13:prvGetImageInfo	2
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/ARM/ota-pal-psa/ota_pal.c:632:16:prvGetImageState	2
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/ARM/ota-pal-psa/ota_pal.c:111:13:prvConvertToRawECDSASignature	7
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/ARM/ota-pal-psa/ota_pal.c:348:23:otaPal_CheckSignature	5
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/ARM/ota-pal-psa/ota_pal.c:256:16:otaPal_Abort	10
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/ARM/ota-pal-psa/ota_pal.c:328:16:otaPal_CreateFileForRx	4
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/ARM/ota-pal-psa/ota_pal.c:445:16:otaPal_CloseFile	1
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/ARM/ota-pal-psa/ota_pal.c:470:9:otaPal_WriteBlock	6
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/ARM/ota-pal-psa/ota_pal.c:571:16:otaPal_SetPlatformImageState	12
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/ARM/ota-pal-psa/ota_pal.c:668:20:otaPal_GetPlatformImageState	12
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/ARM/ota-pal-psa/ota_pal.c:743:16:otaPal_ResetDevice	1
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/ARM/ota-pal-psa/ota_pal.c:521:16:otaPal_ActivateNewImage	6

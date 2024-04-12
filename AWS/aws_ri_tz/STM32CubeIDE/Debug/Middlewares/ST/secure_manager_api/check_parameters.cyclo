@@ -1,0 +1,7 @@
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middlewares/ST/secure_manager_api/interface/src/check_parameters.c:74:10:update_LFSR_state	2
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middlewares/ST/secure_manager_api/interface/src/check_parameters.c:124:9:randomize_buffer	2
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middlewares/ST/secure_manager_api/interface/src/check_parameters.c:137:9:check_and_randomize_buffer	1
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middlewares/ST/secure_manager_api/interface/src/check_parameters.c:153:9:check_buffer_overlap_internal	9
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middlewares/ST/secure_manager_api/interface/src/check_parameters.c:101:9:randomize_output_buffer	2
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middlewares/ST/secure_manager_api/interface/src/check_parameters.c:114:9:check_buffer_overlap_and_randomize	1
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middlewares/ST/secure_manager_api/interface/src/check_parameters.c:187:9:check_buffer_overlap	1

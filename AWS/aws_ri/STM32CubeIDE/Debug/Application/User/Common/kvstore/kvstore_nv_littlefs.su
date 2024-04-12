@@ -1,0 +1,4 @@
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/kvstore/kvstore_nv_littlefs.c:84:8:xprvGetValueLengthFromImpl	304	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/kvstore/kvstore_nv_littlefs.c:102:12:xprvReadValueFromImpl	328	static,ignoring_inline_asm
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/kvstore/kvstore_nv_littlefs.c:190:12:xprvWriteValueToImpl	160	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/kvstore/kvstore_nv_littlefs.c:264:6:vprvNvImplInit	0	static

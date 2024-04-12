@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="SCHVerif.xsd">
+<Obdata>
+	<Info>
+		<Title>SM configuration Keys</Title>
+		<GlobalAlign>80</GlobalAlign>
+	</Info>
+	<File>
+		<Name>Encryption key</Name>
+		<Value>../Keys/SM_Encryption.pem</Value>
+		<Align>1</Align>
+		<KeyType>ecdsa-p256</KeyType>
+		<Type>Private_Raw</Type>
+		<Default>../Keys/SM_Encryption.pem</Default>
+		<Tooltip>Select the key used to encrypt OEM images.</Tooltip>
+	</File>
+	<File>
+		<Name>Authentication key</Name>
+		<Value>../Keys/SM_Authentication.pem</Value>
+		<Align>1</Align>
+		<KeyType>ecdsa-p256</KeyType>
+		<Hash></Hash>
+		<Type>Public</Type>
+		<Default>../Keys/SM_Authentication.pem</Default>
+		<Tooltip>Select the key used to authenticate OEM images.</Tooltip>
+	</File>
+	<Output>
+		<Name>Output File</Name>
+		<Value>../Binary/intermediate1.bin</Value>
+		<Default>../Binary/intermediate1.bin</Default>
+		<Tooltip>Select the output file containing the data</Tooltip>
+	</Output>
+</Obdata>
+</Root>

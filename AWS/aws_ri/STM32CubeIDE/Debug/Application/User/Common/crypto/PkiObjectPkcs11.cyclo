@@ -1,0 +1,9 @@
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/crypto/PkiObjectPkcs11.c:163:14:xPrvDestoryObject	7
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/crypto/PkiObjectPkcs11.c:74:14:xPrvExportPubKeyDer	6
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/crypto/PkiObjectPkcs11.c:197:13:xPrvCkRvToPkiStatus	6
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/crypto/PkiObjectPkcs11.c:229:13:xPkcs11InitMbedtlsPkContext	11
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/crypto/PkiObjectPkcs11.c:307:13:xPkcs11WriteCertificate	11
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/crypto/PkiObjectPkcs11.c:398:13:xPkcs11ReadCertificate	14
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/crypto/PkiObjectPkcs11.c:478:13:xPkcs11GenerateKeyPairEC	16
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/crypto/PkiObjectPkcs11.c:583:13:xPkcs11ReadPublicKey	9
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/crypto/PkiObjectPkcs11.c:663:13:xPkcs11WritePubKey	11

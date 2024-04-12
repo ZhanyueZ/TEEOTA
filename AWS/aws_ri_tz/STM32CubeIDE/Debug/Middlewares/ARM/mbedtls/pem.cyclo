@@ -1,0 +1,4 @@
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/ARM/mbedtls/library/pem.c:44:6:mbedtls_pem_init	1
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/ARM/mbedtls/library/pem.c:225:5:mbedtls_pem_read_buffer	17
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/ARM/mbedtls/library/pem.c:419:6:mbedtls_pem_free	2
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/ARM/mbedtls/library/pem.c:433:5:mbedtls_pem_write_buffer	6

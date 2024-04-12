@@ -1,0 +1,4 @@
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/kvstore/kvstore_nv_psa_its.c:58:8:xprvGetValueLengthFromImpl	2
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/kvstore/kvstore_nv_psa_its.c:80:12:xprvReadValueFromImpl	11
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/kvstore/kvstore_nv_psa_its.c:160:12:xprvWriteValueToImpl	8
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/kvstore/kvstore_nv_psa_its.c:218:6:vprvNvImplInit	1

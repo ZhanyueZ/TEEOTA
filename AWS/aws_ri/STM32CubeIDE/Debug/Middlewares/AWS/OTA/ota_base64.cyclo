@@ -1,0 +1,4 @@
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/AWS/OTA/source/ota_base64.c:194:23:preprocessBase64Index	9
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/AWS/OTA/source/ota_base64.c:266:13:updateBase64DecodingBuffer	2
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/AWS/OTA/source/ota_base64.c:318:23:decodeBase64IndexBuffer	8
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/AWS/OTA/source/ota_base64.c:422:16:base64Decode	14

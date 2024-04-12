@@ -1,0 +1,12 @@
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/ARM/mbedtls/library/pkparse.c:184:12:pk_get_ecparams	16	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/ARM/mbedtls/library/pkparse.c:578:12:pk_get_pk_alg	32	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/ARM/mbedtls/library/pkparse.c:523:12:pk_get_rsapubkey	56	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/ARM/mbedtls/library/pkparse.c:457:12:pk_use_ecparams	16	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/ARM/mbedtls/library/pkparse.c:496:12:pk_get_ecpubkey	24	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/ARM/mbedtls/library/pkparse.c:686:12:asn1_get_nonzero_mpi	16	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/ARM/mbedtls/library/pkparse.c:705:12:pk_parse_key_pkcs1_der	48	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/ARM/mbedtls/library/pkparse.c:862:12:pk_parse_key_sec1_der	56	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/ARM/mbedtls/library/pkparse.c:1000:12:pk_parse_key_pkcs8_unencrypted_der	72	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/ARM/mbedtls/library/pkparse.c:611:5:mbedtls_pk_parse_subpubkey	56	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/ARM/mbedtls/library/pkparse.c:1205:5:mbedtls_pk_parse_key	72	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/ARM/mbedtls/library/pkparse.c:1422:5:mbedtls_pk_parse_public_key	72	static

@@ -1,0 +1,15 @@
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/ARM/mbedtls/library/ecdsa.c:227:12:derive_mpi	5
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/ARM/mbedtls/library/ecdsa.c:650:12:ecdsa_signature_to_asn1	6
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/ARM/mbedtls/library/ecdsa.c:386:5:mbedtls_ecdsa_can_do	1
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/ARM/mbedtls/library/ecdsa.c:252:12:ecdsa_sign_restartable	22
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/ARM/mbedtls/library/ecdsa.c:523:12:ecdsa_verify_restartable	17
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/ARM/mbedtls/library/ecdsa.c:403:5:mbedtls_ecdsa_sign	1
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/ARM/mbedtls/library/ecdsa.c:631:5:mbedtls_ecdsa_verify	1
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/ARM/mbedtls/library/ecdsa.c:678:5:mbedtls_ecdsa_write_signature_restartable	3
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/ARM/mbedtls/library/ecdsa.c:731:5:mbedtls_ecdsa_write_signature	1
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/ARM/mbedtls/library/ecdsa.c:764:5:mbedtls_ecdsa_read_signature_restartable	7
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/ARM/mbedtls/library/ecdsa.c:750:5:mbedtls_ecdsa_read_signature	1
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/ARM/mbedtls/library/ecdsa.c:830:5:mbedtls_ecdsa_genkey	2
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/ARM/mbedtls/library/ecdsa.c:868:6:mbedtls_ecdsa_init	1
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/ARM/mbedtls/library/ecdsa.c:878:6:mbedtls_ecdsa_free	2
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/ARM/mbedtls/library/ecdsa.c:849:5:mbedtls_ecdsa_from_keypair	4

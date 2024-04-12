@@ -1,0 +1,7 @@
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/FreeRTOS/corePKCS11/source/core_pkcs11.c:50:14:prvOpenSession	32	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/FreeRTOS/corePKCS11/source/core_pkcs11.c:72:7:xGetSlotList	32	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/FreeRTOS/corePKCS11/source/core_pkcs11.c:155:7:xInitializePKCS11	40	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/FreeRTOS/corePKCS11/source/core_pkcs11.c:181:7:xInitializePkcs11Token	32	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/FreeRTOS/corePKCS11/source/core_pkcs11.c:261:7:xInitializePkcs11Session	32	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/FreeRTOS/corePKCS11/source/core_pkcs11.c:317:7:xFindObjectWithLabelAndClass	56	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/FreeRTOS/corePKCS11/source/core_pkcs11.c:382:7:vAppendSHA256AlgorithmIdentifierSequence	40	static

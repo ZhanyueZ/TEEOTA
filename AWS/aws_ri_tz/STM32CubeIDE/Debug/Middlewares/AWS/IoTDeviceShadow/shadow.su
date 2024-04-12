@@ -1,0 +1,13 @@
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/AWS/IoTDeviceShadow/source/shadow.c:283:23:validateMatchTopicParameters	0	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/AWS/IoTDeviceShadow/source/shadow.c:305:23:validateAssembleTopicParameters	8	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/AWS/IoTDeviceShadow/source/shadow.c:379:23:validateName	4	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/AWS/IoTDeviceShadow/source/shadow.c:432:23:extractThingName	16	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/AWS/IoTDeviceShadow/source/shadow.c:591:21:getShadowOperationString	0	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/AWS/IoTDeviceShadow/source/shadow.c:649:17:getShadowOperationLength	0	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/AWS/IoTDeviceShadow/source/shadow.c:355:23:containsSubString	8	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/AWS/IoTDeviceShadow/source/shadow.c:457:23:extractShadowRootAndName	32	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/AWS/IoTDeviceShadow/source/shadow.c:512:23:extractShadowMessageType	24	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/AWS/IoTDeviceShadow/source/shadow.c:707:13:createShadowTopicString	24	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/AWS/IoTDeviceShadow/source/shadow.c:766:16:Shadow_MatchTopicString	32	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/AWS/IoTDeviceShadow/source/shadow.c:875:16:Shadow_AssembleTopicString	48	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/AWS/IoTDeviceShadow/source/shadow.c:930:16:Shadow_MatchTopic	40	static

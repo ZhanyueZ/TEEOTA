@@ -1,0 +1,6 @@
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/app/shadow_device_task.c:248:13:prvInitializeCtx	40	static,ignoring_inline_asm
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/app/shadow_device_task.c:341:13:prvSubscribeToShadowUpdateTopics	24	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/app/shadow_device_task.c:617:13:prvIncomingPublishUpdateRejectedCallback	40	static,ignoring_inline_asm
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/app/shadow_device_task.c:508:13:prvIncomingPublishUpdateAcceptedCallback	40	static,ignoring_inline_asm
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/app/shadow_device_task.c:388:13:prvIncomingPublishUpdateDeltaCallback	40	static,ignoring_inline_asm
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/app/shadow_device_task.c:710:6:vShadowDeviceTask	112	static

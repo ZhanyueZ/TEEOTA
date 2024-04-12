@@ -1,0 +1,5 @@
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/net/mxchip/mx_lwip.c:68:13:vLwipStatusCallback	16	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/net/mxchip/mx_lwip.c:36:13:vAddMXHeaderToEthernetFrame	24	static,ignoring_inline_asm
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/net/mxchip/mx_lwip.c:121:7:prvxLinkOutput	32	static,ignoring_inline_asm
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/net/mxchip/mx_lwip.c:193:12:prvxLinkInput	16	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/net/mxchip/mx_lwip.c:250:7:prvInitNetInterface	24	static,ignoring_inline_asm

@@ -1,0 +1,9 @@
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/lwip/src/api/netbuf.c:63:9:netbuf_new	8	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/lwip/src/api/netbuf.c:81:1:netbuf_delete	8	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/lwip/src/api/netbuf.c:102:1:netbuf_alloc	24	static,ignoring_inline_asm
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/lwip/src/api/netbuf.c:127:1:netbuf_free	16	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/lwip/src/api/netbuf.c:151:1:netbuf_ref	24	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/lwip/src/api/netbuf.c:176:1:netbuf_chain	24	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/lwip/src/api/netbuf.c:196:1:netbuf_data	16	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/lwip/src/api/netbuf.c:222:1:netbuf_next	16	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/lwip/src/api/netbuf.c:244:1:netbuf_first	16	static

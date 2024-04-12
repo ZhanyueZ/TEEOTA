@@ -1,0 +1,29 @@
+{
+    "otaUpdateId": "ota_test5",
+    "targets": [
+        "arn:aws:iot:us-east-2:698717045223:thing/stm32h5xx-user-0117000000000007c627"
+    ],
+    "targetSelection": "SNAPSHOT",
+    "files": [{
+        "fileName": "non_secure image",
+        "fileVersion": "1",
+        "fileLocation": {
+            "s3Location": {
+                "bucket": "h573ota",
+                "key": "appli_enc_sign.bin",
+                "version": "mXyQaMbdQori1lo9s9Ce8nWTDAGnzLMf"
+            }
+        },
+        "codeSigning": {
+            "startSigningJobParameter": {
+                "signingProfileName": "ota_signer",
+                "destination": {
+                    "s3Destination": {
+                        "bucket": "h573ota"
+                    }
+                }
+            }
+        }
+    }],
+    "roleArn": "arn:aws:iam::698717045223:role/OTA_Manager"
+  }

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="SCHVerif.xsd">
+<Obdata>
+	<Info>
+		<Title>SMAK configuration ST_2</Title>
+		<ObDestAddress>0x0FFD09D0</ObDestAddress>
+		<DoEncryption>1</DoEncryption>
+		<GlobalAlign>16</GlobalAlign>
+	</Info>
+	<File>
+		<Name>Image Data 3NS</Name>
+		<Value>../Binary/intermediate2.bin</Value>
+		<Align>1</Align>
+		<KeyType>ecdsa-p256</KeyType>
+		<Type></Type>
+		<Hidden>1</Hidden>
+		<Default>../Binary/intermediate2.bin</Default>
+		<Tooltip>Select the data img to be put in 3NS data</Tooltip>
+	</File>
+    <Data>
+		<Name>Padding 1</Name>
+		<Value>0x00</Value>
+		<Width>4</Width>
+        <Hidden>1</Hidden>
+		<Default>0x00</Default>
+	</Data>
+     <Data>
+		<Name>Padding 2</Name>
+		<Value>0x00</Value>
+		<Width>4</Width>
+        <Hidden>1</Hidden>
+		<Default>0x00</Default>
+	</Data>
+     <Data>
+		<Name>Padding 3</Name>
+		<Value>0x00</Value>
+		<Width>4</Width>
+        <Hidden>1</Hidden>
+		<Default>0x00</Default>
+	</Data>
+	<Output>
+		<Name>Output File</Name>
+		<Value>../Binary/SM_Config_Keys.obk</Value>
+		<Default>../Binary/SM_Config_Keys.obk</Default>
+		<Tooltip>Select the output file containing the image</Tooltip>
+	</Output>
+</Obdata>
+</Root>

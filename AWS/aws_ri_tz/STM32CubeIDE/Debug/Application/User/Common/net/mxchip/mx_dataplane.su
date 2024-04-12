@@ -1,0 +1,9 @@
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/net/mxchip/mx_dataplane.c:91:13:spi_transfer_error_callback	24	static,ignoring_inline_asm
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/net/mxchip/mx_dataplane.c:73:13:spi_transfer_done_callback	24	static,ignoring_inline_asm
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/net/mxchip/mx_dataplane.c:126:13:spi_flow_callback	16	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/net/mxchip/mx_dataplane.c:111:13:spi_notify_callback	16	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/net/mxchip/mx_dataplane.c:363:13:vProcessRxPacket	32	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/net/mxchip/mx_dataplane.c:304:26:xTransmitReceiveMessage	40	static,ignoring_inline_asm
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/net/mxchip/mx_dataplane.c:53:10:prvGetNextRequestID	16	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/net/mxchip/mx_dataplane.c:434:6:vInitCallbacks	8	static,ignoring_inline_asm
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/net/mxchip/mx_dataplane.c:491:6:vDataplaneThread	88	static,ignoring_inline_asm

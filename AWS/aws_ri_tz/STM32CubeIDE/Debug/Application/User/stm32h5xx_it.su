@@ -1,0 +1,13 @@
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/STM32H573I-DK/aws_ri_tz/Src/stm32h5xx_it.c:75:6:NMI_Handler	0	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/STM32H573I-DK/aws_ri_tz/Src/stm32h5xx_it.c:90:6:HardFault_Handler	0	static,ignoring_inline_asm
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/STM32H573I-DK/aws_ri_tz/Src/stm32h5xx_it.c:116:6:MemManage_Handler	0	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/STM32H573I-DK/aws_ri_tz/Src/stm32h5xx_it.c:131:6:BusFault_Handler	0	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/STM32H573I-DK/aws_ri_tz/Src/stm32h5xx_it.c:146:6:UsageFault_Handler	0	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/STM32H573I-DK/aws_ri_tz/Src/stm32h5xx_it.c:161:6:DebugMon_Handler	0	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/STM32H573I-DK/aws_ri_tz/Src/stm32h5xx_it.c:181:6:EXTI3_IRQHandler	8	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/STM32H573I-DK/aws_ri_tz/Src/stm32h5xx_it.c:195:6:EXTI4_IRQHandler	8	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/STM32H573I-DK/aws_ri_tz/Src/stm32h5xx_it.c:209:6:GPDMA1_Channel4_IRQHandler	8	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/STM32H573I-DK/aws_ri_tz/Src/stm32h5xx_it.c:223:6:GPDMA1_Channel5_IRQHandler	8	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/STM32H573I-DK/aws_ri_tz/Src/stm32h5xx_it.c:237:6:USART1_IRQHandler	8	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/STM32H573I-DK/aws_ri_tz/Src/stm32h5xx_it.c:251:6:SPI5_IRQHandler	8	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/STM32H573I-DK/aws_ri_tz/Src/stm32h5xx_it.c:264:6:_SysTick_Handler	8	static

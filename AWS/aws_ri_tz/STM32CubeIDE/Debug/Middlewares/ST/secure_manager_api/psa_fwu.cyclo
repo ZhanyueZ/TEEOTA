@@ -1,0 +1,12 @@
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middlewares/ST/secure_manager_api/interface/src/psa_fwu.c:51:21:check_handle_is_valid	3
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middlewares/ST/secure_manager_api/interface/src/psa_fwu.c:71:14:psa_fwu_write	4
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middlewares/ST/secure_manager_api/interface/src/psa_fwu.c:117:14:psa_fwu_install	6
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middlewares/ST/secure_manager_api/interface/src/psa_fwu.c:168:14:psa_fwu_abort	3
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middlewares/ST/secure_manager_api/interface/src/psa_fwu.c:200:14:psa_fwu_query	4
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middlewares/ST/secure_manager_api/interface/src/psa_fwu.c:245:14:psa_fwu_request_reboot	2
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middlewares/ST/secure_manager_api/interface/src/psa_fwu.c:267:14:psa_fwu_accept	3
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middlewares/ST/secure_manager_api/interface/src/psa_fwu.c:303:14:psa_fwu_request_rollback	1
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middlewares/ST/secure_manager_api/interface/src/psa_fwu.c:309:6:psa_fwu_get_image_id_iterator	1
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middlewares/ST/secure_manager_api/interface/src/psa_fwu.c:315:6:psa_fwu_get_image_id_next	1
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middlewares/ST/secure_manager_api/interface/src/psa_fwu.c:321:6:psa_fwu_get_image_id_valid	1
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middlewares/ST/secure_manager_api/interface/src/psa_fwu.c:327:14:psa_fwu_get_image_id	1

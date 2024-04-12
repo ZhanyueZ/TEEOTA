@@ -1,0 +1,9 @@
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/crypto/psa_util.c:616:12:asn1_write_mpibuf	9
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/crypto/psa_util.c:44:5:mbedtls_psa_err_translate_pk	9
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/crypto/psa_util.c:78:5:mbedtls_psa_get_ecc_oid_from_id	3
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/crypto/psa_util.c:183:22:xMbedtlsEccGroupIdFromPsaFamily	22
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/crypto/psa_util.c:293:18:xPsaFamilyFromMbedtlsEccGroupId	5
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/crypto/psa_util.c:335:14:mbedtls_to_psa_error	72
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/crypto/psa_util.c:564:17:mbedtls_psa_translate_md	5
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/crypto/psa_util.c:676:5:pk_ecdsa_sig_asn1_from_psa	5
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/crypto/psa_util.c:699:13:get_psa_function_name	83

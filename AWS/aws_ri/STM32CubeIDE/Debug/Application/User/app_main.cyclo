@@ -1,0 +1,14 @@
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/STM32H573I-DK/aws_ri/Src/app_main.c:232:13:vDetermineResetSource	13
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/STM32H573I-DK/aws_ri/Src/app_main.c:135:13:vHeartbeatTask	1
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/STM32H573I-DK/aws_ri/Src/app_main.c:75:12:fs_init	9
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/STM32H573I-DK/aws_ri/Src/app_main.c:165:6:vInitTask	10
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/STM32H573I-DK/aws_ri/Src/app_main.c:62:9:pxGetDefaultFsCtx	2
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/STM32H573I-DK/aws_ri/Src/app_main.c:274:10:ulGetResetSource	1
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/STM32H573I-DK/aws_ri/Src/app_main.c:279:5:main	1
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/STM32H573I-DK/aws_ri/Src/app_main.c:310:13:uxRand	1
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/STM32H573I-DK/aws_ri/Src/app_main.c:320:6:vApplicationGetIdleTaskMemory	1
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/STM32H573I-DK/aws_ri/Src/app_main.c:347:6:vApplicationGetTimerTaskMemory	1
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/STM32H573I-DK/aws_ri/Src/app_main.c:373:6:vApplicationIdleHook	1
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/STM32H573I-DK/aws_ri/Src/app_main.c:381:6:vApplicationMallocFailedHook	1
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/STM32H573I-DK/aws_ri/Src/app_main.c:392:6:vApplicationStackOverflowHook	2
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/STM32H573I-DK/aws_ri/Src/app_main.c:411:6:vDoSystemReset	2

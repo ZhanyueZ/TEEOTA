@@ -1,0 +1,7 @@
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/STM32H573I-DK/aws_ri_tz/Src/stm32h5xx_hal_msp.c:67:6:HAL_MspInit	1
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/STM32H573I-DK/aws_ri_tz/Src/stm32h5xx_hal_msp.c:88:6:HAL_SPI_MspInit	7
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/STM32H573I-DK/aws_ri_tz/Src/stm32h5xx_hal_msp.c:194:6:HAL_SPI_MspDeInit	2
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/STM32H573I-DK/aws_ri_tz/Src/stm32h5xx_hal_msp.c:230:6:HAL_TIM_Base_MspInit	2
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/STM32H573I-DK/aws_ri_tz/Src/stm32h5xx_hal_msp.c:252:6:HAL_TIM_Base_MspDeInit	2
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/STM32H573I-DK/aws_ri_tz/Src/stm32h5xx_hal_msp.c:274:6:HAL_UART_MspInit	3
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/STM32H573I-DK/aws_ri_tz/Src/stm32h5xx_hal_msp.c:324:6:HAL_UART_MspDeInit	2

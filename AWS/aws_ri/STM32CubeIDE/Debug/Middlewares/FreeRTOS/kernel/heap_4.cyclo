@@ -1,0 +1,9 @@
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/FreeRTOS/kernel/portable/MemMang/heap_4.c:379:13:prvHeapInit	2
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/FreeRTOS/kernel/portable/MemMang/heap_4.c:424:13:prvInsertBlockIntoFreeList	7
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/FreeRTOS/kernel/portable/MemMang/heap_4.c:138:8:pvPortMalloc	14
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/FreeRTOS/kernel/portable/MemMang/heap_4.c:289:6:vPortFree	5
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/FreeRTOS/kernel/portable/MemMang/heap_4.c:342:8:xPortGetFreeHeapSize	1
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/FreeRTOS/kernel/portable/MemMang/heap_4.c:348:8:xPortGetMinimumEverFreeHeapSize	1
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/FreeRTOS/kernel/portable/MemMang/heap_4.c:354:6:vPortInitialiseBlocks	1
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/FreeRTOS/kernel/portable/MemMang/heap_4.c:360:8:pvPortCalloc	5
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/FreeRTOS/kernel/portable/MemMang/heap_4.c:487:6:vPortGetHeapStats	5

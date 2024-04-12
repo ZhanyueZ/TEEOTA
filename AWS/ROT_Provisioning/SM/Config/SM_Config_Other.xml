@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="SCHVerif.xsd">
+<Obdata>
+	<Info>
+		<Title>SM configuration other</Title>
+		<ObDestAddress>0x0FFD0200</ObDestAddress>
+		<DoEncryption>1</DoEncryption>
+		<GlobalAlign>16</GlobalAlign>
+		<FlashStart>0x0C000000</FlashStart>
+		<FlashSize>0x200000</FlashSize>
+		<FlashSectorSize>0x2000</FlashSectorSize>
+		<OBKStart>0xFFD0900</OBKStart>
+		<OBKSize>0x2F0</OBKSize>
+		<OBKSectorSize>0x10</OBKSectorSize>
+		<AuthOBKStart>0xFFD0900</AuthOBKStart>
+		<AuthOBKSize>0x2F0</AuthOBKSize>
+	</Info>
+	<Hash>
+	</Hash>
+	<Data>
+		<Name>Padding 1</Name>
+		<Value>0x0</Value>
+		<Width>1</Width>
+		<Hidden>1</Hidden>
+		<Default>0x0</Default>
+	</Data>
+	<List>
+		<Name>Clock configuration</Name>
+		<Value>0x02</Value>
+		<Width>1</Width>
+		<Hidden>0</Hidden>
+		<Default>0x01</Default>
+		<Val>0x00,SM initialisation @ 64Mhz</Val>
+		<Val>0x01,SM initialisation @ 200Mhz</Val>
+		<Val>0x02,SM initialisation @ 250Mhz</Val>
+		<Tooltip>Configured the clock during SM initialisation (including boot stages) depending on the voltage supply level and the range of temperature supported</Tooltip>
+	</List>
+	<Data>
+		<Name>Padding 2</Name>
+		<Value>0x0</Value>
+		<Width>1</Width>
+		<Hidden>1</Hidden>
+		<Default>0x0</Default>
+	</Data>
+	<Bool>
+		<Name>Jump into ST bootloader when no valid STuROT</Name>
+		<Value>0x01</Value>
+		<Width>1</Width>
+		<Hidden>0</Hidden>
+		<Default>0x01</Default>
+		<True>0x01</True>
+		<False>0x00</False>
+		<Tooltip>Tick the box if STiROT is allowed to jump into ST bootloader when the authenticity and the integrity of STuROT image is not verified</Tooltip>
+	</Bool>
+	<Data>
+		<Name>Padding 3</Name>
+		<Value>0x0</Value>
+		<Width>8</Width>
+		<Hidden>1</Hidden>
+		<Default>0x0</Default>
+	</Data>
+	<Data>
+		<Name>Padding 4</Name>
+		<Value>0x0</Value>
+		<Width>8</Width>
+		<Hidden>1</Hidden>
+		<Default>0x0</Default>
+	</Data>
+	<Data>
+		<Name>Padding 5</Name>
+		<Value>0x0</Value>
+		<Width>8</Width>
+		<Hidden>1</Hidden>
+		<Default>0x0</Default>
+	</Data>
+	<Data>
+		<Name>Padding 6</Name>
+		<Value>0x0</Value>
+		<Width>8</Width>
+		<Hidden>1</Hidden>
+		<Default>0x0</Default>
+	</Data>
+	<Data>
+		<Name>Padding 7</Name>
+		<Value>0x0</Value>
+		<Width>8</Width>
+		<Hidden>1</Hidden>
+		<Default>0x0</Default>
+	</Data>
+	<List>
+		<Name>Minimal Product state allowed</Name>
+		<Value>0x0000C600</Value>
+		<Width>4</Width>
+		<Default>0x0000C600</Default>
+		<Val>0x0000C600,TZ-Closed</Val>
+		<Val>0x00007200,Closed</Val>
+		<Val>0x00005C00,Locked</Val>
+		<Tooltip>The boot stage will execute the application only if the product state programmed in option byte is equal or greater than the "Product state minimal allowed"</Tooltip>
+	</List>
+	<Data>
+		<Name>Padding 8</Name>
+		<Value>0x0</Value>
+		<Width>8</Width>
+		<Hidden>1</Hidden>
+		<Default>0x0</Default>
+	</Data>
+	<Data>
+		<Name>Padding 9</Name>
+		<Value>0x0</Value>
+		<Width>8</Width>
+		<Hidden>1</Hidden>
+		<Default>0x0</Default>
+	</Data>
+	<Data>
+		<Name>Padding 10</Name>
+		<Value>0x0</Value>
+		<Width>8</Width>
+		<Hidden>1</Hidden>
+		<Default>0x0</Default>
+	</Data>
+	<Data>
+		<Name>Padding 11</Name>
+		<Value>0x0</Value>
+		<Width>8</Width>
+		<Hidden>1</Hidden>
+		<Default>0x0</Default>
+	</Data>
+	<Data>
+		<Name>Padding 12</Name>
+		<Value>0x0</Value>
+		<Width>8</Width>
+		<Hidden>1</Hidden>
+		<Default>0x0</Default>
+	</Data>
+	<Data>
+		<Name>Padding 13</Name>
+		<Value>0x0</Value>
+		<Width>8</Width>
+		<Hidden>1</Hidden>
+		<Default>0x0</Default>
+	</Data>
+	<Data>
+		<Name>Padding 14</Name>
+		<Value>0x0</Value>
+		<Width>8</Width>
+		<Hidden>1</Hidden>
+		<Default>0x0</Default>
+	</Data>
+	<Data>
+		<Name>Padding 15</Name>
+		<Value>0x0</Value>
+		<Width>8</Width>
+		<Hidden>1</Hidden>
+		<Default>0x0</Default>
+	</Data>
+	<Data>
+		<Name>Padding 16</Name>
+		<Value>0x0</Value>
+		<Width>8</Width>
+		<Hidden>1</Hidden>
+		<Default>0x0</Default>
+	</Data>
+	<Data>
+		<Name>Padding 17</Name>
+		<Value>0x0</Value>
+		<Width>8</Width>
+		<Hidden>1</Hidden>
+		<Default>0x0</Default>
+	</Data>
+	<Data>
+		<Name>Padding 18</Name>
+		<Value>0x0</Value>
+		<Width>8</Width>
+		<Hidden>1</Hidden>
+		<Default>0x0</Default>
+	</Data>
+	<Data>
+		<Name>Padding 19</Name>
+		<Value>0x0</Value>
+		<Width>8</Width>
+		<Hidden>1</Hidden>
+		<Default>0x0</Default>
+	</Data>
+	<Data>
+		<Name>Padding 20</Name>
+		<Value>0x0</Value>
+		<Width>8</Width>
+		<Hidden>1</Hidden>
+		<Default>0x0</Default>
+	</Data>
+	<Data>
+		<Name>Padding 21</Name>
+		<Value>0x0</Value>
+		<Width>8</Width>
+		<Hidden>1</Hidden>
+		<Default>0x0</Default>
+	</Data>
+	<Data>
+		<Name>Padding 22</Name>
+		<Value>0x0</Value>
+		<Width>8</Width>
+		<Hidden>1</Hidden>
+		<Default>0x0</Default>
+	</Data>
+	<Data>
+		<Name>Padding 23</Name>
+		<Value>0x0</Value>
+		<Width>8</Width>
+		<Hidden>1</Hidden>
+		<Default>0x0</Default>
+	</Data>
+	<Data>
+		<Name>Padding 24</Name>
+		<Value>0x0</Value>
+		<Width>8</Width>
+		<Hidden>1</Hidden>
+		<Default>0x0</Default>
+	</Data>
+	<Data>
+		<Name>Padding 25</Name>
+		<Value>0x0</Value>
+		<Width>8</Width>
+		<Hidden>1</Hidden>
+		<Default>0x0</Default>
+	</Data>
+	<Data>
+		<Name>Padding 26</Name>
+		<Value>0x0</Value>
+		<Width>8</Width>
+		<Hidden>1</Hidden>
+		<Default>0x0</Default>
+	</Data>
+	<Data>
+		<Name>Padding 27</Name>
+		<Value>0x0</Value>
+		<Width>8</Width>
+		<Hidden>1</Hidden>
+		<Default>0x0</Default>
+	</Data>
+	<Data>
+		<Name>Padding 28</Name>
+		<Value>0x0</Value>
+		<Width>8</Width>
+		<Hidden>1</Hidden>
+		<Default>0x0</Default>
+	</Data>
+	<Output>
+		<Name>Output File</Name>
+		<Value>./../Binary/SM_Config_Other.obk</Value>
+		<Default>./../Binary/SM_Config_Other.obk</Default>
+		<Tooltip>Output file .obk containing other configuration</Tooltip>
+	</Output>
+</Obdata>
+</Root>

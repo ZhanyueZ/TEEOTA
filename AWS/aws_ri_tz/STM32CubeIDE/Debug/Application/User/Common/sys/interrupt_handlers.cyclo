@@ -1,0 +1,4 @@
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/sys/interrupt_handlers.c:35:44:prvGetRegistersFromStack	1
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/sys/interrupt_handlers.c:77:6:GPIO_EXTI_Register_Callback	3
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/sys/interrupt_handlers.c:94:6:HAL_GPIO_EXTI_Falling_Callback	1
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/sys/interrupt_handlers.c:104:6:HAL_GPIO_EXTI_Rising_Callback	3

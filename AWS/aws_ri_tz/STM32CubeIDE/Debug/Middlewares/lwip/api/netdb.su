@@ -1,0 +1,4 @@
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/lwip/src/api/netdb.c:87:1:lwip_gethostbyname	32	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/lwip/src/api/netdb.c:162:1:lwip_gethostbyname_r	40	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/lwip/src/api/netdb.c:236:1:lwip_freeaddrinfo	8	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/lwip/src/api/netdb.c:269:1:lwip_getaddrinfo	56	static,ignoring_inline_asm

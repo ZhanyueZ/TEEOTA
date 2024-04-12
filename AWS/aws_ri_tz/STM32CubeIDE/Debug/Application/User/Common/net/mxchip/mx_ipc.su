@@ -1,0 +1,11 @@
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/net/mxchip/mx_ipc.c:57:13:vClearCtx	8	static,ignoring_inline_asm
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/net/mxchip/mx_ipc.c:101:26:pxFindAvailableCtx	16	static,ignoring_inline_asm
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/net/mxchip/mx_ipc.c:165:19:xSendIPCRequest	32	static,ignoring_inline_asm
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/net/mxchip/mx_ipc.c:265:12:mx_RequestVersion	200	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/net/mxchip/mx_ipc.c:291:12:mx_FactoryReset	200	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/net/mxchip/mx_ipc.c:305:12:mx_GetMacAddress	200	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/net/mxchip/mx_ipc.c:329:12:mx_Connect	216	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/net/mxchip/mx_ipc.c:404:12:mx_Disconnect	200	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/net/mxchip/mx_ipc.c:419:12:mx_SetBypassMode	200	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/net/mxchip/mx_ipc.c:443:12:mx_RegisterEventCallback	8	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/net/mxchip/mx_ipc.c:468:6:prvControlPlaneRouter	48	dynamic,ignoring_inline_asm

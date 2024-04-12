@@ -1,0 +1,13 @@
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/AWS/IoTDeviceShadow/source/shadow.c:283:23:validateMatchTopicParameters	4
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/AWS/IoTDeviceShadow/source/shadow.c:305:23:validateAssembleTopicParameters	10
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/AWS/IoTDeviceShadow/source/shadow.c:379:23:validateName	6
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/AWS/IoTDeviceShadow/source/shadow.c:432:23:extractThingName	2
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/AWS/IoTDeviceShadow/source/shadow.c:591:21:getShadowOperationString	11
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/AWS/IoTDeviceShadow/source/shadow.c:649:17:getShadowOperationLength	9
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/AWS/IoTDeviceShadow/source/shadow.c:355:23:containsSubString	3
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/AWS/IoTDeviceShadow/source/shadow.c:457:23:extractShadowRootAndName	4
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/AWS/IoTDeviceShadow/source/shadow.c:512:23:extractShadowMessageType	4
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/AWS/IoTDeviceShadow/source/shadow.c:707:13:createShadowTopicString	2
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/AWS/IoTDeviceShadow/source/shadow.c:766:16:Shadow_MatchTopicString	12
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/AWS/IoTDeviceShadow/source/shadow.c:875:16:Shadow_AssembleTopicString	5
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/AWS/IoTDeviceShadow/source/shadow.c:930:16:Shadow_MatchTopic	2

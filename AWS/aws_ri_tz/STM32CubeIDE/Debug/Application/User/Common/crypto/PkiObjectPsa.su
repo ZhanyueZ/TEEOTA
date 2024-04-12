@@ -1,0 +1,7 @@
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/crypto/PkiObjectPsa.c:69:14:xReadPublicKeyFromPSACrypto	72	static,ignoring_inline_asm
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/crypto/PkiObjectPsa.c:374:9:lWritePublicKeyToPSACrypto	48	static,ignoring_inline_asm
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/crypto/PkiObjectPsa.c:476:9:lWriteCertificateToPSACrypto	40	static,ignoring_inline_asm
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/crypto/PkiObjectPsa.c:527:9:lReadCertificateFromPSACrypto	24	static,ignoring_inline_asm
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/crypto/PkiObjectPsa.c:562:9:lWriteCertificateToPsaIts	16	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/crypto/PkiObjectPsa.c:586:9:lReadCertificateFromPsaIts	24	static,ignoring_inline_asm
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/crypto/PkiObjectPsa.c:717:9:lGenerateKeyPairECPsaCrypto	48	static

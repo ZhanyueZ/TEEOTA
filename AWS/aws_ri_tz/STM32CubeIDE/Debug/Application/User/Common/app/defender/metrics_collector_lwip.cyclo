@@ -1,0 +1,12 @@
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/app/defender/metrics_collector_lwip.c:169:15:xCountListeningTcpPorts	3
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/app/defender/metrics_collector_lwip.c:347:15:xCountListeningUdpPorts	2
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/app/defender/metrics_collector_lwip.c:492:15:xCountTcpConnections	2
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/app/defender/metrics_collector_lwip.c:186:15:pcGetNetifName	3
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/app/defender/metrics_collector_lwip.c:504:13:xIpAddrPortToString	3
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/app/defender/metrics_collector_lwip.c:215:18:xAppendTcpPtsToList	11
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/app/defender/metrics_collector_lwip.c:359:18:xAppendUdpPtsToList	11
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/app/defender/metrics_collector_lwip.c:526:18:xAppendTcpConnectionsToList	13
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/app/defender/metrics_collector_lwip.c:94:11:xGetNetworkStats	12
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/app/defender/metrics_collector_lwip.c:263:11:xGetListeningTcpPorts	20
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/app/defender/metrics_collector_lwip.c:407:11:xGetListeningUdpPorts	20
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/app/defender/metrics_collector_lwip.c:590:11:xGetEstablishedConnections	26

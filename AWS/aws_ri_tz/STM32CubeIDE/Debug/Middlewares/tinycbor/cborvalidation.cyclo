@@ -1,0 +1,5 @@
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/tinycbor/src/cborvalidation.c:375:25:validate_floating_point	36
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/tinycbor/src/cborvalidation.c:293:25:validate_number	21
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/tinycbor/src/cborvalidation.c:501:18:validate_value	74
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/tinycbor/src/cborvalidation.c:438:18:validate_container	20
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/tinycbor/src/cborvalidation.c:644:11:cbor_value_validate	5

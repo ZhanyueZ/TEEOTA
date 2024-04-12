@@ -1,0 +1,6 @@
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/sys/mbedtls_freertos_port.c:106:13:mbedtls_platform_mutex_init	3
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/sys/mbedtls_freertos_port.c:126:13:mbedtls_platform_mutex_free	1
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/sys/mbedtls_freertos_port.c:141:12:mbedtls_platform_mutex_lock	3
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/sys/mbedtls_freertos_port.c:166:12:mbedtls_platform_mutex_unlock	4
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/sys/mbedtls_freertos_port.c:55:8:mbedtls_platform_calloc	4
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/en.x-cube-aws-h5-v1-0-0/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Projects/Common/sys/mbedtls_freertos_port.c:86:6:mbedtls_platform_free	2

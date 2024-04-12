@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="SCHVerif.xsd">
+<McubootFormat>
+	<GlobalParam>
+		<Command>resign</Command>
+		<Title>Module with license generation, OEM sign</Title>
+	</GlobalParam>
+	<Param>
+		<Name>Authentication key</Name>
+		<Value>./../Keys/SM_Authentication.pem</Value>
+		<Type>File</Type>
+		<Command>-k</Command>
+        <Hidden>1</Hidden>
+		<Default>SM_Authentication.pem</Default>
+	</Param>
+	<Param>
+		<Name>pub key format</Name>
+		<Type>Data</Type>
+		<Command>--public-key-format</Command>
+		<Hidden>1</Hidden>
+		<Default>full</Default>
+	</Param>
+	<Param>
+		<Name>Padding</Name>
+		<Type>Data</Type>
+		<Command>--pad</Command>
+		<Hidden>1</Hidden>
+		<Default></Default>
+	</Param>
+	<Param>
+      <Name>Firmware area Size</Name>
+      <Value>0x20000</Value>
+      <Type>Data</Type>
+      <Command>-S</Command>
+      <Hidden>1</Hidden>
+      <Default>0x72000</Default>
+	</Param>
+	<Param>
+		<Name>Align</Name>
+		<Type>Data</Type>
+		<Command>--align</Command>
+		<Hidden>1</Hidden>
+		<Default>16</Default>
+	</Param>
+    <Param>
+      <Name>Binary input file</Name>
+      <Value>./../Binary/dummy_with_license_not_oem_sign.smu</Value>
+      <Type>File</Type>
+      <Tooltip>Select the binary file to be processed for the image generation</Tooltip>
+      <Default>dummy_with_license_not_oem_sign.smu</Default>
+    </Param>
+    <Output>
+      <Name>Image output file</Name>
+      <Value>./../Binary/dummy_with_license_oem_sign.smu</Value>
+      <Default>dummy_with_license_oem_sign.smu</Default>
+    </Output>
+  </McubootFormat>
+</Root>

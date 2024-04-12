@@ -1,0 +1,6 @@
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Utilities/Certificates/stm32_cert.c:249:17:GetAsn1IntegerEncodingInfo	6
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Utilities/Certificates/stm32_cert.c:316:17:GetAsn1SignatureEncodingLength	2
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Utilities/Certificates/stm32_cert.c:289:17:Asn1EncodeInteger	3
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Utilities/Certificates/stm32_cert.c:337:17:Asn1EncodeSignature	2
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Utilities/Certificates/stm32_cert.c:372:15:UTIL_CERT_GetCertificateSize	5
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Utilities/Certificates/stm32_cert.c:415:15:UTIL_CERT_GetCertificate	7

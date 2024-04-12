@@ -1,0 +1,852 @@
+ 
+      -------------------------------------------------------------------
+                       STM32 Trusted Package Creator v2.15.0                  
+      -------------------------------------------------------------------
+
+-obk C:\Users\89336\STM32CubeIDE\workspace_1.13.1\STM32CubeExpansion_Cloud_AWS_H5_V1.0.0\Projects\STM32H573I-DK\ROT_Provisioning\SM\Config\SM_Config_General.xml 
+ 
+SUCCESS OBKey File Generation 
+
+      -------------------------------------------------------------------
+                       STM32 Trusted Package Creator v2.15.0                  
+      -------------------------------------------------------------------
+
+-obk C:\Users\89336\STM32CubeIDE\workspace_1.13.1\STM32CubeExpansion_Cloud_AWS_H5_V1.0.0\Projects\STM32H573I-DK\ROT_Provisioning\SM\Config\SM_Config_Keys.xml 
+ 
+SUCCESS OBKey File Generation 
+
+      -------------------------------------------------------------------
+                       STM32 Trusted Package Creator v2.15.0                  
+      -------------------------------------------------------------------
+
+-pb C:\Users\89336\STM32CubeIDE\workspace_1.13.1\STM32CubeExpansion_Cloud_AWS_H5_V1.0.0\Projects\STM32H573I-DK\ROT_Provisioning\SM\ST\SM_ST_Settings_1.xml 
+ 
+Image generated successfully 
+
+      -------------------------------------------------------------------
+                       STM32 Trusted Package Creator v2.15.0                  
+      -------------------------------------------------------------------
+
+-obk C:\Users\89336\STM32CubeIDE\workspace_1.13.1\STM32CubeExpansion_Cloud_AWS_H5_V1.0.0\Projects\STM32H573I-DK\ROT_Provisioning\SM\ST\SM_ST_Settings_2.xml 
+ 
+SUCCESS OBKey File Generation 
+
+      -------------------------------------------------------------------
+                       STM32 Trusted Package Creator v2.15.0                  
+      -------------------------------------------------------------------
+
+-obk C:\Users\89336\STM32CubeIDE\workspace_1.13.1\STM32CubeExpansion_Cloud_AWS_H5_V1.0.0\Projects\STM32H573I-DK\ROT_Provisioning\SM\Config\SM_Config_Other.xml 
+ 
+SUCCESS OBKey File Generation 
+
+Thu Mar 28 19:32:18 2024 : [INF] ############## Executing xmlval command ##############
+Thu Mar 28 19:32:18 2024 : [INF] AppliCfg.exe xmlval -b FlashLayoutConfigs.bin -b_el_idx 30 -nxml_el_idx Flash Layout configuration index -n NS appli size SM_Config_General.xml --vb
+Thu Mar 28 19:32:18 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:18 2024 : [INF] Searching the parameter with <Name>Flash Layout configuration index</Name>
+Thu Mar 28 19:32:18 2024 : [INF] Parameter found. Extracting information from '<Value>0x0</Value>'
+Thu Mar 28 19:32:18 2024 : [INF] The content recovered is '0x0'
+Thu Mar 28 19:32:18 2024 : [INF] Value to be used 0x49
+Thu Mar 28 19:32:18 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:18 2024 : [INF] Searching the parameter with <Name>NS appli size</Name> element
+Thu Mar 28 19:32:18 2024 : [INF] Parameter found. Verifying information of '<Value>0x49</Value>'
+Thu Mar 28 19:32:18 2024 : [INF] The modification is not necessary
+Thu Mar 28 19:32:18 2024 : [INF] The tag <Value> has already the correct content (0x49)
+Thu Mar 28 19:32:19 2024 : [INF] ############## Executing xmlval command ##############
+Thu Mar 28 19:32:19 2024 : [INF] AppliCfg.exe xmlval -b FlashLayoutConfigs.bin -b_el_idx 0 -nxml_el_idx Flash Layout configuration index -n Nb Secure Modules SM_Config_General.xml --vb
+Thu Mar 28 19:32:19 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:19 2024 : [INF] Searching the parameter with <Name>Flash Layout configuration index</Name>
+Thu Mar 28 19:32:19 2024 : [INF] Parameter found. Extracting information from '<Value>0x0</Value>'
+Thu Mar 28 19:32:19 2024 : [INF] The content recovered is '0x0'
+Thu Mar 28 19:32:19 2024 : [INF] Value to be used 0x0
+Thu Mar 28 19:32:19 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:19 2024 : [INF] Searching the parameter with <Name>Nb Secure Modules</Name> element
+Thu Mar 28 19:32:19 2024 : [INF] Parameter found. Verifying information of '<Value>0x0</Value>'
+Thu Mar 28 19:32:19 2024 : [INF] The modification is not necessary
+Thu Mar 28 19:32:19 2024 : [INF] The tag <Value> has already the correct content (0x0)
+Thu Mar 28 19:32:20 2024 : [INF] ############## Executing xmlval command ##############
+Thu Mar 28 19:32:20 2024 : [INF] AppliCfg.exe xmlval -b FlashLayoutConfigs.bin -b_el_idx 4 -nxml_el_idx Flash Layout configuration index -n S Module 0 primary offset SM_Config_General.xml --vb
+Thu Mar 28 19:32:20 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:20 2024 : [INF] Searching the parameter with <Name>Flash Layout configuration index</Name>
+Thu Mar 28 19:32:20 2024 : [INF] Parameter found. Extracting information from '<Value>0x0</Value>'
+Thu Mar 28 19:32:20 2024 : [INF] The content recovered is '0x0'
+Thu Mar 28 19:32:20 2024 : [INF] Value to be used 0x0
+Thu Mar 28 19:32:20 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:20 2024 : [INF] Searching the parameter with <Name>S Module 0 primary offset</Name> element
+Thu Mar 28 19:32:20 2024 : [INF] Parameter found. Verifying information of '<Value>0x0</Value>'
+Thu Mar 28 19:32:20 2024 : [INF] The modification is not necessary
+Thu Mar 28 19:32:20 2024 : [INF] The tag <Value> has already the correct content (0x0)
+Thu Mar 28 19:32:20 2024 : [INF] ############## Executing xmlval command ##############
+Thu Mar 28 19:32:20 2024 : [INF] AppliCfg.exe xmlval -b FlashLayoutConfigs.bin -b_el_idx 5 -nxml_el_idx Flash Layout configuration index -n S Module 0 secondary offset SM_Config_General.xml --vb
+Thu Mar 28 19:32:20 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:20 2024 : [INF] Searching the parameter with <Name>Flash Layout configuration index</Name>
+Thu Mar 28 19:32:20 2024 : [INF] Parameter found. Extracting information from '<Value>0x0</Value>'
+Thu Mar 28 19:32:20 2024 : [INF] The content recovered is '0x0'
+Thu Mar 28 19:32:20 2024 : [INF] Value to be used 0x0
+Thu Mar 28 19:32:20 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:20 2024 : [INF] Searching the parameter with <Name>S Module 0 secondary offset</Name> element
+Thu Mar 28 19:32:20 2024 : [INF] Parameter found. Verifying information of '<Value>0x0</Value>'
+Thu Mar 28 19:32:20 2024 : [INF] The modification is not necessary
+Thu Mar 28 19:32:20 2024 : [INF] The tag <Value> has already the correct content (0x0)
+Thu Mar 28 19:32:20 2024 : [INF] ############## Executing xmlval command ##############
+Thu Mar 28 19:32:20 2024 : [INF] AppliCfg.exe xmlval -b FlashLayoutConfigs.bin -b_el_idx 6 -nxml_el_idx Flash Layout configuration index -n S Module 0 size SM_Config_General.xml --vb
+Thu Mar 28 19:32:20 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:20 2024 : [INF] Searching the parameter with <Name>Flash Layout configuration index</Name>
+Thu Mar 28 19:32:20 2024 : [INF] Parameter found. Extracting information from '<Value>0x0</Value>'
+Thu Mar 28 19:32:20 2024 : [INF] The content recovered is '0x0'
+Thu Mar 28 19:32:20 2024 : [INF] Value to be used 0x0
+Thu Mar 28 19:32:20 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:20 2024 : [INF] Searching the parameter with <Name>S Module 0 size</Name> element
+Thu Mar 28 19:32:20 2024 : [INF] Parameter found. Verifying information of '<Value>0x0</Value>'
+Thu Mar 28 19:32:20 2024 : [INF] The modification is not necessary
+Thu Mar 28 19:32:20 2024 : [INF] The tag <Value> has already the correct content (0x0)
+Thu Mar 28 19:32:20 2024 : [INF] ############## Executing xmlval command ##############
+Thu Mar 28 19:32:20 2024 : [INF] AppliCfg.exe xmlval -b FlashLayoutConfigs.bin -b_el_idx 7 -nxml_el_idx Flash Layout configuration index -n S Module 1 primary offset SM_Config_General.xml --vb
+Thu Mar 28 19:32:20 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:20 2024 : [INF] Searching the parameter with <Name>Flash Layout configuration index</Name>
+Thu Mar 28 19:32:20 2024 : [INF] Parameter found. Extracting information from '<Value>0x0</Value>'
+Thu Mar 28 19:32:20 2024 : [INF] The content recovered is '0x0'
+Thu Mar 28 19:32:20 2024 : [INF] Value to be used 0x0
+Thu Mar 28 19:32:20 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:20 2024 : [INF] Searching the parameter with <Name>S Module 1 primary offset</Name> element
+Thu Mar 28 19:32:20 2024 : [INF] Parameter found. Verifying information of '<Value>0x0</Value>'
+Thu Mar 28 19:32:20 2024 : [INF] The modification is not necessary
+Thu Mar 28 19:32:20 2024 : [INF] The tag <Value> has already the correct content (0x0)
+Thu Mar 28 19:32:20 2024 : [INF] ############## Executing xmlval command ##############
+Thu Mar 28 19:32:20 2024 : [INF] AppliCfg.exe xmlval -b FlashLayoutConfigs.bin -b_el_idx 8 -nxml_el_idx Flash Layout configuration index -n S Module 1 secondary offset SM_Config_General.xml --vb
+Thu Mar 28 19:32:20 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:20 2024 : [INF] Searching the parameter with <Name>Flash Layout configuration index</Name>
+Thu Mar 28 19:32:20 2024 : [INF] Parameter found. Extracting information from '<Value>0x0</Value>'
+Thu Mar 28 19:32:20 2024 : [INF] The content recovered is '0x0'
+Thu Mar 28 19:32:20 2024 : [INF] Value to be used 0x0
+Thu Mar 28 19:32:20 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:20 2024 : [INF] Searching the parameter with <Name>S Module 1 secondary offset</Name> element
+Thu Mar 28 19:32:20 2024 : [INF] Parameter found. Verifying information of '<Value>0x0</Value>'
+Thu Mar 28 19:32:20 2024 : [INF] The modification is not necessary
+Thu Mar 28 19:32:20 2024 : [INF] The tag <Value> has already the correct content (0x0)
+Thu Mar 28 19:32:20 2024 : [INF] ############## Executing xmlval command ##############
+Thu Mar 28 19:32:20 2024 : [INF] AppliCfg.exe xmlval -b FlashLayoutConfigs.bin -b_el_idx 9 -nxml_el_idx Flash Layout configuration index -n S Module 1 size SM_Config_General.xml --vb
+Thu Mar 28 19:32:20 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:20 2024 : [INF] Searching the parameter with <Name>Flash Layout configuration index</Name>
+Thu Mar 28 19:32:20 2024 : [INF] Parameter found. Extracting information from '<Value>0x0</Value>'
+Thu Mar 28 19:32:20 2024 : [INF] The content recovered is '0x0'
+Thu Mar 28 19:32:20 2024 : [INF] Value to be used 0x0
+Thu Mar 28 19:32:20 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:20 2024 : [INF] Searching the parameter with <Name>S Module 1 size</Name> element
+Thu Mar 28 19:32:20 2024 : [INF] Parameter found. Verifying information of '<Value>0x0</Value>'
+Thu Mar 28 19:32:20 2024 : [INF] The modification is not necessary
+Thu Mar 28 19:32:20 2024 : [INF] The tag <Value> has already the correct content (0x0)
+Thu Mar 28 19:32:20 2024 : [INF] ############## Executing xmlval command ##############
+Thu Mar 28 19:32:20 2024 : [INF] AppliCfg.exe xmlval -b FlashLayoutConfigs.bin -b_el_idx 10 -nxml_el_idx Flash Layout configuration index -n S Module 2 primary offset SM_Config_General.xml --vb
+Thu Mar 28 19:32:20 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:20 2024 : [INF] Searching the parameter with <Name>Flash Layout configuration index</Name>
+Thu Mar 28 19:32:20 2024 : [INF] Parameter found. Extracting information from '<Value>0x0</Value>'
+Thu Mar 28 19:32:20 2024 : [INF] The content recovered is '0x0'
+Thu Mar 28 19:32:20 2024 : [INF] Value to be used 0x0
+Thu Mar 28 19:32:20 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:20 2024 : [INF] Searching the parameter with <Name>S Module 2 primary offset</Name> element
+Thu Mar 28 19:32:20 2024 : [INF] Parameter found. Verifying information of '<Value>0x0</Value>'
+Thu Mar 28 19:32:21 2024 : [INF] The modification is not necessary
+Thu Mar 28 19:32:21 2024 : [INF] The tag <Value> has already the correct content (0x0)
+Thu Mar 28 19:32:21 2024 : [INF] ############## Executing xmlval command ##############
+Thu Mar 28 19:32:21 2024 : [INF] AppliCfg.exe xmlval -b FlashLayoutConfigs.bin -b_el_idx 11 -nxml_el_idx Flash Layout configuration index -n S Module 2 secondary offset SM_Config_General.xml --vb
+Thu Mar 28 19:32:21 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:21 2024 : [INF] Searching the parameter with <Name>Flash Layout configuration index</Name>
+Thu Mar 28 19:32:21 2024 : [INF] Parameter found. Extracting information from '<Value>0x0</Value>'
+Thu Mar 28 19:32:21 2024 : [INF] The content recovered is '0x0'
+Thu Mar 28 19:32:21 2024 : [INF] Value to be used 0x0
+Thu Mar 28 19:32:21 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:21 2024 : [INF] Searching the parameter with <Name>S Module 2 secondary offset</Name> element
+Thu Mar 28 19:32:21 2024 : [INF] Parameter found. Verifying information of '<Value>0x0</Value>'
+Thu Mar 28 19:32:21 2024 : [INF] The modification is not necessary
+Thu Mar 28 19:32:21 2024 : [INF] The tag <Value> has already the correct content (0x0)
+Thu Mar 28 19:32:21 2024 : [INF] ############## Executing xmlval command ##############
+Thu Mar 28 19:32:21 2024 : [INF] AppliCfg.exe xmlval -b FlashLayoutConfigs.bin -b_el_idx 12 -nxml_el_idx Flash Layout configuration index -n S Module 2 size SM_Config_General.xml --vb
+Thu Mar 28 19:32:21 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:21 2024 : [INF] Searching the parameter with <Name>Flash Layout configuration index</Name>
+Thu Mar 28 19:32:21 2024 : [INF] Parameter found. Extracting information from '<Value>0x0</Value>'
+Thu Mar 28 19:32:21 2024 : [INF] The content recovered is '0x0'
+Thu Mar 28 19:32:21 2024 : [INF] Value to be used 0x0
+Thu Mar 28 19:32:21 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:21 2024 : [INF] Searching the parameter with <Name>S Module 2 size</Name> element
+Thu Mar 28 19:32:21 2024 : [INF] Parameter found. Verifying information of '<Value>0x0</Value>'
+Thu Mar 28 19:32:21 2024 : [INF] The modification is not necessary
+Thu Mar 28 19:32:21 2024 : [INF] The tag <Value> has already the correct content (0x0)
+Thu Mar 28 19:32:21 2024 : [INF] ############## Executing xmlval command ##############
+Thu Mar 28 19:32:21 2024 : [INF] AppliCfg.exe xmlval -b FlashLayoutConfigs.bin -b_el_idx 13 -nxml_el_idx Flash Layout configuration index -n S Module 3 primary offset SM_Config_General.xml --vb
+Thu Mar 28 19:32:21 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:21 2024 : [INF] Searching the parameter with <Name>Flash Layout configuration index</Name>
+Thu Mar 28 19:32:21 2024 : [INF] Parameter found. Extracting information from '<Value>0x0</Value>'
+Thu Mar 28 19:32:21 2024 : [INF] The content recovered is '0x0'
+Thu Mar 28 19:32:21 2024 : [INF] Value to be used 0x0
+Thu Mar 28 19:32:21 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:21 2024 : [INF] Searching the parameter with <Name>S Module 3 primary offset</Name> element
+Thu Mar 28 19:32:21 2024 : [INF] Parameter found. Verifying information of '<Value>0x0</Value>'
+Thu Mar 28 19:32:21 2024 : [INF] The modification is not necessary
+Thu Mar 28 19:32:21 2024 : [INF] The tag <Value> has already the correct content (0x0)
+Thu Mar 28 19:32:21 2024 : [INF] ############## Executing xmlval command ##############
+Thu Mar 28 19:32:21 2024 : [INF] AppliCfg.exe xmlval -b FlashLayoutConfigs.bin -b_el_idx 14 -nxml_el_idx Flash Layout configuration index -n S Module 3 secondary offset SM_Config_General.xml --vb
+Thu Mar 28 19:32:21 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:21 2024 : [INF] Searching the parameter with <Name>Flash Layout configuration index</Name>
+Thu Mar 28 19:32:21 2024 : [INF] Parameter found. Extracting information from '<Value>0x0</Value>'
+Thu Mar 28 19:32:21 2024 : [INF] The content recovered is '0x0'
+Thu Mar 28 19:32:21 2024 : [INF] Value to be used 0x0
+Thu Mar 28 19:32:21 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:21 2024 : [INF] Searching the parameter with <Name>S Module 3 secondary offset</Name> element
+Thu Mar 28 19:32:21 2024 : [INF] Parameter found. Verifying information of '<Value>0x0</Value>'
+Thu Mar 28 19:32:21 2024 : [INF] The modification is not necessary
+Thu Mar 28 19:32:21 2024 : [INF] The tag <Value> has already the correct content (0x0)
+Thu Mar 28 19:32:21 2024 : [INF] ############## Executing xmlval command ##############
+Thu Mar 28 19:32:21 2024 : [INF] AppliCfg.exe xmlval -b FlashLayoutConfigs.bin -b_el_idx 15 -nxml_el_idx Flash Layout configuration index -n S Module 3 size SM_Config_General.xml --vb
+Thu Mar 28 19:32:21 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:21 2024 : [INF] Searching the parameter with <Name>Flash Layout configuration index</Name>
+Thu Mar 28 19:32:21 2024 : [INF] Parameter found. Extracting information from '<Value>0x0</Value>'
+Thu Mar 28 19:32:21 2024 : [INF] The content recovered is '0x0'
+Thu Mar 28 19:32:21 2024 : [INF] Value to be used 0x0
+Thu Mar 28 19:32:21 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:21 2024 : [INF] Searching the parameter with <Name>S Module 3 size</Name> element
+Thu Mar 28 19:32:21 2024 : [INF] Parameter found. Verifying information of '<Value>0x0</Value>'
+Thu Mar 28 19:32:21 2024 : [INF] The modification is not necessary
+Thu Mar 28 19:32:21 2024 : [INF] The tag <Value> has already the correct content (0x0)
+Thu Mar 28 19:32:21 2024 : [INF] ############## Executing xmlval command ##############
+Thu Mar 28 19:32:21 2024 : [INF] AppliCfg.exe xmlval -b FlashLayoutConfigs.bin -b_el_idx 16 -nxml_el_idx Flash Layout configuration index -n S Module 4 primary offset SM_Config_General.xml --vb
+Thu Mar 28 19:32:21 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:21 2024 : [INF] Searching the parameter with <Name>Flash Layout configuration index</Name>
+Thu Mar 28 19:32:21 2024 : [INF] Parameter found. Extracting information from '<Value>0x0</Value>'
+Thu Mar 28 19:32:21 2024 : [INF] The content recovered is '0x0'
+Thu Mar 28 19:32:21 2024 : [INF] Value to be used 0x0
+Thu Mar 28 19:32:21 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:21 2024 : [INF] Searching the parameter with <Name>S Module 4 primary offset</Name> element
+Thu Mar 28 19:32:21 2024 : [INF] Parameter found. Verifying information of '<Value>0x0</Value>'
+Thu Mar 28 19:32:21 2024 : [INF] The modification is not necessary
+Thu Mar 28 19:32:21 2024 : [INF] The tag <Value> has already the correct content (0x0)
+Thu Mar 28 19:32:22 2024 : [INF] ############## Executing xmlval command ##############
+Thu Mar 28 19:32:22 2024 : [INF] AppliCfg.exe xmlval -b FlashLayoutConfigs.bin -b_el_idx 17 -nxml_el_idx Flash Layout configuration index -n S Module 4 secondary offset SM_Config_General.xml --vb
+Thu Mar 28 19:32:22 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:22 2024 : [INF] Searching the parameter with <Name>Flash Layout configuration index</Name>
+Thu Mar 28 19:32:22 2024 : [INF] Parameter found. Extracting information from '<Value>0x0</Value>'
+Thu Mar 28 19:32:22 2024 : [INF] The content recovered is '0x0'
+Thu Mar 28 19:32:22 2024 : [INF] Value to be used 0x0
+Thu Mar 28 19:32:22 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:22 2024 : [INF] Searching the parameter with <Name>S Module 4 secondary offset</Name> element
+Thu Mar 28 19:32:22 2024 : [INF] Parameter found. Verifying information of '<Value>0x0</Value>'
+Thu Mar 28 19:32:22 2024 : [INF] The modification is not necessary
+Thu Mar 28 19:32:22 2024 : [INF] The tag <Value> has already the correct content (0x0)
+Thu Mar 28 19:32:22 2024 : [INF] ############## Executing xmlval command ##############
+Thu Mar 28 19:32:22 2024 : [INF] AppliCfg.exe xmlval -b FlashLayoutConfigs.bin -b_el_idx 18 -nxml_el_idx Flash Layout configuration index -n S Module 4 size SM_Config_General.xml --vb
+Thu Mar 28 19:32:22 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:22 2024 : [INF] Searching the parameter with <Name>Flash Layout configuration index</Name>
+Thu Mar 28 19:32:22 2024 : [INF] Parameter found. Extracting information from '<Value>0x0</Value>'
+Thu Mar 28 19:32:22 2024 : [INF] The content recovered is '0x0'
+Thu Mar 28 19:32:22 2024 : [INF] Value to be used 0x0
+Thu Mar 28 19:32:22 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:22 2024 : [INF] Searching the parameter with <Name>S Module 4 size</Name> element
+Thu Mar 28 19:32:22 2024 : [INF] Parameter found. Verifying information of '<Value>0x0</Value>'
+Thu Mar 28 19:32:22 2024 : [INF] The modification is not necessary
+Thu Mar 28 19:32:22 2024 : [INF] The tag <Value> has already the correct content (0x0)
+Thu Mar 28 19:32:22 2024 : [INF] ############## Executing xmlval command ##############
+Thu Mar 28 19:32:22 2024 : [INF] AppliCfg.exe xmlval -b FlashLayoutConfigs.bin -b_el_idx 19 -nxml_el_idx Flash Layout configuration index -n S Module 5 primary offset SM_Config_General.xml --vb
+Thu Mar 28 19:32:22 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:22 2024 : [INF] Searching the parameter with <Name>Flash Layout configuration index</Name>
+Thu Mar 28 19:32:22 2024 : [INF] Parameter found. Extracting information from '<Value>0x0</Value>'
+Thu Mar 28 19:32:22 2024 : [INF] The content recovered is '0x0'
+Thu Mar 28 19:32:22 2024 : [INF] Value to be used 0x0
+Thu Mar 28 19:32:22 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:22 2024 : [INF] Searching the parameter with <Name>S Module 5 primary offset</Name> element
+Thu Mar 28 19:32:22 2024 : [INF] Parameter found. Verifying information of '<Value>0x0</Value>'
+Thu Mar 28 19:32:22 2024 : [INF] The modification is not necessary
+Thu Mar 28 19:32:22 2024 : [INF] The tag <Value> has already the correct content (0x0)
+Thu Mar 28 19:32:22 2024 : [INF] ############## Executing xmlval command ##############
+Thu Mar 28 19:32:22 2024 : [INF] AppliCfg.exe xmlval -b FlashLayoutConfigs.bin -b_el_idx 20 -nxml_el_idx Flash Layout configuration index -n S Module 5 secondary offset SM_Config_General.xml --vb
+Thu Mar 28 19:32:22 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:22 2024 : [INF] Searching the parameter with <Name>Flash Layout configuration index</Name>
+Thu Mar 28 19:32:22 2024 : [INF] Parameter found. Extracting information from '<Value>0x0</Value>'
+Thu Mar 28 19:32:22 2024 : [INF] The content recovered is '0x0'
+Thu Mar 28 19:32:22 2024 : [INF] Value to be used 0x0
+Thu Mar 28 19:32:22 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:22 2024 : [INF] Searching the parameter with <Name>S Module 5 secondary offset</Name> element
+Thu Mar 28 19:32:22 2024 : [INF] Parameter found. Verifying information of '<Value>0x0</Value>'
+Thu Mar 28 19:32:22 2024 : [INF] The modification is not necessary
+Thu Mar 28 19:32:22 2024 : [INF] The tag <Value> has already the correct content (0x0)
+Thu Mar 28 19:32:22 2024 : [INF] ############## Executing xmlval command ##############
+Thu Mar 28 19:32:22 2024 : [INF] AppliCfg.exe xmlval -b FlashLayoutConfigs.bin -b_el_idx 21 -nxml_el_idx Flash Layout configuration index -n S Module 5 size SM_Config_General.xml --vb
+Thu Mar 28 19:32:22 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:22 2024 : [INF] Searching the parameter with <Name>Flash Layout configuration index</Name>
+Thu Mar 28 19:32:22 2024 : [INF] Parameter found. Extracting information from '<Value>0x0</Value>'
+Thu Mar 28 19:32:22 2024 : [INF] The content recovered is '0x0'
+Thu Mar 28 19:32:22 2024 : [INF] Value to be used 0x0
+Thu Mar 28 19:32:22 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:22 2024 : [INF] Searching the parameter with <Name>S Module 5 size</Name> element
+Thu Mar 28 19:32:22 2024 : [INF] Parameter found. Verifying information of '<Value>0x0</Value>'
+Thu Mar 28 19:32:22 2024 : [INF] The modification is not necessary
+Thu Mar 28 19:32:22 2024 : [INF] The tag <Value> has already the correct content (0x0)
+Thu Mar 28 19:32:22 2024 : [INF] ############## Executing xmlval command ##############
+Thu Mar 28 19:32:22 2024 : [INF] AppliCfg.exe xmlval -b FlashLayoutConfigs.bin -b_el_idx 22 -nxml_el_idx Flash Layout configuration index -n S Module 6 primary offset SM_Config_General.xml --vb
+Thu Mar 28 19:32:22 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:22 2024 : [INF] Searching the parameter with <Name>Flash Layout configuration index</Name>
+Thu Mar 28 19:32:22 2024 : [INF] Parameter found. Extracting information from '<Value>0x0</Value>'
+Thu Mar 28 19:32:22 2024 : [INF] The content recovered is '0x0'
+Thu Mar 28 19:32:22 2024 : [INF] Value to be used 0x0
+Thu Mar 28 19:32:22 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:22 2024 : [INF] Searching the parameter with <Name>S Module 6 primary offset</Name> element
+Thu Mar 28 19:32:22 2024 : [INF] Parameter found. Verifying information of '<Value>0x0</Value>'
+Thu Mar 28 19:32:22 2024 : [INF] The modification is not necessary
+Thu Mar 28 19:32:22 2024 : [INF] The tag <Value> has already the correct content (0x0)
+Thu Mar 28 19:32:22 2024 : [INF] ############## Executing xmlval command ##############
+Thu Mar 28 19:32:22 2024 : [INF] AppliCfg.exe xmlval -b FlashLayoutConfigs.bin -b_el_idx 23 -nxml_el_idx Flash Layout configuration index -n S Module 6 secondary offset SM_Config_General.xml --vb
+Thu Mar 28 19:32:22 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:22 2024 : [INF] Searching the parameter with <Name>Flash Layout configuration index</Name>
+Thu Mar 28 19:32:22 2024 : [INF] Parameter found. Extracting information from '<Value>0x0</Value>'
+Thu Mar 28 19:32:22 2024 : [INF] The content recovered is '0x0'
+Thu Mar 28 19:32:22 2024 : [INF] Value to be used 0x0
+Thu Mar 28 19:32:22 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:22 2024 : [INF] Searching the parameter with <Name>S Module 6 secondary offset</Name> element
+Thu Mar 28 19:32:22 2024 : [INF] Parameter found. Verifying information of '<Value>0x0</Value>'
+Thu Mar 28 19:32:22 2024 : [INF] The modification is not necessary
+Thu Mar 28 19:32:22 2024 : [INF] The tag <Value> has already the correct content (0x0)
+Thu Mar 28 19:32:23 2024 : [INF] ############## Executing xmlval command ##############
+Thu Mar 28 19:32:23 2024 : [INF] AppliCfg.exe xmlval -b FlashLayoutConfigs.bin -b_el_idx 24 -nxml_el_idx Flash Layout configuration index -n S Module 6 size SM_Config_General.xml --vb
+Thu Mar 28 19:32:23 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:23 2024 : [INF] Searching the parameter with <Name>Flash Layout configuration index</Name>
+Thu Mar 28 19:32:23 2024 : [INF] Parameter found. Extracting information from '<Value>0x0</Value>'
+Thu Mar 28 19:32:23 2024 : [INF] The content recovered is '0x0'
+Thu Mar 28 19:32:23 2024 : [INF] Value to be used 0x0
+Thu Mar 28 19:32:23 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:23 2024 : [INF] Searching the parameter with <Name>S Module 6 size</Name> element
+Thu Mar 28 19:32:23 2024 : [INF] Parameter found. Verifying information of '<Value>0x0</Value>'
+Thu Mar 28 19:32:23 2024 : [INF] The modification is not necessary
+Thu Mar 28 19:32:23 2024 : [INF] The tag <Value> has already the correct content (0x0)
+Thu Mar 28 19:32:23 2024 : [INF] ############## Executing xmlval command ##############
+Thu Mar 28 19:32:23 2024 : [INF] AppliCfg.exe xmlval -b FlashLayoutConfigs.bin -b_el_idx 25 -nxml_el_idx Flash Layout configuration index -n S Module 7 primary offset SM_Config_General.xml --vb
+Thu Mar 28 19:32:23 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:23 2024 : [INF] Searching the parameter with <Name>Flash Layout configuration index</Name>
+Thu Mar 28 19:32:23 2024 : [INF] Parameter found. Extracting information from '<Value>0x0</Value>'
+Thu Mar 28 19:32:23 2024 : [INF] The content recovered is '0x0'
+Thu Mar 28 19:32:23 2024 : [INF] Value to be used 0x0
+Thu Mar 28 19:32:23 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:23 2024 : [INF] Searching the parameter with <Name>S Module 7 primary offset</Name> element
+Thu Mar 28 19:32:23 2024 : [INF] Parameter found. Verifying information of '<Value>0x0</Value>'
+Thu Mar 28 19:32:23 2024 : [INF] The modification is not necessary
+Thu Mar 28 19:32:23 2024 : [INF] The tag <Value> has already the correct content (0x0)
+Thu Mar 28 19:32:23 2024 : [INF] ############## Executing xmlval command ##############
+Thu Mar 28 19:32:23 2024 : [INF] AppliCfg.exe xmlval -b FlashLayoutConfigs.bin -b_el_idx 26 -nxml_el_idx Flash Layout configuration index -n S Module 7 secondary offset SM_Config_General.xml --vb
+Thu Mar 28 19:32:23 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:23 2024 : [INF] Searching the parameter with <Name>Flash Layout configuration index</Name>
+Thu Mar 28 19:32:23 2024 : [INF] Parameter found. Extracting information from '<Value>0x0</Value>'
+Thu Mar 28 19:32:23 2024 : [INF] The content recovered is '0x0'
+Thu Mar 28 19:32:23 2024 : [INF] Value to be used 0x0
+Thu Mar 28 19:32:23 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:23 2024 : [INF] Searching the parameter with <Name>S Module 7 secondary offset</Name> element
+Thu Mar 28 19:32:23 2024 : [INF] Parameter found. Verifying information of '<Value>0x0</Value>'
+Thu Mar 28 19:32:23 2024 : [INF] The modification is not necessary
+Thu Mar 28 19:32:23 2024 : [INF] The tag <Value> has already the correct content (0x0)
+Thu Mar 28 19:32:23 2024 : [INF] ############## Executing xmlval command ##############
+Thu Mar 28 19:32:23 2024 : [INF] AppliCfg.exe xmlval -b FlashLayoutConfigs.bin -b_el_idx 27 -nxml_el_idx Flash Layout configuration index -n S Module 7 size SM_Config_General.xml --vb
+Thu Mar 28 19:32:23 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:23 2024 : [INF] Searching the parameter with <Name>Flash Layout configuration index</Name>
+Thu Mar 28 19:32:23 2024 : [INF] Parameter found. Extracting information from '<Value>0x0</Value>'
+Thu Mar 28 19:32:23 2024 : [INF] The content recovered is '0x0'
+Thu Mar 28 19:32:23 2024 : [INF] Value to be used 0x0
+Thu Mar 28 19:32:23 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:23 2024 : [INF] Searching the parameter with <Name>S Module 7 size</Name> element
+Thu Mar 28 19:32:23 2024 : [INF] Parameter found. Verifying information of '<Value>0x0</Value>'
+Thu Mar 28 19:32:23 2024 : [INF] The modification is not necessary
+Thu Mar 28 19:32:23 2024 : [INF] The tag <Value> has already the correct content (0x0)
+Thu Mar 28 19:32:23 2024 : [INF] ############## Executing xmlval command ##############
+Thu Mar 28 19:32:23 2024 : [INF] AppliCfg.exe xmlval -b FlashLayoutConfigs.bin -b_el_idx 28 -nxml_el_idx Flash Layout configuration index -n NS appli primary offset SM_Config_General.xml --vb
+Thu Mar 28 19:32:23 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:23 2024 : [INF] Searching the parameter with <Name>Flash Layout configuration index</Name>
+Thu Mar 28 19:32:23 2024 : [INF] Parameter found. Extracting information from '<Value>0x0</Value>'
+Thu Mar 28 19:32:23 2024 : [INF] The content recovered is '0x0'
+Thu Mar 28 19:32:23 2024 : [INF] Value to be used 0x37
+Thu Mar 28 19:32:23 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:23 2024 : [INF] Searching the parameter with <Name>NS appli primary offset</Name> element
+Thu Mar 28 19:32:23 2024 : [INF] Parameter found. Verifying information of '<Value>0x37</Value>'
+Thu Mar 28 19:32:23 2024 : [INF] The modification is not necessary
+Thu Mar 28 19:32:23 2024 : [INF] The tag <Value> has already the correct content (0x37)
+Thu Mar 28 19:32:23 2024 : [INF] ############## Executing xmlval command ##############
+Thu Mar 28 19:32:23 2024 : [INF] AppliCfg.exe xmlval -b FlashLayoutConfigs.bin -b_el_idx 29 -nxml_el_idx Flash Layout configuration index -n NS appli secondary offset -nxml NS reserved area size -e val1+(val2/2) -cond val2>0 and (val2 % 2) == 0 SM_Config_General.xml --vb
+Thu Mar 28 19:32:23 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:23 2024 : [INF] Searching the parameter with <Name>Flash Layout configuration index</Name>
+Thu Mar 28 19:32:23 2024 : [INF] Parameter found. Extracting information from '<Value>0x0</Value>'
+Thu Mar 28 19:32:23 2024 : [INF] The content recovered is '0x0'
+Thu Mar 28 19:32:23 2024 : [INF] Searching the parameter with <Name>NS reserved area size</Name>
+Thu Mar 28 19:32:23 2024 : [INF] Parameter found. Extracting information from '<Value>0x00</Value>'
+Thu Mar 28 19:32:23 2024 : [INF] The content recovered is '0x00'
+Thu Mar 28 19:32:23 2024 : [INF] Condition to be computed 'val2>0 and (val2 % 2) == 0' 
+Thu Mar 28 19:32:23 2024 : [INF] Condition patterns were replaced to '0x00>0 and (0x00 % 2) == 0' 
+Thu Mar 28 19:32:23 2024 : [INF] Value to be used 0x80
+Thu Mar 28 19:32:23 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:23 2024 : [INF] Searching the parameter with <Name>NS appli secondary offset</Name> element
+Thu Mar 28 19:32:23 2024 : [INF] Parameter found. Verifying information of '<Value>0x80</Value>'
+Thu Mar 28 19:32:23 2024 : [INF] The modification is not necessary
+Thu Mar 28 19:32:23 2024 : [INF] The tag <Value> has already the correct content (0x80)
+Thu Mar 28 19:32:23 2024 : [INF] ############## Executing xmlval command ##############
+Thu Mar 28 19:32:23 2024 : [INF] AppliCfg.exe xmlval -b FlashLayoutConfigs.bin -b_el_idx 30 -nxml_el_idx Flash Layout configuration index -n NS appli size -nxml NS reserved area size -e val1-(val2/2) -cond val2>0 and (val2 % 2) == 0 SM_Config_General.xml --vb
+Thu Mar 28 19:32:23 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:23 2024 : [INF] Searching the parameter with <Name>Flash Layout configuration index</Name>
+Thu Mar 28 19:32:23 2024 : [INF] Parameter found. Extracting information from '<Value>0x0</Value>'
+Thu Mar 28 19:32:23 2024 : [INF] The content recovered is '0x0'
+Thu Mar 28 19:32:23 2024 : [INF] Searching the parameter with <Name>NS reserved area size</Name>
+Thu Mar 28 19:32:23 2024 : [INF] Parameter found. Extracting information from '<Value>0x00</Value>'
+Thu Mar 28 19:32:23 2024 : [INF] The content recovered is '0x00'
+Thu Mar 28 19:32:23 2024 : [INF] Condition to be computed 'val2>0 and (val2 % 2) == 0' 
+Thu Mar 28 19:32:23 2024 : [INF] Condition patterns were replaced to '0x00>0 and (0x00 % 2) == 0' 
+Thu Mar 28 19:32:23 2024 : [INF] Value to be used 0x49
+Thu Mar 28 19:32:23 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:23 2024 : [INF] Searching the parameter with <Name>NS appli size</Name> element
+Thu Mar 28 19:32:23 2024 : [INF] Parameter found. Verifying information of '<Value>0x49</Value>'
+Thu Mar 28 19:32:23 2024 : [INF] The modification is not necessary
+Thu Mar 28 19:32:23 2024 : [INF] The tag <Value> has already the correct content (0x49)
+Thu Mar 28 19:32:24 2024 : [INF] ############## Executing xmlval command ##############
+Thu Mar 28 19:32:24 2024 : [INF] AppliCfg.exe xmlval -b FlashLayoutConfigs.bin -b_el_idx 31 -nxml_el_idx Flash Layout configuration index -n NS reserved area offset -nxml NS appli primary offset -nxml NS appli size -e val2 + val3 SM_Config_General.xml --vb
+Thu Mar 28 19:32:24 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:24 2024 : [INF] Searching the parameter with <Name>Flash Layout configuration index</Name>
+Thu Mar 28 19:32:24 2024 : [INF] Parameter found. Extracting information from '<Value>0x0</Value>'
+Thu Mar 28 19:32:24 2024 : [INF] The content recovered is '0x0'
+Thu Mar 28 19:32:24 2024 : [INF] Searching the parameter with <Name>NS appli primary offset</Name>
+Thu Mar 28 19:32:24 2024 : [INF] Parameter found. Extracting information from '<Value>0x37</Value>'
+Thu Mar 28 19:32:24 2024 : [INF] The content recovered is '0x37'
+Thu Mar 28 19:32:24 2024 : [INF] Searching the parameter with <Name>NS appli size</Name>
+Thu Mar 28 19:32:24 2024 : [INF] Parameter found. Extracting information from '<Value>0x49</Value>'
+Thu Mar 28 19:32:24 2024 : [INF] The content recovered is '0x49'
+Thu Mar 28 19:32:24 2024 : [INF] Expression to be computed 'val2 + val3' 
+Thu Mar 28 19:32:24 2024 : [INF] Expression patterns were replaced to '0x37 + 0x49' 
+Thu Mar 28 19:32:24 2024 : [INF] Value to be used 0x80
+Thu Mar 28 19:32:24 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:24 2024 : [INF] Searching the parameter with <Name>NS reserved area offset</Name> element
+Thu Mar 28 19:32:24 2024 : [INF] Parameter found. Verifying information of '<Value>0x80</Value>'
+Thu Mar 28 19:32:24 2024 : [INF] The modification is not necessary
+Thu Mar 28 19:32:24 2024 : [INF] The tag <Value> has already the correct content (0x80)
+Thu Mar 28 19:32:24 2024 : [INF] ############## Executing xmlval command ##############
+Thu Mar 28 19:32:24 2024 : [INF] AppliCfg.exe xmlval -b FlashLayoutConfigs.bin -b_el_idx 33 -nxml_el_idx Flash Layout configuration index -n ITS Factory offset SM_Config_General.xml --vb
+Thu Mar 28 19:32:24 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:24 2024 : [INF] Searching the parameter with <Name>Flash Layout configuration index</Name>
+Thu Mar 28 19:32:24 2024 : [INF] Parameter found. Extracting information from '<Value>0x0</Value>'
+Thu Mar 28 19:32:24 2024 : [INF] The content recovered is '0x0'
+Thu Mar 28 19:32:24 2024 : [INF] Value to be used 0xC9
+Thu Mar 28 19:32:24 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:24 2024 : [INF] Searching the parameter with <Name>ITS Factory offset</Name> element
+Thu Mar 28 19:32:24 2024 : [INF] Parameter found. Verifying information of '<Value>0xC9</Value>'
+Thu Mar 28 19:32:24 2024 : [INF] The modification is not necessary
+Thu Mar 28 19:32:24 2024 : [INF] The tag <Value> has already the correct content (0xC9)
+Thu Mar 28 19:32:24 2024 : [INF] ############## Executing xmlval command ##############
+Thu Mar 28 19:32:24 2024 : [INF] AppliCfg.exe xmlval -b FlashLayoutConfigs.bin -b_el_idx 34 -nxml_el_idx Flash Layout configuration index -n ITS Factory size SM_Config_General.xml --vb
+Thu Mar 28 19:32:24 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:24 2024 : [INF] Searching the parameter with <Name>Flash Layout configuration index</Name>
+Thu Mar 28 19:32:24 2024 : [INF] Parameter found. Extracting information from '<Value>0x0</Value>'
+Thu Mar 28 19:32:24 2024 : [INF] The content recovered is '0x0'
+Thu Mar 28 19:32:24 2024 : [INF] Value to be used 0x1
+Thu Mar 28 19:32:24 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:24 2024 : [INF] Searching the parameter with <Name>ITS Factory size</Name> element
+Thu Mar 28 19:32:24 2024 : [INF] Parameter found. Verifying information of '<Value>0x1</Value>'
+Thu Mar 28 19:32:24 2024 : [INF] The modification is not necessary
+Thu Mar 28 19:32:24 2024 : [INF] The tag <Value> has already the correct content (0x1)
+Thu Mar 28 19:32:24 2024 : [INF] ############## Executing xmlval command ##############
+Thu Mar 28 19:32:24 2024 : [INF] AppliCfg.exe xmlval -b FlashLayoutConfigs.bin -b_el_idx 35 -nxml_el_idx Flash Layout configuration index -n ITS offset SM_Config_General.xml --vb
+Thu Mar 28 19:32:24 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:24 2024 : [INF] Searching the parameter with <Name>Flash Layout configuration index</Name>
+Thu Mar 28 19:32:24 2024 : [INF] Parameter found. Extracting information from '<Value>0x0</Value>'
+Thu Mar 28 19:32:24 2024 : [INF] The content recovered is '0x0'
+Thu Mar 28 19:32:24 2024 : [INF] Value to be used 0xCA
+Thu Mar 28 19:32:24 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:24 2024 : [INF] Searching the parameter with <Name>ITS offset</Name> element
+Thu Mar 28 19:32:24 2024 : [INF] Parameter found. Verifying information of '<Value>0xCA</Value>'
+Thu Mar 28 19:32:24 2024 : [INF] The modification is not necessary
+Thu Mar 28 19:32:24 2024 : [INF] The tag <Value> has already the correct content (0xCA)
+Thu Mar 28 19:32:24 2024 : [INF] ############## Executing xmlval command ##############
+Thu Mar 28 19:32:24 2024 : [INF] AppliCfg.exe xmlval -b FlashLayoutConfigs.bin -b_el_idx 36 -nxml_el_idx Flash Layout configuration index -n ITS size SM_Config_General.xml --vb
+Thu Mar 28 19:32:24 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:24 2024 : [INF] Searching the parameter with <Name>Flash Layout configuration index</Name>
+Thu Mar 28 19:32:24 2024 : [INF] Parameter found. Extracting information from '<Value>0x0</Value>'
+Thu Mar 28 19:32:24 2024 : [INF] The content recovered is '0x0'
+Thu Mar 28 19:32:24 2024 : [INF] Value to be used 0x6
+Thu Mar 28 19:32:24 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:24 2024 : [INF] Searching the parameter with <Name>ITS size</Name> element
+Thu Mar 28 19:32:24 2024 : [INF] Parameter found. Verifying information of '<Value>0x6</Value>'
+Thu Mar 28 19:32:24 2024 : [INF] The modification is not necessary
+Thu Mar 28 19:32:24 2024 : [INF] The tag <Value> has already the correct content (0x6)
+Thu Mar 28 19:32:25 2024 : [INF] ############## Executing xmlval command ##############
+Thu Mar 28 19:32:25 2024 : [INF] AppliCfg.exe xmlval -xml SM_Config_General.xml -nxml ITS Factory size -n Firmware area Size -e val1*0x2000 SM_ITS.xml --vb
+Thu Mar 28 19:32:25 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:25 2024 : [INF] Searching the parameter with <Name>ITS Factory size</Name>
+Thu Mar 28 19:32:25 2024 : [INF] Parameter found. Extracting information from '<Value>0x1</Value>'
+Thu Mar 28 19:32:25 2024 : [INF] The content recovered is '0x1'
+Thu Mar 28 19:32:25 2024 : [INF] Expression to be computed 'val1*0x2000' 
+Thu Mar 28 19:32:25 2024 : [INF] Expression patterns were replaced to '0x1*0x2000' 
+Thu Mar 28 19:32:25 2024 : [INF] Value to be used 0x2000
+Thu Mar 28 19:32:25 2024 : [INF] Opening the 'SM_ITS.xml' file
+Thu Mar 28 19:32:25 2024 : [INF] Searching the parameter with <Name>Firmware area Size</Name> element
+Thu Mar 28 19:32:25 2024 : [INF] Parameter found. Verifying information of '<Value>0x2000</Value>'
+Thu Mar 28 19:32:25 2024 : [INF] The modification is not necessary
+Thu Mar 28 19:32:25 2024 : [INF] The tag <Value> has already the correct content (0x2000)
+Thu Mar 28 19:32:25 2024 : [INF] ############## Executing xmlval command ##############
+Thu Mar 28 19:32:25 2024 : [INF] AppliCfg.exe xmlval -xml SM_Config_General.xml -nxml ITS offset -n Rom fixed -e (val1*0x2000)+0xC000000 SM_ITS.xml --vb
+Thu Mar 28 19:32:25 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:25 2024 : [INF] Searching the parameter with <Name>ITS offset</Name>
+Thu Mar 28 19:32:25 2024 : [INF] Parameter found. Extracting information from '<Value>0xCA</Value>'
+Thu Mar 28 19:32:25 2024 : [INF] The content recovered is '0xCA'
+Thu Mar 28 19:32:25 2024 : [INF] Expression to be computed '(val1*0x2000)+0xC000000' 
+Thu Mar 28 19:32:25 2024 : [INF] Expression patterns were replaced to '(0xCA*0x2000)+0xC000000' 
+Thu Mar 28 19:32:25 2024 : [INF] Value to be used 0xC194000
+Thu Mar 28 19:32:25 2024 : [INF] Opening the 'SM_ITS.xml' file
+Thu Mar 28 19:32:25 2024 : [INF] Searching the parameter with <Name>Rom fixed</Name> element
+Thu Mar 28 19:32:25 2024 : [INF] Parameter found. Verifying information of '<Value>0xC194000</Value>'
+Thu Mar 28 19:32:25 2024 : [INF] The modification is not necessary
+Thu Mar 28 19:32:25 2024 : [INF] The tag <Value> has already the correct content (0xC194000)
+Thu Mar 28 19:32:25 2024 : [INF] ############## Executing xmlval command ##############
+Thu Mar 28 19:32:25 2024 : [INF] AppliCfg.exe xmlval -xml SM_Config_General.xml -nxml ITS Factory offset -n Firmware download area offset -e (val1*0x2000)+0x8000000 SM_ITS.xml --vb
+Thu Mar 28 19:32:25 2024 : [INF] Opening the 'SM_Config_General.xml' file
+Thu Mar 28 19:32:25 2024 : [INF] Searching the parameter with <Name>ITS Factory offset</Name>
+Thu Mar 28 19:32:25 2024 : [INF] Parameter found. Extracting information from '<Value>0xC9</Value>'
+Thu Mar 28 19:32:25 2024 : [INF] The content recovered is '0xC9'
+Thu Mar 28 19:32:25 2024 : [INF] Expression to be computed '(val1*0x2000)+0x8000000' 
+Thu Mar 28 19:32:25 2024 : [INF] Expression patterns were replaced to '(0xC9*0x2000)+0x8000000' 
+Thu Mar 28 19:32:25 2024 : [INF] Value to be used 0x8192000
+Thu Mar 28 19:32:25 2024 : [INF] Opening the 'SM_ITS.xml' file
+Thu Mar 28 19:32:25 2024 : [INF] Searching the parameter with <Name>Firmware download area offset</Name> element
+Thu Mar 28 19:32:25 2024 : [INF] Parameter found. Verifying information of '<Value>0x8192000</Value>'
+Thu Mar 28 19:32:25 2024 : [INF] The modification is not necessary
+Thu Mar 28 19:32:25 2024 : [INF] The tag <Value> has already the correct content (0x8192000)
+      -------------------------------------------------------------------
+                       STM32 Trusted Package Creator v2.15.0                  
+      -------------------------------------------------------------------
+
+-pb C:\Users\89336\STM32CubeIDE\workspace_1.13.1\STM32CubeExpansion_Cloud_AWS_H5_V1.0.0\Projects\STM32H573I-DK\ROT_Provisioning\SM\Images\SM_ITS.xml 
+ 
+Image generated successfully 
+
+      -------------------------------------------------------------------
+                       STM32 Trusted Package Creator v2.15.0                  
+      -------------------------------------------------------------------
+
+Warning: The file C:\Users\89336\STM32CubeIDE\workspace_1.13.1\STM32CubeExpansion_Cloud_AWS_H5_V1.0.0\Projects\STM32H573I-DK\ROT_Provisioning\SM\Binary\SecureManagerPackage.sfi already exists, it will be overwritten
+SFI generation SUCCESS
+      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.15.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : 0035002C3232511739353236
+ST-LINK FW  : V3J13M4
+Board       : STM32H573I-DK
+Voltage     : 3.28V
+SWD freq    : 8000 KHz
+Connect mode: Under Reset
+Reset mode  : Hardware reset
+Device ID   : 0x484
+Revision ID : --
+Device name : STM32H5xx
+Flash size  : 2 MBytes
+Device type : MCU
+Device CPU  : Cortex-M33
+BL Version  : 0xE4
+SFSP Version: v2.5.0
+Debug in Low Power mode enabled
+
+
+Mass erase ... 
+
+Mass erase successfully achieved
+      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.15.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : 0035002C3232511739353236
+ST-LINK FW  : V3J13M4
+Board       : STM32H573I-DK
+Voltage     : 3.28V
+SWD freq    : 8000 KHz
+Connect mode: Under Reset
+Reset mode  : Hardware reset
+Device ID   : 0x484
+Revision ID : --
+Device name : STM32H5xx
+Flash size  : 2 MBytes
+Device type : MCU
+Device CPU  : Cortex-M33
+BL Version  : 0xE4
+SFSP Version: v2.5.0
+Debug in Low Power mode enabled
+
+
+Hard reset is performed
+      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.15.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : 0035002C3232511739353236
+ST-LINK FW  : V3J13M4
+Board       : STM32H573I-DK
+Voltage     : 3.28V
+SWD freq    : 8000 KHz
+Connect mode: Under Reset
+Reset mode  : Hardware reset
+Device ID   : 0x484
+Revision ID : --
+Device name : STM32H5xx
+Flash size  : 2 MBytes
+Device type : MCU
+Device CPU  : Cortex-M33
+BL Version  : 0xE4
+SFSP Version: v2.5.0
+Debug in Low Power mode enabled
+
+
+Hard reset is performed
+      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.15.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : 0035002C3232511739353236
+ST-LINK FW  : V3J13M4
+Board       : STM32H573I-DK
+Voltage     : 3.28V
+SWD freq    : 8000 KHz
+Connect mode: Hot Plug
+Reset mode  : Software reset
+Device ID   : 0x484
+Revision ID : --
+Device name : STM32H5xx
+Flash size  : 2 MBytes
+Device type : MCU
+Device CPU  : Cortex-M33
+BL Version  : 0xE4
+SFSP Version: v2.5.0
+Debug in Low Power mode enabled
+
+  Protocol Information         : static
+
+  SFI File Information         : 
+
+     SFI file path             : C:\Users\89336\STM32CubeIDE\workspace_1.13.1\STM32CubeExpansion_Cloud_AWS_H5_V1.0.0\Projects\STM32H573I-DK\ROT_Provisioning\SM\Binary\SecureManagerPackage.sfi
+     SFI license file path     : C:\Users\89336\STM32CubeIDE\workspace_1.13.1\STM32CubeExpansion_Cloud_AWS_H5_V1.0.0\Projects\STM32H573I-DK\ROT_Provisioning\SM\Keys\SFI_Global_License.bin
+     SFI header information    : 
+         SFI protocol version        : 2
+         SFI total number of areas   : 13
+         SFI image version           : 0
+     SFI Areas information     : 
+
+     Parsing Area 1/13    : 
+         Area type                   : H
+         Area size                   : 16
+         Area destination address    : 0x0
+
+     Parsing Area 2/13    : 
+         Area type                   : O
+         Area size                   : 112
+         Area destination address    : 0xFFD0100
+
+     Parsing Area 3/13    : 
+         Area type                   : O
+         Area size                   : 192
+         Area destination address    : 0xFFD09D0
+
+     Parsing Area 4/13    : 
+         Area type                   : O
+         Area size                   : 112
+         Area destination address    : 0xFFD0A80
+
+     Parsing Area 5/13    : 
+         Area type                   : O
+         Area size                   : 272
+         Area destination address    : 0xFFD0200
+
+     Parsing Area 6/13    : 
+         Area type                   : S
+         Area size                   : 110808
+         Area destination address    : 0x0
+
+     Parsing Area 7/13    : 
+         Area type                   : S
+         Area size                   : 128184
+         Area destination address    : 0x0
+
+     Parsing Area 8/13    : 
+         Area type                   : S
+         Area size                   : 128184
+         Area destination address    : 0x0
+
+     Parsing Area 9/13    : 
+         Area type                   : S
+         Area size                   : 31628
+         Area destination address    : 0x0
+
+     Parsing Area 10/13    : 
+         Area type                   : F
+         Area size                   : 14848
+         Area destination address    : 0x806E400
+
+     Parsing Area 11/13    : 
+         Area type                   : F
+         Area size                   : 528
+         Area destination address    : 0x8192000
+
+     Parsing Area 12/13    : 
+         Area type                   : F
+         Area size                   : 48
+         Area destination address    : 0x8193FD0
+
+     Parsing Area 13/13    : 
+         Area type                   : C
+         Area size                   : 48
+         Area destination address    : 0x0
+
+
+
+Reconnecting...
+Reconnected !
+Time elapsed during option Bytes configuration: 00:00:01.178
+
+
+Reconnecting...
+Reconnected !
+
+
+Reconnecting...
+Reconnected !
+Time elapsed during option Bytes configuration: 00:00:02.366
+ST-LINK SN  : 0035002C3232511739353236
+ST-LINK FW  : V3J13M4
+Board       : STM32H573I-DK
+Voltage     : 3.28V
+SWD freq    : 8000 KHz
+Connect mode: Hot Plug
+Reset mode  : Software reset
+Device ID   : 0x484
+Revision ID : --
+Warning: Option Byte: SECBOOT_LOCK, value: 0xC3, was not modified.
+Warning: Option Bytes are unchanged, Data won't be downloaded
+Time elapsed during option Bytes configuration: 00:00:00.002
+Warning: Option Byte: SECBOOTADD, value: 0xC0000, was not modified.
+Warning: Option Byte: SECWM1_END, value: 0x7F, was not modified.
+Warning: Option Byte: SECWM1_STRT, value: 0x0, was not modified.
+Warning: Option Byte: SECWM2_END, value: 0x7F, was not modified.
+Warning: Option Byte: SECWM2_STRT, value: 0x0, was not modified.
+Warning: Option Byte: SRAM1_3_RST, value: 0x1, was not modified.
+Warning: Option Byte: SRAM2_ECC, value: 0x0, was not modified.
+Warning: Option Byte: SRAM2_RST, value: 0x0, was not modified.
+Warning: Option Bytes are unchanged, Data won't be downloaded
+Time elapsed during option Bytes configuration: 00:00:00.003
+ST-LINK SN  : 0035002C3232511739353236
+ST-LINK FW  : V3J13M4
+Board       : STM32H573I-DK
+Voltage     : 3.28V
+SWD freq    : 8000 KHz
+Connect mode: Hot Plug
+Reset mode  : Software reset
+Device ID   : 0x484
+Revision ID : --
+
+
+Reconnecting...
+Reconnected !
+
+
+Reconnecting...
+Reconnected !
+Time elapsed during option Bytes configuration: 00:00:02.809
+ST-LINK SN  : 0035002C3232511739353236
+ST-LINK FW  : V3J13M4
+Board       : STM32H573I-DK
+Voltage     : 3.28V
+SWD freq    : 8000 KHz
+Connect mode: Hot Plug
+Reset mode  : Software reset
+Device ID   : 0x484
+Revision ID : --
+Installing RSSe
+
+
+Memory Programming ...
+Opening and parsing file: enc_signed_RSSe_SFI_STM32H5_v2.0.0.0.bin
+  File          : enc_signed_RSSe_SFI_STM32H5_v2.0.0.0.bin
+  Size          : 53.78 KB 
+  Address       : 0x20054100 
+
+
+Erasing memory corresponding to segment 0:
+Download in Progress:
+
+
+File download complete
+Time elapsed during download operation: 00:00:00.109
+
+MCU Reset
+ST-LINK SN  : 0035002C3232511739353236
+ST-LINK FW  : V3J13M4
+Board       : STM32H573I-DK
+Voltage     : 3.28V
+SWD freq    : 8000 KHz
+Connect mode: Hot Plug
+Reset mode  : Software reset
+Device ID   : 0x484
+Revision ID : --
+Get RSSe status...
+
+
+RSS version = 2.2.0
+
+
+RSSe version = 2.0.0
+
+Starting SFI 
+
+Processing license...
+Get RSSe status...
+Processing Image Header
+Get RSSe status...
+Processing Area 1...
+Get RSSe status...
+Area Address = 0x0
+Area Type    = H
+Processing Area 2...
+Get RSSe status...
+Area Address = 0xFFD0100
+Area Type    = O
+Processing Area 3...
+Get RSSe status...
+Area Address = 0xFFD09D0
+Area Type    = O
+Processing Area 4...
+Get RSSe status...
+Area Address = 0xFFD0A80
+Area Type    = O
+Processing Area 5...
+Get RSSe status...
+Area Address = 0xFFD0200
+Area Type    = O
+Processing Area 6...
+Get RSSe status...
+Area Address = 0x0
+Area Type    = S
+Processing Area 7...
+Get RSSe status...
+Area Address = 0x0
+Area Type    = S
+Processing Area 8...
+Get RSSe status...
+Area Address = 0x0
+Area Type    = S
+Processing Area 9...
+Get RSSe status...
+Area Address = 0x0
+Area Type    = S
+Processing Area 10...
+Get RSSe status...
+Area Address = 0x806E400
+Area Type    = F
+Processing Area 11...
+Get RSSe status...
+Area Address = 0x8192000
+Area Type    = F
+Processing Area 12...
+Get RSSe status...
+Area Address = 0x8193FD0
+Area Type    = F
+Processing Area 13...
+Can not verify last area
+Area Address = 0x0
+Area Type    = C
+SFI Process Finished!
+SFI file C:\Users\89336\STM32CubeIDE\workspace_1.13.1\STM32CubeExpansion_Cloud_AWS_H5_V1.0.0\Projects\STM32H573I-DK\ROT_Provisioning\SM\Binary\SecureManagerPackage.sfi Install Operation Success
+
+Time elapsed during SFI install operation: 00:00:18.004

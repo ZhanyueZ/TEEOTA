@@ -1,0 +1,12 @@
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/FreeRTOS/kernel/portable/GCC/ARM_CM33_NTZ/non_secure/port.c:751:17:prvSetupFPU	0	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/FreeRTOS/kernel/portable/GCC/ARM_CM33_NTZ/non_secure/port.c:633:13:prvTaskExitError	16	static,ignoring_inline_asm
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/FreeRTOS/kernel/portable/GCC/ARM_CM33_NTZ/non_secure/port.c:612:32:vPortSetupTimerInterrupt	0	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/FreeRTOS/kernel/portable/GCC/ARM_CM33_NTZ/non_secure/port.c:775:6:vPortYield	0	static,ignoring_inline_asm
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/FreeRTOS/kernel/portable/GCC/ARM_CM33_NTZ/non_secure/port.c:787:6:vPortEnterCritical	8	static,ignoring_inline_asm
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/FreeRTOS/kernel/portable/GCC/ARM_CM33_NTZ/non_secure/port.c:799:6:vPortExitCritical	8	static,ignoring_inline_asm
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/FreeRTOS/kernel/portable/GCC/ARM_CM33_NTZ/non_secure/port.c:811:6:SysTick_Handler	8	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/FreeRTOS/kernel/portable/GCC/ARM_CM33_NTZ/non_secure/port.c:828:6:vPortSVCHandler_C	8	static,ignoring_inline_asm
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/FreeRTOS/kernel/portable/GCC/ARM_CM33_NTZ/non_secure/port.c:955:19:pxPortInitialiseStack	4	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/FreeRTOS/kernel/portable/GCC/ARM_CM33_NTZ/non_secure/port.c:1070:12:xPortStartScheduler	8	static
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/FreeRTOS/kernel/portable/GCC/ARM_CM33_NTZ/non_secure/port.c:1107:6:vPortEndScheduler	8	static,ignoring_inline_asm
+C:/Users/89336/STM32CubeIDE/workspace_1.13.1/STM32CubeExpansion_Cloud_AWS_H5_V1.0.0/Middleware/FreeRTOS/kernel/portable/GCC/ARM_CM33_NTZ/non_secure/port.c:1240:12:xPortIsInsideInterrupt	0	static,ignoring_inline_asm

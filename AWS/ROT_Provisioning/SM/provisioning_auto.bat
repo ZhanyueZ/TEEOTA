@@ -1,0 +1,1 @@
+call %~dp0provisioning.bat AUTO

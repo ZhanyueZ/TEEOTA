@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>STM32H573I-DK aws_ri</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="../../../_htmresc/mini-st_2020_raw.css" />
+  <link rel="icon" type="image/x-icon" href="../../../_htmresc/favicon.png" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">STM32H573I-DK <em>aws_ri</em></h1>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#keywords" id="toc-keywords"><span
+class="toc-section-number">1</span> Keywords</a></li>
+<li><a href="#directory-contents" id="toc-directory-contents"><span
+class="toc-section-number">2</span> Directory contents</a></li>
+<li><a href="#hardware-and-software-environment"
+id="toc-hardware-and-software-environment"><span
+class="toc-section-number">3</span> Hardware and Software
+environment</a>
+<ul>
+<li><a href="#hardware-and-test-environment"
+id="toc-hardware-and-test-environment"><span
+class="toc-section-number">3.1</span> Hardware and test
+environment</a></li>
+<li><a href="#cloud-account-and-resources"
+id="toc-cloud-account-and-resources"><span
+class="toc-section-number">3.2</span> Cloud account and
+resources</a></li>
+<li><a href="#development-environment"
+id="toc-development-environment"><span
+class="toc-section-number">3.3</span> Development environment</a>
+<ul>
+<li><a href="#aws-tools" id="toc-aws-tools"><span
+class="toc-section-number">3.3.1</span> AWS tools</a></li>
+<li><a href="#st-platform-tools" id="toc-st-platform-tools"><span
+class="toc-section-number">3.3.2</span> ST platform tools</a></li>
+<li><a href="#other-tools" id="toc-other-tools"><span
+class="toc-section-number">3.3.3</span> Other tools</a></li>
+</ul></li>
+<li><a href="#target-preparation" id="toc-target-preparation"><span
+class="toc-section-number">3.4</span> Target preparation</a></li>
+</ul></li>
+<li><a href="#how-to-use-it" id="toc-how-to-use-it"><span
+class="toc-section-number">4</span> How to use it?</a>
+<ul>
+<li><a href="#firmware-build-and-installation"
+id="toc-firmware-build-and-installation"><span
+class="toc-section-number">4.1</span> Firmware build and
+installation</a></li>
+<li><a href="#runtime-device-provisioning"
+id="toc-runtime-device-provisioning"><span
+class="toc-section-number">4.2</span> Runtime device
+provisioning</a></li>
+<li><a href="#registration-of-the-device-with-aws-iot-core"
+id="toc-registration-of-the-device-with-aws-iot-core"><span
+class="toc-section-number">4.3</span> Registration of the device with
+AWS IoT Core</a></li>
+<li><a href="#observation-of-mqtt-messages-on-the-aws-iot-core-console"
+id="toc-observation-of-mqtt-messages-on-the-aws-iot-core-console"><span
+class="toc-section-number">4.4</span> Observation of MQTT messages on
+the AWS IoT Core Console</a></li>
+<li><a
+href="#observation-of-mqtt-messages-on-the-aws-iot-core-console-1"
+id="toc-observation-of-mqtt-messages-on-the-aws-iot-core-console-1"><span
+class="toc-section-number">4.5</span> Observation of MQTT messages on
+the AWS IoT Core Console</a></li>
+<li><a href="#ota-firmware-update" id="toc-ota-firmware-update"><span
+class="toc-section-number">4.6</span> OTA Firmware Update</a>
+<ul>
+<li><a href="#generate-a-code-signing-key"
+id="toc-generate-a-code-signing-key"><span
+class="toc-section-number">4.6.1</span> Generate a code signing
+key</a></li>
+<li><a href="#setup-ota-s3-bucket-service-role-and-policies-in-aws"
+id="toc-setup-ota-s3-bucket-service-role-and-policies-in-aws"><span
+class="toc-section-number">4.6.2</span> Setup OTA S3 bucket, Service
+role and policies in AWS</a></li>
+<li><a href="#create-a-code-signed-firmware-update-job"
+id="toc-create-a-code-signed-firmware-update-job"><span
+class="toc-section-number">4.6.3</span> Create a code signed firmware
+update job</a></li>
+<li><a href="#monitoring-and-verification-of-firmware-update"
+id="toc-monitoring-and-verification-of-firmware-update"><span
+class="toc-section-number">4.6.4</span> Monitoring and Verification of
+firmware update</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#design-notes" id="toc-design-notes"><span
+class="toc-section-number">5</span> Design notes</a>
+<ul>
+<li><a href="#freertos-heap-configuration"
+id="toc-freertos-heap-configuration"><span
+class="toc-section-number">5.1</span> FreeRTOS heap
+configuration</a></li>
+<li><a href="#mbedtls-configuration"
+id="toc-mbedtls-configuration"><span
+class="toc-section-number">5.2</span> MbedTLS configuration</a>
+<ul>
+<li><a href="#provisions-for-running-freertos-qualification-tests"
+id="toc-provisions-for-running-freertos-qualification-tests"><span
+class="toc-section-number">5.2.1</span> Provisions for running
+FreeRTOS qualification tests</a></li>
+</ul></li>
+<li><a href="#ide-project-settings" id="toc-ide-project-settings"><span
+class="toc-section-number">5.3</span> IDE project settings</a></li>
+</ul></li>
+</ul>
+</nav>
+<p>This application example is a port of the <a
+href="https://www.freertos.org/STM32U5">FreeRTOS STM32U5 IoT Reference
+Integration</a> to the STM32H573 Discovery kit.</p>
+<p>The application is composed of:</p>
+<ul>
+<li><p>A command line interpreter, used for:</p>
+<ul>
+<li>provisioning the device: Device cloud credentials (name, keys and
+certificate), endpoint name and root CA certificate, code signing key,
+and Wi-Fi network credentials;</li>
+<li>monitoring the runtime resources consumption (RTOS tasks and dynamic
+memory).</li>
+</ul></li>
+<li><p>An MQTT client, connecting to AWS IoT Core over TLS with mutual
+authentication based on X.509 certificates</p></li>
+<li><p>AWS agents, supporting the following AWS IoT Core services:</p>
+<ul>
+<li>Shadows</li>
+<li>Device Defender</li>
+<li>OTA update</li>
+<li>Raw telemetry data reporting (network packets statistics)</li>
+</ul></li>
+</ul>
+<h1 data-number="1" id="keywords"><span
+class="header-section-number">1</span> Keywords</h1>
+<ul>
+<li>FreeRTOS</li>
+<li>AWS</li>
+<li>OTA</li>
+<li>Wi-Fi</li>
+</ul>
+<h1 data-number="2" id="directory-contents"><span
+class="header-section-number">2</span> Directory contents</h1>
+<pre><code>aws_ri
++-- .extSettings                              STM32CubeMX extended configuration file
++-- Inc
+¦   +-- core_pkcs11_config.h                  Mapping of the PKI objects between the CLI and PKCS#11
+¦   +-- kvstore_config_plat.h
+¦   +-- main.h
+¦   +-- mbedtls_config_ntz.h                  MbedTLS configuration, optimized for read-only footprint, and throughput
+¦   +-- stm32h5xx_hal_conf.h
+¦   +-- stm32h5xx_it.h
+¦   +-- tls_transport_config.h                Mapping of the PKI objects between the MbedTLS port and PKCS#11
++-- README.md
++-- README.html
++-- STM32CubeIDE
+¦   +-- Application
+¦   ¦   +-- User
+¦   ¦       +-- Core
+¦   ¦       ¦   +-- syscalls.c
+¦   ¦       ¦   +-- sysmem.c
+¦   ¦       +-- Startup
+¦   ¦           +-- startup_stm32h573iikxq.s
+¦   +-- .cproject
+¦   +-- .project
+
+¦   +-- STM32H573I-DK_aws_ri.launch
+¦   +-- STM32H573IIKXQ_FLASH.ld
++-- Src
+¦   +-- app_main.c                            Application entry point
+¦   +-- crypto
+¦   ¦   +-- core_pkcs11_pal_littlefs.c        CorePKCS11 storage port to the littlefs filesystem
+¦   ¦   +-- core_pkcs11_pal_utils.c
+¦   ¦   +-- core_pkcs11_pal_utils.h
+¦   ¦   +-- rng_alt_stm32.c                   Entropy generator mapped on the STM32 hardware RNG IP
+¦   +-- fs                                    LittleFS filesystem platform port
+¦   ¦   +-- lfs_config.h
+¦   ¦   +-- lfs_port.h
+¦   ¦   +-- lfs_port_ospi.c
+¦   ¦   +-- lfs_port_prv.c
+¦   ¦   +-- lfs_port_prv.h
+¦   ¦   +-- ospi_nor_mx25lmxxx45g.c           Custom external flash driver
+¦   ¦   +-- ospi_nor_mx25lmxxx45g.h
+¦   +-- main.c                                Platform init
+¦   +-- ota_pal                               OTA platform port to the STM32 bank swap mechanism
+¦   ¦   +-- ota_firmware_version.c
+¦   ¦   +-- ota_pal.h
+¦   ¦   +-- ota_pal_stm32_ntz.c
+¦   +-- stm32h5xx_hal_msp.c
+¦   +-- stm32h5xx_it.c
+¦   +-- system_stm32h5xx.c
++-- STM32H573I-DK_aws_ri.ioc                 STM32CubeMX project configuration file</code></pre>
+<p>Project-common files (common to all project variants and all
+targets):<br />
+The ‘-’ marks denote the sub-directories or files which are not used in
+the present project.</p>
+<pre><code>../Common/                                    Source files common to the ports of the FreeRTOS Reference Integration for
+                                              STM32 (different targets, different connectivities, different boot and
+                                              OTA firmware update mechanisms).
++-- app
+¦   +-- auto_provisioning.c             -
+¦   +-- defender                              AWS Device Defender task
+¦   ¦   +-- defender_task.c
+¦   ¦   +-- metrics_collector.h
+¦   ¦   +-- metrics_collector_lwip.c
+¦   +-- emu_sensor_publish.c                  Emulated sensor telemetry task, reporting network packet statistics
+¦   +-- env_sensor_publish.c            -
+¦   +-- motion_sensors_publish.c        -
+¦   +-- mqtt                                  AWS IoT Core MQTT task
+¦   ¦   +-- freertos_command_pool.c
+¦   ¦   +-- freertos_command_pool.h
+¦   ¦   +-- mqtt_agent_task.c
+¦   ¦   +-- mqtt_agent_task.h
+¦   ¦   +-- subscription_manager.h
+¦   +-- ota                                   AWS IoT Core OTA Firmware Update task
+¦   ¦   +-- ota_update_task.c
+¦   +-- pub_sub_test_task.c
+¦   +-- qualification_app_main.c
+¦   +-- shadow_device_task.c                  AWS IoT Core Shadow task
++-- boards
+¦   +-- stm32u5_iot_board.c             -
++-- cli                                       Embedded command line interface supporting terminal logging, and network
+                                              and PKI configuration.
+¦   +-- ReadMe.html
+¦   +-- ReadMe.md
+¦   +-- cli.h
+¦   +-- cli_conf.c
+¦   +-- cli_main.c
+¦   +-- cli_pki.c
+¦   +-- cli_prv.h
+¦   +-- cli_rngtest.c
+¦   +-- cli_uart_drv.c
+¦   +-- cli_utils.c
+¦   +-- logging.c
+¦   +-- logging.h
+¦   +-- logging_levels.h
++-- config                                    Middleware configuration files
+¦   +-- FreeRTOSConfig.h
+¦   +-- b_u585i_iot02a_conf.h           -
+¦   +-- core_http_config.h
+¦   +-- core_mqtt_agent_config.h
+¦   +-- core_mqtt_config.h
+¦   +-- defender_config.h
+¦   +-- hw_defs.h
+¦   +-- kvstore_config.h
+¦   +-- lwipopts.h
+¦   +-- mqtt_metrics.h
+¦   +-- ota_config.h
+¦   +-- shadow_config.h
+¦   +-- test_execution_config.h
+¦   +-- test_param_config.h
+¦   +-- tls_transport_lwip.h
+¦   +-- unity_config.h
++-- crypto                                   Cryptography application module supporting the embedded CLI PKI commands
+                                             and the device authentication by MbedTLS.
+¦   +-- PkiObject.c
+¦   +-- PkiObjectPkcs11.c                  Port to PKCS#11
+¦   +-- PkiObjectPsa.c                  -  Port PSA Crypto, PSA ITS and optionally PSA PS
+¦   +-- PkiObject_prv.h
+¦   +-- ReadMe.html
+¦   +-- ReadMe.md
+¦   +-- mbedtls_pk_pkcs11.c                MbedTLS integration of the PKCS#11 backend
+¦   +-- mbedtls_pk_psa.c                -  MbedTLS integration of the PSA backend
+¦   +-- psa_util.c
+¦   +-- psa_util.h
++-- include
+¦   +-- PkiObject.h
+¦   +-- cmsis_os.h                      -
+¦   +-- mbedtls_error_utils.h
+¦   +-- mbedtls_freertos_port.h
+¦   +-- mbedtls_transport.h
+¦   +-- sys_evt.h
++-- kvstore                                 Permanent storage application module for the network configuration
+¦   +-- ReadMe.html
+¦   +-- ReadMe.md
+¦   +-- kvstore.c
+¦   +-- kvstore.h
+¦   +-- kvstore_cache.c                    Store cache in RAM
+¦   +-- kvstore_nv_littlefs.c              LittleFs backend
+¦   +-- kvstore_nv_psa_its.c            -  PSA ITS backend
+¦   +-- kvstore_prv.h
++-- net                                     TCP/IP socket porting application module
+¦   +-- eth                             -   LwIP/Ethernet backend
+¦   ¦   +-- eth_dataplane.c            -
+¦   ¦   +-- eth_lwip.c                 -
+¦   ¦   +-- eth_lwip.h                 -
+¦   ¦   +-- eth_netconn.c              -
+¦   ¦   +-- eth_netconn.h              -
+¦   ¦   +-- eth_prv.h                  -
+¦   +-- lwip_port                           LwIP port
+¦   ¦   +-- include
+¦   ¦   ¦   +-- arch
+¦   ¦   ¦   ¦   +-- cc.h
+¦   ¦   ¦   ¦   +-- perf.h
+¦   ¦   ¦   ¦   +-- sys_arch.h
+¦   ¦   ¦   +-- lwipopts_freertos.h
+¦   ¦   +-- src
+¦   ¦       +-- sys_arch.c
+¦   +-- mbedtls_transport.c                 MbedTLS port to the net and crypto port
+¦   +-- mxchip                              LwIP/Mx-Chip EMW3080 Wi-Fi backend over SPI
+¦       +-- mx_dataplane.c                
+¦       +-- mx_ipc.c                      
+¦       +-- mx_ipc.h                     
+¦       +-- mx_lwip.c                    
+¦       +-- mx_lwip.h                    
+¦       +-- mx_netconn.c                 
+¦       +-- mx_netconn.h                 
+¦       +-- mx_prv.h                     
++-- sys
+    +-- interrupt_handlers.c
+    +-- mbedtls_freertos_port.c
+    +-- newlibc_stubs.c</code></pre>
+<h1 data-number="3" id="hardware-and-software-environment"><span
+class="header-section-number">3</span> Hardware and Software
+environment</h1>
+<h2 data-number="3.1" id="hardware-and-test-environment"><span
+class="header-section-number">3.1</span> Hardware and test
+environment</h2>
+<p>This example runs on STM32H573I-DK devices.</p>
+<dl>
+<dt><img src="../../../Documentation/STM32H573I-DK_EMW3080.png" /></dt>
+<dd>
+<p>Figure: Target connectivity overview</p>
+</dd>
+</dl>
+<p>Equipment to be connected to the device. Refer to picture above to
+locate the connectors.</p>
+<ol type="1">
+<li><p>Wi-Fi module<br />
+For the user application to connect to Internet.<br />
+Plug the provided EMW3080 daugtherboard in the STMOD+ connector of the
+discovery kit.</p></li>
+<li><p>USB-C STLINK port<br />
+For supplying power to the target, programming and debugging over USB,
+and as a serial terminal console and command-line interface.<br />
+Connect to a USB port of the user computer installed with:</p></li>
+</ol>
+<ul>
+<li>ST tools allowing programming and debugging (STM32CubeIDE),</li>
+<li>A terminal emulator.</li>
+</ul>
+<h2 data-number="3.2" id="cloud-account-and-resources"><span
+class="header-section-number">3.2</span> Cloud account and
+resources</h2>
+<p>The user must have registered an AWS account with the appropriate
+rights.</p>
+<p>Follow your organization’s policy regarding configuring your access
+to AWS with temporary or long term IAM credentials. If not such policy
+exists, refer to the instructions on the <a
+href="https://docs.aws.amazon.com/iot/latest/developerguide/setting-up.html">Set
+up your AWS account</a> for details on your options.</p>
+<h2 data-number="3.3" id="development-environment"><span
+class="header-section-number">3.3</span> Development environment</h2>
+<p>The tool versions compatible with this expansion package are
+documented in the <a href="../../../Release_Notes.html">Release
+Notes</a>.</p>
+<p>The open-source tools should preferably be installed by a package
+manager (such as <a href="https://scoop.sh">scoop</a> for Windows) to
+easily manage the installed versions and benefit from homogeneous
+execution paths. It is advised to double-check your <em>PATH</em>
+environment variable and ensure that:</p>
+<ul>
+<li>Different versions of the tools are not active at the same
+time;</li>
+<li>C: is placed before /usr/bin when running .bat files</li>
+</ul>
+<h3 data-number="3.3.1" id="aws-tools"><span
+class="header-section-number">3.3.1</span> AWS tools</h3>
+<ul>
+<li><p>The AWS CLI tool is used for most interactions between the user
+and AWS:</p>
+<ol type="1">
+<li><p>Download AWS CLI for your platform from the <a
+href="https://aws.amazon.com/cli">official website</a> or using your
+preferred package manager.</p></li>
+<li><p>Refer to the following guides for configuring AWS CLI depending
+on how your AWS account is set up:</p>
+<ul>
+<li><a
+href="https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-sso.html">Configuring
+the AWS CLI to use AWS IAM Identity Center</a></li>
+<li><a
+href="https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html">Quick
+configuration with aws configure</a></li>
+</ul></li>
+</ol></li>
+<li><p>AWS CLI must have access to Internet in order to be used for the
+provisioning, create OTA Update jobs, etc..<br />
+Depending on your environment, HTTP proxy settings may have to be
+defined.</p></li>
+</ul>
+<h3 data-number="3.3.2" id="st-platform-tools"><span
+class="header-section-number">3.3.2</span> ST platform tools</h3>
+<ul>
+<li><p>The following tools must be installed for building the
+application and programming the target.</p>
+<ul>
+<li><a
+href="https://www.st.com/content/st_com/en/stm32cubeide.html">STM32CubeIDE</a></li>
+</ul></li>
+</ul>
+<h3 data-number="3.3.3" id="other-tools"><span
+class="header-section-number">3.3.3</span> Other tools</h3>
+<ul>
+<li><em>python3</em>, to
+<ul>
+<li>Use the provisioning helper scripts<br />
+Must be seconded by the modules listed in
+<em>&lt;env_dir&gt;tools/requirements.txt</em>, to be installed by<br />
+<code>$ python3 -m pip install -r &lt;env_dir&gt;/tools/requirements.txt</code>.</li>
+</ul></li>
+<li><em>openssl</em>, to
+<ul>
+<li>Generate the code signing material required for launching OTA
+firmware update</li>
+</ul></li>
+<li>(optional) <em>bash</em>, <em>awk</em>, to
+<ul>
+<li>Run the example scripts (for OTA, and easy copy/paste of command
+lines) embedded in the present readme.</li>
+</ul></li>
+</ul>
+<h2 data-number="3.4" id="target-preparation"><span
+class="header-section-number">3.4</span> Target preparation</h2>
+<p>By default there is no specific target preparation for this
+application.</p>
+<p>If you have enabled TrustZone on your target (for instance by
+installing the Secure Manager), you must refer to the documentation of
+your TrustZone application example to perform a full chip regression
+before programming the present application example.</p>
+<h1 data-number="4" id="how-to-use-it"><span
+class="header-section-number">4</span> How to use it?</h1>
+<p>The required steps to run the application example follow. Here is the
+outline:</p>
+<ul>
+<li>Firmware build and installation</li>
+<li>Runtime device provisioning</li>
+<li>Registration of the device with AWS IoT Core</li>
+<li>Observation of MQTT messages on the AWS IoT Core Console</li>
+<li>(optional) OTA Firmware Update</li>
+</ul>
+<h2 data-number="4.1" id="firmware-build-and-installation"><span
+class="header-section-number">4.1</span> Firmware build and
+installation</h2>
+<ol type="1">
+<li><p>When installing your development environment on MS Windows,
+substitute the expansion package installation path to a dedicated
+Windows drive letter. This avoids possible issues with long paths.</p>
+<p>For instance, create the <code>S:</code> virtual drive from the
+Windows command line:</p>
+<pre><code>C:\Users\johndoe&gt; subst S: C:\Users\johndoe\Downloads\STM32CubeExpansion_Cloud_AWS_H5_V&lt;package_version&gt;</code></pre></li>
+<li><p>Open STM32CubeIDE. If prompted, create a fresh workspace for the
+version of the X-CUBE-AWS-H5 expansion package you installed (you may
+want to use <code>S:</code>, but the workspace location should not
+matter).</p></li>
+<li><p>Import the project from the <code>S:</code> subst drive in your
+STM32CubeIDE workspace (<strong>File</strong>/<strong>Open Projects from
+Filesystem</strong>/<strong>Import
+source</strong>/<strong>Directory</strong> menu)</p></li>
+<li><p>Build the project (right-click on the project in the STM32CubeIDE
+Project Explorer pane, and select <strong>Build
+Project</strong>)</p></li>
+<li><p>Connect the target STLINK USB port to your computer</p></li>
+<li><p>Load the binary into the target and launch the debugger
+(right-click on the project in the STM32CubeIDE Project Explorer pane,
+and select <strong>Debug As/STM32 C/C++ Application</strong>), or
+drag-and-drop the <em>STM32CubeIDE/Debug/<app_name>.bin</em> file to the
+USB mass storage mounted on the Windows virtual drive named
+<em>DIS_H573II</em></p></li>
+</ol>
+<h2 data-number="4.2" id="runtime-device-provisioning"><span
+class="header-section-number">4.2</span> Runtime device
+provisioning</h2>
+<ol type="1">
+<li><p>Open the target board’s serial port with your favorite serial
+terminal emulator. Some common options are TeraTerm, putty, screen,
+minicom, and picocom.</p>
+<p>Use the settings below.</p>
+<table>
+<caption>Table: Terminal settings</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Serial settings</th>
+<th></th>
+<th></th>
+<th style="text-align: left;">Terminal settings</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Baud rate</td>
+<td>115200</td>
+<td></td>
+<td style="text-align: left;">New Line receive</td>
+<td>Auto</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Data</td>
+<td>8 bit</td>
+<td></td>
+<td style="text-align: left;">New line transmit</td>
+<td>LF</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Parity</td>
+<td>None</td>
+<td></td>
+<td style="text-align: left;"></td>
+<td></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Stop</td>
+<td>1 bit</td>
+<td></td>
+<td style="text-align: left;"></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Flow control</td>
+<td>None</td>
+<td></td>
+<td style="text-align: left;"></td>
+<td></td>
+</tr>
+</tbody>
+</table></li>
+<li><p>Verify that the embedded CLI is functional by typing
+<code>help conf</code> in the terminal emulator. The following message
+should be displayed:</p>
+<pre><code>&gt; help conf
+conf:
+    Get/ Set/ Commit runtime configuration values
+    Usage:
+    conf get
+        Outputs the value of all runtime config options supported by the system.
+
+    conf get &lt;key&gt;
+        Outputs the current value of a given runtime config item.
+
+    conf set &lt;key&gt; &lt;value&gt;
+        Set the value of a given runtime config item. This change is staged
+        in volatile memory until a commit operation occurs.
+
+    conf commit
+        Commit staged config changes to nonvolatile memory.</code></pre></li>
+<li><p>Set your desired thing name (that is the MQTT device
+identifier)</p>
+<pre><code>&gt; conf set thing_name my_thing_name
+thing_name=&quot;my_thing_name&quot;</code></pre></li>
+<li><p>Set the AWS IoT Core MQTT endpoint for your AWS account and
+region:</p>
+<pre><code>&gt; conf set mqtt_endpoint xxxxxxxxxxxxxx-ats.iot.us-west-2.amazonaws.com
+mqtt_endpoint=&quot;xxxxxxxxxxxxxx-ats.iot.us-west-2.amazonaws.com&quot;</code></pre>
+<p>You can determine the endpoint for your AWS account</p>
+<ul>
+<li>either with this AWS CLI command:
+<code>$ aws iot describe-endpoint --endpoint-type iot:Data-ATS</code></li>
+<li>or on the <em>Settings</em> page of the AWS IoT Core web
+console.</li>
+</ul></li>
+<li><p>Set the Wi-Fi SSID:
+<code>&gt; conf set wifi_ssid xxxxxxxxxxxxxxx     wifi_ssid="xxxxxxxxxxxxxxx"</code>
+Note: Your local Wi-Fi network must provide an open IPv4 access to
+Internet (no captive portal or proxy…).</p></li>
+<li><p>Set the Wi-Fi password:
+<code>&gt; conf set wifi_credential xxxxxxxxxxxxxxx     wifi_credential="xxxxxxxxxxxxxxx"</code></p></li>
+<li><p>Commit the staged configuration changes to non-volatile
+memory.</p>
+<pre><code>&gt; conf commit
+Configuration saved to NVM.</code></pre></li>
+<li><p>Import the certificate of the root CA of your endpoint</p>
+<p>Copy/paste the contents of the <a
+href="https://www.amazontrust.com/repository/AmazonRootCA3.pem">Amazon
+Root CA 3 PEM file</a> on the terminal right after this command, and
+type <em>enter</em>:</p>
+<pre><code>&gt; pki import cert root_ca_cert
+-----BEGIN CERTIFICATE-----
+MIIBtjCCAVugAwIBAgITBmyf1XSXNmY/Owua2eiedgPySjAKBggqhkjOPQQDAjA5
+MQswCQYDVQQGEwJVUzEPMA0GA1UEChMGQW1hem9uMRkwFwYDVQQDExBBbWF6b24g
+Um9vdCBDQSAzMB4XDTE1MDUyNjAwMDAwMFoXDTQwMDUyNjAwMDAwMFowOTELMAkG
+A1UEBhMCVVMxDzANBgNVBAoTBkFtYXpvbjEZMBcGA1UEAxMQQW1hem9uIFJvb3Qg
+Q0EgMzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABCmXp8ZBf8ANm+gBG1bG8lKl
+ui2yEujSLtf6ycXYqm0fc4E7O5hrOXwzpcVOho6AF2hiRVd9RFgdszflZwjrZt6j
+QjBAMA8GA1UdEwEB/wQFMAMBAf8wDgYDVR0PAQH/BAQDAgGGMB0GA1UdDgQWBBSr
+ttvXBp43rDCGB5Fwx5zEGbF4wDAKBggqhkjOPQQDAgNJADBGAiEA4IWSoxe3jfkr
+BqWTrBqYaGFy+uGh0PsceGCmQ5nFuMQCIQCcAu/xlJyzlvnrxir4tiz+OpAUFteM
+YyRIHN8wfdVoOw==
+-----END CERTIFICATE-----</code></pre>
+<p>For verifying the import, type:</p>
+<pre><code>&gt; pki export cert root_ca_cert
+-----BEGIN CERTIFICATE-----
+MIIBtjCCAVugAwIBAgITBmyf1XSXNmY/Owua2eiedgPySjAKBggqhkjOPQQDAjA5
+MQswCQYDVQQGEwJVUzEPMA0GA1UEChMGQW1hem9uMRkwFwYDVQQDExBBbWF6b24g
+Um9vdCBDQSAzMB4XDTE1MDUyNjAwMDAwMFoXDTQwMDUyNjAwMDAwMFowOTELMAkG
+A1UEBhMCVVMxDzANBgNVBAoTBkFtYXpvbjEZMBcGA1UEAxMQQW1hem9uIFJvb3Qg
+Q0EgMzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABCmXp8ZBf8ANm+gBG1bG8lKl
+ui2yEujSLtf6ycXYqm0fc4E7O5hrOXwzpcVOho6AF2hiRVd9RFgdszflZwjrZt6j
+QjBAMA8GA1UdEwEB/wQFMAMBAf8wDgYDVR0PAQH/BAQDAgGGMB0GA1UdDgQWBBSr
+ttvXBp43rDCGB5Fwx5zEGbF4wDAKBggqhkjOPQQDAgNJADBGAiEA4IWSoxe3jfkr
+BqWTrBqYaGFy+uGh0PsceGCmQ5nFuMQCIQCcAu/xlJyzlvnrxir4tiz+OpAUFteM
+YyRIHN8wfdVoOw==
+-----END CERTIFICATE-----</code></pre>
+<p>Note: Provisioning the <em>Amazon Root CA 3</em> (ECDSA-based)
+instead of the more usual <em>Amazon Root CA 1</em> (RSA-based) is
+mandatory. It allows to fully remove the RSA support from the TLS
+library and reduce the read-only memory footprint of the
+application.</p></li>
+<li><p>Generate an ECDSA key pair</p>
+<p>The resulting public key will be printed to the console.</p>
+<pre><code>&gt; pki generate key
+SUCCESS: Key pair generated and stored in
+Private Key Label: tls_key_priv
+Public Key Label: tls_key_pub
+-----BEGIN PUBLIC KEY-----
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX=
+-----END PUBLIC KEY-----</code></pre></li>
+<li><p>Generate a self-signed certificate from your key pair and thing
+name</p>
+<pre><code>&gt; pki generate cert
+-----BEGIN CERTIFICATE-----
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+(...)
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX==
+-----END CERTIFICATE-----</code></pre>
+<p>Copy/paste and save the resulting certificate to a new file
+(e.g. <em>device_cert_filename.pem</em>).</p></li>
+</ol>
+<h2 data-number="4.3"
+id="registration-of-the-device-with-aws-iot-core"><span
+class="header-section-number">4.3</span> Registration of the device with
+AWS IoT Core</h2>
+<ol type="1">
+<li><p>Create the <em>thing</em></p>
+<div class="sourceCode" id="cb12"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="ex">aws</span> iot create-thing <span class="dt">\</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a> <span class="at">--thing-name</span> my_thing_name</span></code></pre></div></li>
+<li><p>Register the certificate</p>
+<p>Follow the instructions at the AWS IoT Core Developer Guide to <a
+href="https://docs.aws.amazon.com/iot/latest/developerguide/manual-cert-registration.html#manual-cert-registration-noca-cli">register
+a client certificate</a>.</p>
+<div class="sourceCode" id="cb13"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="ex">aws</span> iot register-certificate-without-ca <span class="dt">\</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">--status</span> ACTIVE <span class="dt">\</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">--certificate-pem</span> file://device_cert_filename.pem</span></code></pre></div>
+<p>Note down the certificate ARN. It is needed in the next steps for
+attaching a policy to it, and for attaching it to your <em>thing</em>.
+It is referred to as <em>&lt;cert_arn&gt;</em> below.</p></li>
+<li><p>Attach the certificate to the <em>thing</em></p>
+<div class="sourceCode" id="cb14"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="ex">aws</span> iot attach-thing-principal <span class="dt">\</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a> <span class="at">--principal</span> <span class="op">&lt;</span>cert_arn<span class="op">&gt;</span> <span class="dt">\</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a> <span class="at">--thing-name</span> my_thing_name</span></code></pre></div></li>
+<li><p>Create a policy if none exists</p>
+<div class="sourceCode" id="cb15"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="ex">aws</span> iot create-policy <span class="dt">\</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>      <span class="at">--policy-name</span><span class="op">=</span><span class="st">&quot;AllowAllDev&quot;</span> <span class="dt">\</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>      <span class="at">--policy-document</span><span class="op">=</span><span class="st">&quot;{ </span><span class="dt">\&quot;</span><span class="st">Version</span><span class="dt">\&quot;</span><span class="st">: </span><span class="dt">\&quot;</span><span class="st">2012-10-17</span><span class="dt">\&quot;</span><span class="st">, </span><span class="dt">\&quot;</span><span class="st">Statement</span><span class="dt">\&quot;</span><span class="st">: [{</span><span class="dt">\&quot;</span><span class="st">Effect</span><span class="dt">\&quot;</span><span class="st">: </span><span class="dt">\&quot;</span><span class="st">Allow</span><span class="dt">\&quot;</span><span class="st">, </span><span class="dt">\&quot;</span><span class="st">Action</span><span class="dt">\&quot;</span><span class="st">: </span><span class="dt">\&quot;</span><span class="st">iot:*</span><span class="dt">\&quot;</span><span class="st">, </span><span class="dt">\&quot;</span><span class="st">Resource</span><span class="dt">\&quot;</span><span class="st">: </span><span class="dt">\&quot;</span><span class="st">*</span><span class="dt">\&quot;</span><span class="st">}]}&quot;</span></span></code></pre></div>
+<p><mark>Important</mark> This policy allows very broad access to AWS
+IoT MQTT APIs. Use a more restrictive policy for any production
+environments.</p></li>
+<li><p>Attach a security policy to the certificate</p>
+<div class="sourceCode" id="cb16"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="ex">aws</span> iot attach-policy <span class="dt">\</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>      <span class="at">--target</span> <span class="op">&lt;</span>cert_arn<span class="op">&gt;</span> <span class="dt">\</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>      <span class="at">--policy-name</span> AllowAllDev</span></code></pre></div></li>
+</ol>
+<blockquote>
+<p>Alternatively to the manual device provisioning steps detailed in the
+two previous sections, it is possible to call the following script after
+having disconnected your terminal emulator from the serial
+interface:</p>
+<div class="sourceCode" id="cb17"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> python3 ./tools/provision.py <span class="at">-i</span></span></code></pre></div>
+<p>Note: In the present application example, the Wi-Fi SSID and
+credentials do not have to be set. See the <a
+href="../../STM32CubeProjectsList.html#provisioning-script">script
+documentation</a> section in the ProjectList document for details.</p>
+</blockquote>
+<p>Now that the device is registered and granted with AWS IoT Core
+permissions, it is allowed to connect to the IoT Core endpoint.</p>
+<h2 data-number="4.4"
+id="observation-of-mqtt-messages-on-the-aws-iot-core-console"><span
+class="header-section-number">4.4</span> Observation of MQTT messages on
+the AWS IoT Core Console</h2>
+<ol type="1">
+<li><p>If not already done, connect the device Ethernet port to your
+local network</p></li>
+<li><p>Reset the device</p>
+<pre><code>&gt; reset
+Resetting device.</code></pre></li>
+</ol>
+<h2 data-number="4.5"
+id="observation-of-mqtt-messages-on-the-aws-iot-core-console-1"><span
+class="header-section-number">4.5</span> Observation of MQTT messages on
+the AWS IoT Core Console</h2>
+<ol type="1">
+<li>Log in to <a
+href="https://aws.amazon.com">https://aws.amazon.com</a> with your IAM
+User.</li>
+<li>Navigate to the <em>Iot Core</em> service using the search box at
+the top of the page.</li>
+<li>Select the AWS region where your endpoint is located using the
+select button at the top-right of the page.</li>
+<li>Using the menu on the left side of the screen, select
+<strong>Test</strong>/<strong>MQTT test client</strong></li>
+<li>Set the topic filter to <em>#</em> and click the <em>Subscribe</em>
+button.</li>
+</ol>
+<p>You will soon see telemetry data streaming from your device.</p>
+<h2 data-number="4.6" id="ota-firmware-update"><span
+class="header-section-number">4.6</span> OTA Firmware Update</h2>
+<p>Overview:</p>
+<ul>
+<li><p>The application example runs a FreeRTOS OTA agent as one of the
+RTOS tasks, which waits for OTA update jobs from the FreeRTOS
+OTA Service running in AWS.</p></li>
+<li><p>The update file is streamed over MQTT.</p></li>
+<li><p>After download, the application verifies its authenticity thanks
+to a code signing public key and to the signature embedded in the OTA
+update job document. This forms an application-level file integrity and
+authentication check.</p></li>
+</ul>
+<p>Before being able to create a FreeRTOS OTA Update job, you must
+create a code signing profile.</p>
+<h3 data-number="4.6.1" id="generate-a-code-signing-key"><span
+class="header-section-number">4.6.1</span> Generate a code signing
+key</h3>
+<p>Setup and provision the code signing credentials so as to enable the
+FreeRTOS OTA Update Service to digitally sign the image file and the
+device to verify the image file signature before installation.</p>
+<ol type="1">
+<li><p>In your working directory, use the following text to create a
+file named <code>cert_config.txt</code>. Replace
+<em>test_signer@amazon.com</em> with your email address:</p>
+<div class="sourceCode" id="cb19"><pre
+class="sourceCode ini"><code class="sourceCode ini"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="kw">[ req ]</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="dt">prompt             </span><span class="ot">=</span><span class="st"> </span><span class="kw">no</span></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="dt">distinguished_name </span><span class="ot">=</span><span class="st"> my_dn</span></span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a><span class="kw">[ my_dn ]</span></span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a><span class="dt">commonName </span><span class="ot">=</span><span class="st"> test_signer@amazon.com</span></span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a><span class="kw">[ my_exts ]</span></span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a><span class="dt">keyUsage         </span><span class="ot">=</span><span class="st"> digitalSignature</span></span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a><span class="dt">extendedKeyUsage </span><span class="ot">=</span><span class="st"> codeSigning</span></span></code></pre></div></li>
+<li><p>Create an ECDSA code-signing private key:</p>
+<div class="sourceCode" id="cb20"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="ex">openssl</span> genpkey <span class="at">-algorithm</span> EC <span class="dt">\</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>      <span class="at">-pkeyopt</span> ec_paramgen_curve:P-256 <span class="dt">\</span></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>      <span class="at">-pkeyopt</span> ec_param_enc:named_curve <span class="dt">\</span></span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>      <span class="at">-outform</span> PEM <span class="dt">\</span></span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>      <span class="at">-out</span> ecdsasigner-priv-key.pem</span></code></pre></div></li>
+<li><p>Generate the corresponding public key from the private key:</p>
+<div class="sourceCode" id="cb21"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="ex">openssl</span> ec <span class="at">-inform</span> PEM <span class="dt">\</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>      <span class="at">-in</span> ecdsasigner-priv-key.pem <span class="dt">\</span></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>      <span class="at">-pubout</span> <span class="dt">\</span></span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>      <span class="at">-outform</span> PEM <span class="dt">\</span></span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>      <span class="at">-out</span> ecdsasigner-pub-key.pem</span></code></pre></div></li>
+<li><p>Create an ECDSA code-signing certificate to be uploaded to the
+AWS Certificate Manager service (ACM):</p>
+<div class="sourceCode" id="cb22"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="ex">openssl</span> req <span class="at">-new</span> <span class="at">-x509</span> <span class="dt">\</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>      <span class="at">-config</span> cert_config.txt <span class="dt">\</span></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>      <span class="at">-extensions</span> my_exts <span class="dt">\</span></span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>      <span class="at">-nodes</span> <span class="dt">\</span></span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>      <span class="at">-days</span> 365 <span class="dt">\</span></span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>      <span class="at">-key</span> ecdsasigner-priv-key.pem <span class="dt">\</span></span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a>      <span class="at">-out</span> ecdsasigner.crt</span></code></pre></div></li>
+<li><p>Import the code-signing certificate and private key into ACM:</p>
+<div class="sourceCode" id="cb23"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="ex">aws</span> acm import-certificate <span class="at">--certificate</span> fileb://ecdsasigner.crt <span class="dt">\</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>      <span class="at">--private-key</span> fileb://ecdsasigner-priv-key.pem</span></code></pre></div>
+<p>Note down the ARN of the code signing certificate. It will be
+referred to as <em>&lt;code_sign_cert_arn&gt;</em> when creating the
+code signing profile below.</p></li>
+<li><p>If not already done, connect to the target device via a serial
+terminal.</p>
+<p>Copy/paste the contents of the <em>ecdsasigner-pub-key.pem</em> file
+on the terminal right after this command, and type <em>enter</em>:</p>
+<pre><code>&gt; pki import key ota_signer_pub
+-----BEGIN PUBLIC KEY-----
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+-----END PUBLIC KEY-----</code></pre>
+<p>Note: <em>ota_signer_pub</em> is the label used to refer to the code
+signing key during verification of the firmware update.</p></li>
+<li><p>Create a signing profile in AWS to sign the firmware images.</p>
+<div class="sourceCode" id="cb25"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="ex">aws</span> signer put-signing-profile <span class="at">--profile-name</span> <span class="op">&lt;</span>your profile name<span class="op">&gt;</span> <span class="dt">\</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>      <span class="at">--signing-material</span> certificateArn=<span class="op">&lt;</span>code_sign_cert_arn<span class="op">&gt;</span> <span class="dt">\</span></span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>      <span class="at">--platform</span> AmazonFreeRTOS-Default <span class="dt">\</span></span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>      <span class="at">--signing-parameters</span> certname=ota_signer_pub</span></code></pre></div>
+<p>Summary of the generated files:</p>
+<table>
+<caption>Table: Code signing profile intermediate files</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">File name</th>
+<th style="text-align: left;">Contents</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">ecdsasigner-priv-key.pem</td>
+<td style="text-align: left;">Code signing private key</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ecdsasigner-pub-key.pem</td>
+<td style="text-align: left;">Code signing public key</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">cert_config.txt</td>
+<td style="text-align: left;">Code signing certificate signature request
+parameters</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ecdsasigner.crt</td>
+<td style="text-align: left;">Code signing certificate</td>
+</tr>
+</tbody>
+</table></li>
+</ol>
+<h3 data-number="4.6.2"
+id="setup-ota-s3-bucket-service-role-and-policies-in-aws"><span
+class="header-section-number">4.6.2</span> Setup OTA S3 bucket, Service
+role and policies in AWS</h3>
+<ol type="1">
+<li><p>Create an S3 bucket to store the new firmware image to be
+updated:<br />
+<a
+href="https://docs.aws.amazon.com/freertos/latest/userguide/dg-ota-bucket.html">https://docs.aws.amazon.com/freertos/latest/userguide/dg-ota-bucket.html</a></p>
+<p>In the next steps, the name of this bucket is referred to as
+<em><s3 bucket for image></em>.</p></li>
+<li><p>Create a service role which grants permission for OTA service to
+access the firmware image:<br />
+<a
+href="https://docs.aws.amazon.com/freertos/latest/userguide/create-service-role.html">https://docs.aws.amazon.com/freertos/latest/userguide/create-service-role.html</a></p></li>
+<li><p>Create an OTA update policy:<br />
+<a
+href="https://docs.aws.amazon.com/freertos/latest/userguide/create-ota-user-policy.html">https://docs.aws.amazon.com/freertos/latest/userguide/create-ota-user-policy.html</a></p></li>
+<li><p>Add a policy for AWS IoT to access the code signing
+profile:<br />
+<a
+href="https://docs.aws.amazon.com/freertos/latest/userguide/code-sign-policy.html">https://docs.aws.amazon.com/freertos/latest/userguide/code-sign-policy.html</a></p></li>
+</ol>
+<h3 data-number="4.6.3"
+id="create-a-code-signed-firmware-update-job"><span
+class="header-section-number">4.6.3</span> Create a code signed firmware
+update job</h3>
+<ol type="1">
+<li><p>Bump up the version of the new firmware image of the application
+to be updated.</p>
+<ol type="a">
+<li>Open the file
+<em>&lt;project&gt;/Src/ota_pal/ota_firmware_version.c</em> and
+increment for instance the <em>APP_VERSION_MINOR</em> definition.</li>
+<li>Re-build the application.</li>
+</ol>
+<p><mark>Warning</mark>: If the image self-test procedure embedded in
+the application does not detect a higher version number after
+installation, the self-test procedure fails, the update is reverted, and
+the OTA job is reported as rejected.</p></li>
+<li><p>Upload the new image file to the S3 bucket created in the
+previous section.</p>
+<p>The application image file generated by the post-build command is
+created as
+<em>&lt;project&gt;/STM32CubeIDE/Debug/STM32H573I-DK_aws_ri.bin</em>.</p>
+<p>In the following commands, <em>&lt;image_binary_path&gt;</em> is
+<em>&lt;project&gt;/STM32CubeIDE/Debug/STM32H573I-DK_aws_ri.bin</em>,
+and <em>&lt;image_binary_name&gt;</em> is
+<em>STM32H573I-DK_aws_ri.bin</em>.</p>
+<div class="sourceCode" id="cb26"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="ex">aws</span> s3 cp <span class="op">&lt;</span>image_binary_path<span class="op">&gt;</span> s3://<span class="op">&lt;</span>s3_bucket_for_image<span class="op">&gt;</span>/</span></code></pre></div></li>
+<li><p>Get the latest S3 file version of the binary image:</p>
+<div class="sourceCode" id="cb27"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="ex">aws</span> s3api  list-object-versions <span class="at">--bucket</span> <span class="op">&lt;</span>s3_bucket_for_image<span class="op">&gt;</span> <span class="dt">\</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>      <span class="at">--prefix</span> <span class="op">&lt;</span>image_binary_name<span class="op">&gt;</span> <span class="dt">\</span></span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>      <span class="at">--query</span> <span class="st">&#39;Versions[?IsLatest==`true`]&#39;</span></span></code></pre></div></li>
+<li><p>Create a new OTA Update job configuration json file (Example:
+<em>ota-update-job-config.json</em>) on your computer as below.</p>
+<p>Substitute the parameters with the output obtained from steps
+above.</p>
+<p>The image to update must be specified in the
+<em>files[].fileName</em> field of the
+<em>ota-update-job-config.json</em> file:
+<em>“STM32H573I-DK_aws.bin”</em>, for the OTA Agent to identify the
+image properly. Otherwise no image is downloaded.</p>
+<p>More precisely, it must match the name used in
+<em>otaPal_CreateFileForRx()</em>, in the OTA Platform Abstraction Layer
+provided by the user application.</p>
+<p>The <em>files[].fileLocation.s3Location.key</em> field should then be
+set to <em>STM32H573I-DK_aws_ri.bin</em>.</p>
+<div class="sourceCode" id="cb28"><pre
+class="sourceCode json"><code class="sourceCode json"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;otaUpdateId&quot;</span><span class="fu">:</span> <span class="st">&quot;&lt;ota_update_unique_identifier&gt;&quot;</span><span class="fu">,</span></span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;targets&quot;</span><span class="fu">:</span> <span class="ot">[</span></span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>      <span class="st">&quot;arn:aws:iot:&lt;region&gt;:&lt;account_id&gt;:thing/&lt;thing_name&gt;&quot;</span></span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a>  <span class="ot">]</span><span class="fu">,</span></span>
+<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;targetSelection&quot;</span><span class="fu">:</span> <span class="st">&quot;SNAPSHOT&quot;</span><span class="fu">,</span></span>
+<span id="cb28-7"><a href="#cb28-7" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;files&quot;</span><span class="fu">:</span> <span class="ot">[</span><span class="fu">{</span></span>
+<span id="cb28-8"><a href="#cb28-8" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&quot;fileName&quot;</span><span class="fu">:</span> <span class="st">&quot;STM32H573I-DK_aws.bin&quot;</span><span class="fu">,</span></span>
+<span id="cb28-9"><a href="#cb28-9" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&quot;fileVersion&quot;</span><span class="fu">:</span> <span class="st">&quot;1&quot;</span><span class="fu">,</span></span>
+<span id="cb28-10"><a href="#cb28-10" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&quot;fileLocation&quot;</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="cb28-11"><a href="#cb28-11" aria-hidden="true" tabindex="-1"></a>          <span class="dt">&quot;s3Location&quot;</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="cb28-12"><a href="#cb28-12" aria-hidden="true" tabindex="-1"></a>              <span class="dt">&quot;bucket&quot;</span><span class="fu">:</span> <span class="st">&quot;&lt;s3_bucket_for_image&gt;&quot;</span><span class="fu">,</span></span>
+<span id="cb28-13"><a href="#cb28-13" aria-hidden="true" tabindex="-1"></a>              <span class="dt">&quot;key&quot;</span><span class="fu">:</span> <span class="st">&quot;&lt;image_binary_name&gt;&quot;</span><span class="fu">,</span></span>
+<span id="cb28-14"><a href="#cb28-14" aria-hidden="true" tabindex="-1"></a>              <span class="dt">&quot;version&quot;</span><span class="fu">:</span> <span class="st">&quot;&lt;latest_s3_file_version_of_binary_image&gt;&quot;</span></span>
+<span id="cb28-15"><a href="#cb28-15" aria-hidden="true" tabindex="-1"></a>          <span class="fu">}</span></span>
+<span id="cb28-16"><a href="#cb28-16" aria-hidden="true" tabindex="-1"></a>      <span class="fu">},</span></span>
+<span id="cb28-17"><a href="#cb28-17" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&quot;codeSigning&quot;</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="cb28-18"><a href="#cb28-18" aria-hidden="true" tabindex="-1"></a>          <span class="dt">&quot;startSigningJobParameter&quot;</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="cb28-19"><a href="#cb28-19" aria-hidden="true" tabindex="-1"></a>              <span class="dt">&quot;signingProfileName&quot;</span><span class="fu">:</span> <span class="st">&quot;&lt;signing_profile_name&gt;&quot;</span><span class="fu">,</span></span>
+<span id="cb28-20"><a href="#cb28-20" aria-hidden="true" tabindex="-1"></a>              <span class="dt">&quot;destination&quot;</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="cb28-21"><a href="#cb28-21" aria-hidden="true" tabindex="-1"></a>                  <span class="dt">&quot;s3Destination&quot;</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="cb28-22"><a href="#cb28-22" aria-hidden="true" tabindex="-1"></a>                      <span class="dt">&quot;bucket&quot;</span><span class="fu">:</span> <span class="st">&quot;&lt;s3_bucket_for_image&gt;&quot;</span></span>
+<span id="cb28-23"><a href="#cb28-23" aria-hidden="true" tabindex="-1"></a>                  <span class="fu">}</span></span>
+<span id="cb28-24"><a href="#cb28-24" aria-hidden="true" tabindex="-1"></a>              <span class="fu">}</span></span>
+<span id="cb28-25"><a href="#cb28-25" aria-hidden="true" tabindex="-1"></a>          <span class="fu">}</span></span>
+<span id="cb28-26"><a href="#cb28-26" aria-hidden="true" tabindex="-1"></a>      <span class="fu">}</span></span>
+<span id="cb28-27"><a href="#cb28-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">}</span><span class="ot">]</span><span class="fu">,</span></span>
+<span id="cb28-28"><a href="#cb28-28" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;roleArn&quot;</span><span class="fu">:</span> <span class="st">&quot;arn:aws:iam::&lt;account_id&gt;:role/&lt;OTA_service_role&gt;&quot;</span></span>
+<span id="cb28-29"><a href="#cb28-29" aria-hidden="true" tabindex="-1"></a><span class="fu">}</span></span></code></pre></div></li>
+<li><p>Create a new OTA update job from the configuration file:</p>
+<div class="sourceCode" id="cb29"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="ex">aws</span> iot create-ota-update <span class="at">--cli-input-json</span> file://ota-update-job-config.json</span></code></pre></div>
+<p>The command above must be launched from the folder containing the
+<em>ota-update-job-config.json</em> file.</p>
+<p>On success, the command returns the OTA Update identifier (referred
+to as <em>&lt;ota_update_identifier&gt;</em> in the next step) and
+status of the job as <em>CREATE_PENDING</em>.</p>
+<p>At user convenience, and as an alternative to a local JSON file for
+creating an OTA update job with a unique update ID, a scripted command
+line may also be used, such as:</p>
+<div class="sourceCode" id="cb30"><pre
+class="sourceCode numberSource bash numberLines"><code class="sourceCode bash"><span id="cb30-1"><a href="#cb30-1"></a><span class="co">#!/bin/bash</span></span>
+<span id="cb30-2"><a href="#cb30-2"></a><span class="va">UPDATE_ID</span><span class="op">=</span><span class="st">&quot;H5DK_</span><span class="va">$(</span><span class="fu">date</span> +%F_%H%M<span class="va">)</span><span class="st">&quot;</span></span>
+<span id="cb30-3"><a href="#cb30-3"></a><span class="va">TARGETS</span><span class="op">=</span><span class="st">&quot;arn:aws:iot:&lt;region&gt;:&lt;account_id&gt;:thing/&lt;thing_name&gt;&quot;</span></span>
+<span id="cb30-4"><a href="#cb30-4"></a><span class="va">ROLE_ARN</span><span class="op">=</span><span class="st">&quot;arn:aws:iam::&lt;account_id&gt;:role/&lt;OTA_service_role&gt;&quot;</span></span>
+<span id="cb30-5"><a href="#cb30-5"></a><span class="va">fileName</span><span class="op">=</span><span class="st">&quot;STM32H573I-DK_aws.bin&quot;</span></span>
+<span id="cb30-6"><a href="#cb30-6"></a><span class="va">otaBucketName</span><span class="op">=</span><span class="st">&quot;&lt;s3_bucket_for_image&gt;&quot;</span></span>
+<span id="cb30-7"><a href="#cb30-7"></a><span class="va">fileKey</span><span class="op">=</span><span class="st">&quot;&lt;image_binary_name&gt;&quot;</span></span>
+<span id="cb30-8"><a href="#cb30-8"></a><span class="va">fileVersion</span><span class="op">=</span><span class="st">&quot;&lt;latest_s3_file_version_of_binary_image&gt;&quot;</span></span>
+<span id="cb30-9"><a href="#cb30-9"></a><span class="va">otaCodeSigningProfile</span><span class="op">=</span><span class="st">&quot;&lt;signing_profile_name&gt;&quot;</span></span>
+<span id="cb30-10"><a href="#cb30-10"></a></span>
+<span id="cb30-11"><a href="#cb30-11"></a><span class="va">FILES</span><span class="op">=</span><span class="st">&quot;fileName=</span><span class="va">$fileName</span><span class="st">,</span><span class="dt">\</span></span>
+<span id="cb30-12"><a href="#cb30-12"></a><span class="st">       fileLocation={s3Location={bucket=</span><span class="va">$otaBucketName</span><span class="st">,key=</span><span class="va">$fileKey</span><span class="st">,version=</span><span class="va">$fileVersion</span><span class="st">}},</span><span class="dt">\</span></span>
+<span id="cb30-13"><a href="#cb30-13"></a><span class="st">       codeSigning={startSigningJobParameter={signingProfileName=</span><span class="dt">\</span></span>
+<span id="cb30-14"><a href="#cb30-14"></a><span class="st">         </span><span class="va">$otaCodeSigningProfile</span><span class="st">,</span><span class="dt">\</span></span>
+<span id="cb30-15"><a href="#cb30-15"></a><span class="st">         destination={s3Destination={bucket=</span><span class="va">$otaBucketName</span><span class="st">}}}}&quot;</span></span>
+<span id="cb30-16"><a href="#cb30-16"></a></span>
+<span id="cb30-17"><a href="#cb30-17"></a><span class="ex">aws</span> iot create-ota-update <span class="at">--ota-update-id</span> <span class="st">&quot;</span><span class="va">$UPDATE_ID</span><span class="st">&quot;</span> <span class="dt">\</span></span>
+<span id="cb30-18"><a href="#cb30-18"></a>      <span class="at">--targets</span> <span class="st">&quot;</span><span class="va">$TARGETS</span><span class="st">&quot;</span> <span class="dt">\</span></span>
+<span id="cb30-19"><a href="#cb30-19"></a>      <span class="at">--target-selection</span> <span class="st">&quot;SNAPSHOT&quot;</span> <span class="dt">\</span></span>
+<span id="cb30-20"><a href="#cb30-20"></a>      <span class="at">--files</span> <span class="st">&quot;</span><span class="va">$FILES</span><span class="st">&quot;</span> <span class="dt">\</span></span>
+<span id="cb30-21"><a href="#cb30-21"></a>      <span class="at">--role-arn</span> <span class="st">&quot;</span><span class="va">$ROLE_ARN</span><span class="st">&quot;</span></span></code></pre></div></li>
+<li><p>To get the corresponding job ID, execute the following command
+and look for <em>awsIotJobId</em> field in json document returned.</p>
+<div class="sourceCode" id="cb31"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="ex">aws</span> iot get-ota-update <span class="at">--ota-update-id</span><span class="op">=&lt;</span>ota_update_identifier<span class="op">&gt;</span></span></code></pre></div>
+<p>Note down the job ID to check the status of the job later.</p></li>
+</ol>
+<h3 data-number="4.6.4"
+id="monitoring-and-verification-of-firmware-update"><span
+class="header-section-number">4.6.4</span> Monitoring and Verification
+of firmware update</h3>
+<ol type="1">
+<li><p>Once the OTA job is created, the job document is sent by AWS to
+the device, and your serial terminal emulator logs show that OTA job is
+accepted. The device subsequently starts downloading image.</p>
+<pre><code>&lt;INF&gt;    88331 [MQTTAgent ] Received OTA job message, size: 614. (ota_update_task.c:921)
+&lt;INF&gt;    88331 [OTAAgent  ] Extracted parameter: [key: value]=[execution.jobId: AFR_OTA-H5DK_2023-08-23_0952] (ota.c:1678)
+&lt;INF&gt;    88333 [OTAAgent  ] Extracted parameter: [key: value]=[execution.jobDocument.afr_ota.streamname: AFR_OTA-456f10ca-4c96-4bd2-855a-f4bb3ddd9b8c] (ota.c:1678)
+&lt;INF&gt;    88333 [OTAAgent  ] Extracted parameter: [key: value]=[execution.jobDocument.afr_ota.protocols: [&quot;MQTT&quot;]] (ota.c:1678)
+&lt;INF&gt;    88334 [OTAAgent  ] Extracted parameter: [key: value]=[filepath: STM32H573I-DK_aws.bin] (ota.c:1678)
+&lt;INF&gt;    88334 [OTAAgent  ] Extracted parameter: [key: value]=[filesize: 492536] (ota.c:1719)
+&lt;INF&gt;    88334 [OTAAgent  ] Extracted parameter: [key: value]=[fileid: 0] (ota.c:1719)
+&lt;INF&gt;    88334 [OTAAgent  ] Extracted parameter: [key: value]=[certfile: ota_signer_pub] (ota.c:1678)
+&lt;INF&gt;    88335 [OTAAgent  ] Extracted parameter [ sig-sha256-ecdsa: MEUCIQCaJlhKjSymG3hDadcZCc5QcPAE... ] (ota.c:1609)
+&lt;INF&gt;    88335 [OTAAgent  ] Job document was accepted. Attempting to begin the update. (ota.c:2258)</code></pre></li>
+<li><p>Once the full image has been downloaded, the OTA library verifies
+the image signature and requests the image installation by PSA Firmware
+Update.</p>
+<pre><code>&lt;INF&gt;    27899 [OTAAgent  ] Received final block of the update. (ota.c:2718)
+&lt;INF&gt;    28293 [OTAAgent  ] Received entire update and validated the signature. (ota.c:2742)
+...
+&lt;SYS&gt;        0 [None      ] Reset Source: 0x14000000 : SFTRSTF: software system reset with pin reset. (app_main.c:266)
+&lt;INF&gt;        0 [None      ] HW Init Complete (app_main.c:285)</code></pre></li>
+<li><p>New image boots up and performs a self-test, here it checks the
+version is higher than previous. If so it sets the new image as
+valid.</p>
+<pre><code>&lt;INF&gt;    15487 [OTAAgent] In self test mode. (ota.c:2102)
+&lt;INF&gt;    15487 [OTAAgent] New image has a higher version number than the current image: New image version=1.1.0, Previous image version=1.0.0 (ota.c:1932)</code></pre></li>
+<li><p>Checking the job status, should show the job as succeeded:</p>
+<div class="sourceCode" id="cb35"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="ex">aws</span> iot describe-job-execution <span class="at">--job-id</span><span class="op">=&lt;</span>Job ID created above<span class="op">&gt;</span> <span class="dt">\</span></span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>      <span class="at">--thing-name</span><span class="op">=&lt;</span>thing name<span class="op">&gt;</span></span></code></pre></div></li>
+</ol>
+<h1 data-number="5" id="design-notes"><span
+class="header-section-number">5</span> Design notes</h1>
+<h2 data-number="5.1" id="freertos-heap-configuration"><span
+class="header-section-number">5.1</span> FreeRTOS heap
+configuration</h2>
+<p>The <em>heap_4</em> implementation of FreeRTOS dynamic memory
+allocator is selected and uses a single memory region.</p>
+<p>Its size is specified by the
+FreeRTOS <code>configTOTAL_HEAP_SIZE</code> definition.</p>
+<h2 data-number="5.2" id="mbedtls-configuration"><span
+class="header-section-number">5.2</span> MbedTLS configuration</h2>
+<p>The MbedTLS configuration file
+<em>&lt;project&gt;/Inc/mbedtls_config_ntz.h</em> is tuned to reduce the
+read-only memory footprint. - With exceptions:</p>
+<ul>
+<li>For runtime performance reasons: MBEDTLS_AES_ROM_TABLES,
+MBEDTLS_ECP_NIST_OPTIM</li>
+<li>For debuggability: MBEDTLS_ERROR_C</li>
+</ul>
+<p>In particular the support of RSA-based cipher suites is disabled.
+Therefore, the root CA certificate provisioned for authenticating the
+endpoint must be based on an ECDSA key. That is the <em>Amazon Root CA
+3</em> CA which is specified in the provisioning section above.</p>
+<p>In case there is a TLS error during the handshake, ensure that the
+proper certificate was provisionned. Its common name is displayed on the
+console as follows:</p>
+<pre><code>&lt;INF&gt;      916 [MQTTAgent ] CA Certificate:  CN=Amazon Root CA 3, SN:0x066C9FD5749736663F3B0B9AD9E89E7603F24A (mbedtls_transport.c:335)</code></pre>
+<p>## Firmware update implemented by flash bank swapping</p>
+<ul>
+<li><p>The application reads the bank size from a region of the STM32H5
+system flash which does not support cached accesses. The application
+init therefore configures the MPU so that this region is mapped as
+non-cacheable device memory.</p></li>
+<li><p>The flash programmation operations are placed in critical
+sections so that the programming task is not descheduled by the RTOS
+before the operation is completed (task switches while programming have
+been reported to cause unstabilities).</p></li>
+<li><p>The swap of the flash banks is selected by the <em>SWAP_BANK</em>
+option byte.<br />
+After OTA update has run an odd number of times, the MCU boots from the
+second bank.</p></li>
+</ul>
+<hr />
+<p><mark>Troubleshooting</mark> In that state, if application download
+and debug fails to start and the STM32CubeIDE debugger fails to attach
+to MCU after programming,</p>
+<ul>
+<li>The option byte can be reset manually to allow flash and debug
+again:
+<code>$ STM32CubeProgrammer.exe mode=UR -ob SWAP_BANK=0</code></li>
+<li>The external flash must also be erased so that the file system does
+not keep track of an erroneous OTA state.<br />
+The external loader to be selected in STM32CubeProgrammer is
+<em>MX25LM51245G_STM32H573I-DK-RevB</em>.<br />
+Please refer to the STM32CubeProgrammer documentation for usage
+details.</li>
+</ul>
+<h3 data-number="5.2.1"
+id="provisions-for-running-freertos-qualification-tests"><span
+class="header-section-number">5.2.1</span> Provisions for running
+FreeRTOS qualification tests</h3>
+<ul>
+<li>The <em>FreeRTOS-Libraries-Integration-Tests</em> module is included
+in the project, together with the needed application and configurarion
+files.</li>
+<li>The test task is built and replaces the reference integration
+applicative tasks only if one test case is selected in the configuration
+file
+<em><env_dir>/Projects/Common/config/test_execution_config.h</em>.</li>
+<li>The qualification testing status is documented in the release
+notes.</li>
+</ul>
+<h2 data-number="5.3" id="ide-project-settings"><span
+class="header-section-number">5.3</span> IDE project settings</h2>
+<ul>
+<li><p>Build settings</p>
+<ul>
+<li>Only the <em>Debug</em> target is provided</li>
+<li>Enabled .bin in MCU Post build outputs: <code>-O binary</code></li>
+<li>Selected debug-compatible compiler optimization:
+<code>-Og -g3</code></li>
+<li>Selected target-specific compiler optimization: <em>assume loading
+data from flash is slower than fetching instructions</em>
+<code>-mslow-flash-data</code></li>
+<li>No float support in printf</li>
+</ul></li>
+<li><p>Debug launcher settings</p>
+<ul>
+<li>Enable FreeRTOS awareness for Cortex-M33 NTZ (the FreeRTOS kernel
+fully runs in the non-secure partition)</li>
+</ul></li>
+</ul>
+</body>
+</html>
