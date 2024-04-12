@@ -12,8 +12,6 @@
 // DEBUG: ANSI esc codes
 #define RED    "\x1b[91m"
 #define GREEN  "\x1b[92m"
-#define YELLOW "\x1b[93m"
-#define BLUE   "\x1b[94m"
 #define RESET  "\x1b[0m"
 
 const int USER = 1;
@@ -21,7 +19,7 @@ const int COMP = -1;
 extern int SIZE;
 extern int DIFFICULTY;
 extern int PLAYER;  // set first player
-extern int moves;   // state recorder
+extern int moves;
 extern double t;    // average response time by computer
 extern std::vector<std::vector<int>> board;
 
