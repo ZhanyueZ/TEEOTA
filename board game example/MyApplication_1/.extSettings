@@ -1,0 +1,3 @@
+[Groups]
+Application/User/TouchGFX/target=..\TouchGFX\target\CortexMMCUInstrumentation.cpp;../TouchGFX/target/Buttons.cpp;../TouchGFX/target/KeySampler.cpp
+[Others]

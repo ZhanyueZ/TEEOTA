@@ -1,0 +1,5 @@
+../../TouchGFX/gui/include/gui/beginner_screen_screen/Beginner_ScreenPresenter.hpp:28:13:Beginner_ScreenPresenter::~Beginner_ScreenPresenter()	0	static
+C:/TouchGFXProjects/MyApplication_1/TouchGFX/gui/src/beginner_screen_screen/Beginner_ScreenPresenter.cpp:10:6:virtual void Beginner_ScreenPresenter::activate()	0	static
+../../TouchGFX/gui/include/gui/beginner_screen_screen/Beginner_ScreenPresenter.hpp:28:13:virtual Beginner_ScreenPresenter::~Beginner_ScreenPresenter()	8	static
+../../TouchGFX/gui/include/gui/beginner_screen_screen/Beginner_ScreenPresenter.hpp:28:13:virtual void* Beginner_ScreenPresenter::_ZThn4_N24Beginner_ScreenPresenterD1Ev()	0	static
+C:/TouchGFXProjects/MyApplication_1/TouchGFX/gui/src/beginner_screen_screen/Beginner_ScreenPresenter.cpp:4:1:Beginner_ScreenPresenter::Beginner_ScreenPresenter(Beginner_ScreenView&)	8	static

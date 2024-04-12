@@ -1,0 +1,2304 @@
+{
+  "Application": {
+    "Screens": [
+      {
+        "Name": "Beginner_Screen",
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 240,
+            "Height": 240,
+            "Color": {
+              "Red": 255,
+              "Green": 253,
+              "Blue": 191
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 18,
+            "Y": 37,
+            "Width": 204,
+            "Height": 31,
+            "TextId": "__SingleUse_ORXO",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 42,
+              "Green": 104,
+              "Blue": 219
+            }
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonWithLabel1",
+            "X": 65,
+            "Y": 86,
+            "Width": 110,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_round_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_round_active.png",
+            "TextId": "__SingleUse_0RA6",
+            "ReleasedColor": {
+              "Red": 99,
+              "Green": 123,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\tiny_round_active.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonWithLabel2",
+            "X": 65,
+            "Y": 152,
+            "Width": 110,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_round_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_round_active.png",
+            "TextId": "__SingleUse_CYFQ",
+            "ReleasedColor": {
+              "Red": 99,
+              "Green": 123,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\tiny_round_active.json"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "c4",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonWithLabel1"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionWipe",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "Screen1"
+            }
+          },
+          {
+            "InteractionName": "gomoku",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonWithLabel2"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionWipe",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "Screen2"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Screen1",
+        "CanvasBufferSize": 3600,
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 240,
+            "Height": 240,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "scalableImage1",
+            "Width": 240,
+            "Height": 240,
+            "Filename": "Four_in_a_row.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "Circle",
+            "Name": "b_c04",
+            "Y": 69,
+            "Width": 36,
+            "Height": 33,
+            "Visible": false,
+            "Color": {
+              "Red": 89,
+              "Green": 145,
+              "Blue": 235
+            },
+            "CenterX": 21.0,
+            "CenterY": 16.0,
+            "Radius": 14.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "b_c15",
+            "X": 36,
+            "Y": 33,
+            "Width": 36,
+            "Height": 34,
+            "Visible": false,
+            "Color": {
+              "Red": 89,
+              "Green": 145,
+              "Blue": 235
+            },
+            "CenterX": 18.0,
+            "CenterY": 17.0,
+            "Radius": 15.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "b_c25",
+            "X": 69,
+            "Y": 33,
+            "Width": 36,
+            "Height": 34,
+            "Visible": false,
+            "Color": {
+              "Red": 89,
+              "Green": 145,
+              "Blue": 235
+            },
+            "CenterX": 18.0,
+            "CenterY": 17.0,
+            "Radius": 15.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "b_c35",
+            "X": 102,
+            "Y": 33,
+            "Width": 36,
+            "Height": 34,
+            "Visible": false,
+            "Color": {
+              "Red": 89,
+              "Green": 145,
+              "Blue": 235
+            },
+            "CenterX": 18.0,
+            "CenterY": 17.0,
+            "Radius": 15.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "b_c45",
+            "X": 135,
+            "Y": 33,
+            "Width": 36,
+            "Height": 34,
+            "Visible": false,
+            "Color": {
+              "Red": 89,
+              "Green": 145,
+              "Blue": 235
+            },
+            "CenterX": 18.0,
+            "CenterY": 17.0,
+            "Radius": 15.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "b_c55",
+            "X": 168,
+            "Y": 33,
+            "Width": 36,
+            "Height": 34,
+            "Visible": false,
+            "Color": {
+              "Red": 89,
+              "Green": 145,
+              "Blue": 235
+            },
+            "CenterX": 18.0,
+            "CenterY": 17.0,
+            "Radius": 15.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "b_c65",
+            "X": 201,
+            "Y": 33,
+            "Width": 36,
+            "Height": 34,
+            "Visible": false,
+            "Color": {
+              "Red": 89,
+              "Green": 145,
+              "Blue": 235
+            },
+            "CenterX": 18.0,
+            "CenterY": 17.0,
+            "Radius": 15.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "b_c64",
+            "X": 201,
+            "Y": 67,
+            "Width": 36,
+            "Height": 34,
+            "Visible": false,
+            "Color": {
+              "Red": 89,
+              "Green": 145,
+              "Blue": 235
+            },
+            "CenterX": 18.0,
+            "CenterY": 17.0,
+            "Radius": 15.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "b_c63",
+            "X": 201,
+            "Y": 103,
+            "Width": 36,
+            "Height": 34,
+            "Visible": false,
+            "Color": {
+              "Red": 89,
+              "Green": 145,
+              "Blue": 235
+            },
+            "CenterX": 18.0,
+            "CenterY": 17.0,
+            "Radius": 15.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "b_c62",
+            "X": 201,
+            "Y": 137,
+            "Width": 36,
+            "Height": 34,
+            "Visible": false,
+            "Color": {
+              "Red": 89,
+              "Green": 145,
+              "Blue": 235
+            },
+            "CenterX": 18.0,
+            "CenterY": 17.0,
+            "Radius": 15.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "b_c61",
+            "X": 201,
+            "Y": 171,
+            "Width": 36,
+            "Height": 34,
+            "Visible": false,
+            "Color": {
+              "Red": 89,
+              "Green": 145,
+              "Blue": 235
+            },
+            "CenterX": 18.0,
+            "CenterY": 17.0,
+            "Radius": 15.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "b_c60",
+            "X": 201,
+            "Y": 205,
+            "Width": 36,
+            "Height": 34,
+            "Visible": false,
+            "Color": {
+              "Red": 89,
+              "Green": 145,
+              "Blue": 235
+            },
+            "CenterX": 18.0,
+            "CenterY": 17.0,
+            "Radius": 15.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "b_c54",
+            "X": 168,
+            "Y": 69,
+            "Width": 36,
+            "Height": 34,
+            "Visible": false,
+            "Color": {
+              "Red": 89,
+              "Green": 145,
+              "Blue": 235
+            },
+            "CenterX": 18.0,
+            "CenterY": 16.0,
+            "Radius": 15.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "b_c53",
+            "X": 168,
+            "Y": 103,
+            "Width": 36,
+            "Height": 34,
+            "Visible": false,
+            "Color": {
+              "Red": 89,
+              "Green": 145,
+              "Blue": 235
+            },
+            "CenterX": 18.0,
+            "CenterY": 16.0,
+            "Radius": 15.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "b_c52",
+            "X": 168,
+            "Y": 137,
+            "Width": 36,
+            "Height": 34,
+            "Visible": false,
+            "Color": {
+              "Red": 89,
+              "Green": 145,
+              "Blue": 235
+            },
+            "CenterX": 18.0,
+            "CenterY": 16.0,
+            "Radius": 15.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "b_c51",
+            "X": 168,
+            "Y": 171,
+            "Width": 36,
+            "Height": 34,
+            "Visible": false,
+            "Color": {
+              "Red": 89,
+              "Green": 145,
+              "Blue": 235
+            },
+            "CenterX": 18.0,
+            "CenterY": 17.0,
+            "Radius": 15.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "b_c50",
+            "X": 168,
+            "Y": 205,
+            "Width": 36,
+            "Height": 34,
+            "Visible": false,
+            "Color": {
+              "Red": 89,
+              "Green": 145,
+              "Blue": 235
+            },
+            "CenterX": 18.0,
+            "CenterY": 17.0,
+            "Radius": 15.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "b_c44",
+            "X": 135,
+            "Y": 67,
+            "Width": 36,
+            "Height": 34,
+            "Visible": false,
+            "Color": {
+              "Red": 89,
+              "Green": 145,
+              "Blue": 235
+            },
+            "CenterX": 18.0,
+            "CenterY": 17.0,
+            "Radius": 15.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "b_c43",
+            "X": 135,
+            "Y": 103,
+            "Width": 36,
+            "Height": 34,
+            "Visible": false,
+            "Color": {
+              "Red": 89,
+              "Green": 145,
+              "Blue": 235
+            },
+            "CenterX": 18.0,
+            "CenterY": 17.0,
+            "Radius": 15.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "b_c42",
+            "X": 135,
+            "Y": 137,
+            "Width": 36,
+            "Height": 34,
+            "Visible": false,
+            "Color": {
+              "Red": 89,
+              "Green": 145,
+              "Blue": 235
+            },
+            "CenterX": 18.0,
+            "CenterY": 17.0,
+            "Radius": 15.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "b_c41",
+            "X": 134,
+            "Y": 171,
+            "Width": 36,
+            "Height": 34,
+            "Visible": false,
+            "Color": {
+              "Red": 89,
+              "Green": 145,
+              "Blue": 235
+            },
+            "CenterX": 18.0,
+            "CenterY": 17.0,
+            "Radius": 15.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "b_c40",
+            "X": 135,
+            "Y": 205,
+            "Width": 36,
+            "Height": 34,
+            "Visible": false,
+            "Color": {
+              "Red": 89,
+              "Green": 145,
+              "Blue": 235
+            },
+            "CenterX": 18.0,
+            "CenterY": 17.0,
+            "Radius": 15.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "b_c34",
+            "X": 102,
+            "Y": 67,
+            "Width": 36,
+            "Height": 34,
+            "Visible": false,
+            "Color": {
+              "Red": 89,
+              "Green": 145,
+              "Blue": 235
+            },
+            "CenterX": 18.0,
+            "CenterY": 17.0,
+            "Radius": 15.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "b_c33",
+            "X": 102,
+            "Y": 103,
+            "Width": 36,
+            "Height": 34,
+            "Visible": false,
+            "Color": {
+              "Red": 89,
+              "Green": 145,
+              "Blue": 235
+            },
+            "CenterX": 18.0,
+            "CenterY": 17.0,
+            "Radius": 15.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "b_c32",
+            "X": 102,
+            "Y": 137,
+            "Width": 36,
+            "Height": 34,
+            "Visible": false,
+            "Color": {
+              "Red": 89,
+              "Green": 145,
+              "Blue": 235
+            },
+            "CenterX": 18.0,
+            "CenterY": 17.0,
+            "Radius": 15.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "b_c31",
+            "X": 102,
+            "Y": 171,
+            "Width": 36,
+            "Height": 34,
+            "Visible": false,
+            "Color": {
+              "Red": 89,
+              "Green": 145,
+              "Blue": 235
+            },
+            "CenterX": 18.0,
+            "CenterY": 17.0,
+            "Radius": 15.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "b_c30",
+            "X": 102,
+            "Y": 205,
+            "Width": 36,
+            "Height": 34,
+            "Visible": false,
+            "Color": {
+              "Red": 89,
+              "Green": 145,
+              "Blue": 235
+            },
+            "CenterX": 18.0,
+            "CenterY": 17.0,
+            "Radius": 15.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "b_c24",
+            "X": 69,
+            "Y": 67,
+            "Width": 36,
+            "Height": 34,
+            "Visible": false,
+            "Color": {
+              "Red": 89,
+              "Green": 145,
+              "Blue": 235
+            },
+            "CenterX": 18.0,
+            "CenterY": 17.0,
+            "Radius": 15.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "b_c23",
+            "X": 69,
+            "Y": 101,
+            "Width": 36,
+            "Height": 34,
+            "Visible": false,
+            "Color": {
+              "Red": 89,
+              "Green": 145,
+              "Blue": 235
+            },
+            "CenterX": 18.0,
+            "CenterY": 17.0,
+            "Radius": 15.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "b_c22",
+            "X": 69,
+            "Y": 135,
+            "Width": 36,
+            "Height": 34,
+            "Visible": false,
+            "Color": {
+              "Red": 89,
+              "Green": 145,
+              "Blue": 235
+            },
+            "CenterX": 18.0,
+            "CenterY": 18.0,
+            "Radius": 15.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "b_c21",
+            "X": 69,
+            "Y": 169,
+            "Width": 36,
+            "Height": 34,
+            "Visible": false,
+            "Color": {
+              "Red": 89,
+              "Green": 145,
+              "Blue": 235
+            },
+            "CenterX": 18.0,
+            "CenterY": 18.0,
+            "Radius": 15.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "b_c20",
+            "X": 69,
+            "Y": 203,
+            "Width": 36,
+            "Height": 34,
+            "Visible": false,
+            "Color": {
+              "Red": 89,
+              "Green": 145,
+              "Blue": 235
+            },
+            "CenterX": 18.0,
+            "CenterY": 18.0,
+            "Radius": 15.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "b_c14",
+            "X": 36,
+            "Y": 69,
+            "Width": 36,
+            "Height": 33,
+            "Visible": false,
+            "Color": {
+              "Red": 89,
+              "Green": 145,
+              "Blue": 235
+            },
+            "CenterX": 18.0,
+            "CenterY": 16.0,
+            "Radius": 14.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "b_c13",
+            "X": 36,
+            "Y": 104,
+            "Width": 36,
+            "Height": 33,
+            "Visible": false,
+            "Color": {
+              "Red": 89,
+              "Green": 145,
+              "Blue": 235
+            },
+            "CenterX": 18.0,
+            "CenterY": 15.0,
+            "Radius": 14.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "b_c12",
+            "X": 36,
+            "Y": 137,
+            "Width": 36,
+            "Height": 33,
+            "Visible": false,
+            "Color": {
+              "Red": 89,
+              "Green": 145,
+              "Blue": 235
+            },
+            "CenterX": 18.0,
+            "CenterY": 16.0,
+            "Radius": 14.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "b_c11",
+            "X": 36,
+            "Y": 170,
+            "Width": 36,
+            "Height": 33,
+            "Visible": false,
+            "Color": {
+              "Red": 89,
+              "Green": 145,
+              "Blue": 235
+            },
+            "CenterX": 18.0,
+            "CenterY": 17.0,
+            "Radius": 14.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "b_c10",
+            "X": 36,
+            "Y": 207,
+            "Width": 36,
+            "Height": 33,
+            "Visible": false,
+            "Color": {
+              "Red": 89,
+              "Green": 145,
+              "Blue": 235
+            },
+            "CenterX": 18.0,
+            "CenterY": 16.0,
+            "Radius": 14.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "b_c01",
+            "Y": 171,
+            "Width": 36,
+            "Height": 36,
+            "Visible": false,
+            "Color": {
+              "Red": 89,
+              "Green": 145,
+              "Blue": 235
+            },
+            "CenterX": 21.0,
+            "CenterY": 17.0,
+            "Radius": 14.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "circle1",
+            "Width": 36,
+            "Height": 39,
+            "Color": {
+              "Red": 235,
+              "Green": 87,
+              "Blue": 87
+            },
+            "CenterX": 19.0,
+            "CenterY": 20.0,
+            "Radius": 13.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "r_c00",
+            "Y": 201,
+            "Width": 36,
+            "Height": 39,
+            "Visible": false,
+            "Color": {
+              "Red": 235,
+              "Green": 87,
+              "Blue": 87
+            },
+            "CenterX": 21.0,
+            "CenterY": 21.0,
+            "Radius": 14.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "r_c01",
+            "Y": 168,
+            "Width": 36,
+            "Height": 39,
+            "Visible": false,
+            "Color": {
+              "Red": 235,
+              "Green": 87,
+              "Blue": 87
+            },
+            "CenterX": 21.0,
+            "CenterY": 20.0,
+            "Radius": 14.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "r_c02",
+            "Y": 135,
+            "Width": 36,
+            "Height": 39,
+            "Visible": false,
+            "Color": {
+              "Red": 235,
+              "Green": 87,
+              "Blue": 87
+            },
+            "CenterX": 21.0,
+            "CenterY": 19.0,
+            "Radius": 14.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "r_c03",
+            "Y": 101,
+            "Width": 36,
+            "Height": 39,
+            "Visible": false,
+            "Color": {
+              "Red": 235,
+              "Green": 87,
+              "Blue": 87
+            },
+            "CenterX": 21.0,
+            "CenterY": 18.0,
+            "Radius": 14.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "b_c00",
+            "Y": 207,
+            "Width": 36,
+            "Height": 39,
+            "Visible": false,
+            "Color": {
+              "Red": 89,
+              "Green": 145,
+              "Blue": 235
+            },
+            "CenterX": 21.0,
+            "CenterY": 16.0,
+            "Radius": 14.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "b_c02",
+            "Y": 135,
+            "Width": 36,
+            "Height": 36,
+            "Visible": false,
+            "Color": {
+              "Red": 89,
+              "Green": 145,
+              "Blue": 235
+            },
+            "CenterX": 21.0,
+            "CenterY": 19.0,
+            "Radius": 14.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "b_c03",
+            "Y": 102,
+            "Width": 36,
+            "Height": 33,
+            "Visible": false,
+            "Color": {
+              "Red": 89,
+              "Green": 145,
+              "Blue": 235
+            },
+            "CenterX": 21.0,
+            "CenterY": 17.0,
+            "Radius": 14.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "b_c05",
+            "Y": 36,
+            "Width": 36,
+            "Height": 33,
+            "Visible": false,
+            "Color": {
+              "Red": 89,
+              "Green": 145,
+              "Blue": 235
+            },
+            "CenterX": 21.0,
+            "CenterY": 15.0,
+            "Radius": 14.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "r_c04",
+            "Y": 68,
+            "Width": 36,
+            "Height": 39,
+            "Visible": false,
+            "Color": {
+              "Red": 235,
+              "Green": 87,
+              "Blue": 87
+            },
+            "CenterX": 21.0,
+            "CenterY": 17.0,
+            "Radius": 14.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "r_c05",
+            "Y": 29,
+            "Width": 36,
+            "Height": 39,
+            "Visible": false,
+            "Color": {
+              "Red": 235,
+              "Green": 87,
+              "Blue": 87
+            },
+            "CenterX": 21.0,
+            "CenterY": 22.0,
+            "Radius": 14.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "r_c15",
+            "X": 36,
+            "Y": 29,
+            "Width": 36,
+            "Height": 39,
+            "Visible": false,
+            "Color": {
+              "Red": 235,
+              "Green": 87,
+              "Blue": 87
+            },
+            "CenterX": 18.0,
+            "CenterY": 21.0,
+            "Radius": 14.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "r_c14",
+            "X": 36,
+            "Y": 62,
+            "Width": 36,
+            "Height": 39,
+            "Visible": false,
+            "Color": {
+              "Red": 235,
+              "Green": 87,
+              "Blue": 87
+            },
+            "CenterX": 18.0,
+            "CenterY": 22.0,
+            "Radius": 14.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "r_c13",
+            "X": 36,
+            "Y": 101,
+            "Width": 36,
+            "Height": 35,
+            "Visible": false,
+            "Color": {
+              "Red": 235,
+              "Green": 87,
+              "Blue": 87
+            },
+            "CenterX": 18.0,
+            "CenterY": 18.0,
+            "Radius": 14.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "r_c12",
+            "X": 36,
+            "Y": 136,
+            "Width": 36,
+            "Height": 35,
+            "Visible": false,
+            "Color": {
+              "Red": 235,
+              "Green": 87,
+              "Blue": 87
+            },
+            "CenterX": 18.0,
+            "CenterY": 18.0,
+            "Radius": 14.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "r_c11",
+            "X": 36,
+            "Y": 171,
+            "Width": 36,
+            "Height": 35,
+            "Visible": false,
+            "Color": {
+              "Red": 235,
+              "Green": 87,
+              "Blue": 87
+            },
+            "CenterX": 18.0,
+            "CenterY": 17.0,
+            "Radius": 14.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "r_c10",
+            "X": 36,
+            "Y": 205,
+            "Width": 36,
+            "Height": 35,
+            "Visible": false,
+            "Color": {
+              "Red": 235,
+              "Green": 87,
+              "Blue": 87
+            },
+            "CenterX": 18.0,
+            "CenterY": 17.0,
+            "Radius": 14.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "r_c25",
+            "X": 69,
+            "Y": 33,
+            "Width": 36,
+            "Height": 35,
+            "Visible": false,
+            "Color": {
+              "Red": 235,
+              "Green": 87,
+              "Blue": 87
+            },
+            "CenterX": 18.0,
+            "CenterY": 17.0,
+            "Radius": 14.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "r_c35",
+            "X": 102,
+            "Y": 33,
+            "Width": 36,
+            "Height": 35,
+            "Visible": false,
+            "Color": {
+              "Red": 235,
+              "Green": 87,
+              "Blue": 87
+            },
+            "CenterX": 18.0,
+            "CenterY": 17.0,
+            "Radius": 14.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "r_c45",
+            "X": 135,
+            "Y": 33,
+            "Width": 36,
+            "Height": 35,
+            "Visible": false,
+            "Color": {
+              "Red": 235,
+              "Green": 87,
+              "Blue": 87
+            },
+            "CenterX": 18.0,
+            "CenterY": 17.0,
+            "Radius": 14.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "r_c55",
+            "X": 170,
+            "Y": 33,
+            "Width": 33,
+            "Height": 35,
+            "Visible": false,
+            "Color": {
+              "Red": 235,
+              "Green": 87,
+              "Blue": 87
+            },
+            "CenterX": 16.0,
+            "CenterY": 17.0,
+            "Radius": 14.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "r_c65",
+            "X": 203,
+            "Y": 33,
+            "Width": 33,
+            "Height": 35,
+            "Visible": false,
+            "Color": {
+              "Red": 235,
+              "Green": 87,
+              "Blue": 87
+            },
+            "CenterX": 16.0,
+            "CenterY": 17.0,
+            "Radius": 14.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "r_c64",
+            "X": 204,
+            "Y": 68,
+            "Width": 32,
+            "Height": 33,
+            "Visible": false,
+            "Color": {
+              "Red": 235,
+              "Green": 87,
+              "Blue": 87
+            },
+            "CenterX": 16.0,
+            "CenterY": 17.0,
+            "Radius": 14.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "r_c63",
+            "X": 204,
+            "Y": 101,
+            "Width": 32,
+            "Height": 33,
+            "Visible": false,
+            "Color": {
+              "Red": 235,
+              "Green": 87,
+              "Blue": 87
+            },
+            "CenterX": 16.0,
+            "CenterY": 18.0,
+            "Radius": 14.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "r_c62",
+            "X": 203,
+            "Y": 134,
+            "Width": 32,
+            "Height": 33,
+            "Visible": false,
+            "Color": {
+              "Red": 235,
+              "Green": 87,
+              "Blue": 87
+            },
+            "CenterX": 16.0,
+            "CenterY": 19.0,
+            "Radius": 14.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "r_c61",
+            "X": 203,
+            "Y": 167,
+            "Width": 33,
+            "Height": 35,
+            "Visible": false,
+            "Color": {
+              "Red": 235,
+              "Green": 87,
+              "Blue": 87
+            },
+            "CenterX": 16.0,
+            "CenterY": 21.0,
+            "Radius": 14.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "r_c60",
+            "X": 204,
+            "Y": 202,
+            "Width": 33,
+            "Height": 35,
+            "Visible": false,
+            "Color": {
+              "Red": 235,
+              "Green": 87,
+              "Blue": 87
+            },
+            "CenterX": 16.0,
+            "CenterY": 20.0,
+            "Radius": 14.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "r_c54",
+            "X": 170,
+            "Y": 68,
+            "Width": 33,
+            "Height": 33,
+            "Visible": false,
+            "Color": {
+              "Red": 235,
+              "Green": 87,
+              "Blue": 87
+            },
+            "CenterX": 16.0,
+            "CenterY": 17.0,
+            "Radius": 14.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "r_c53",
+            "X": 170,
+            "Y": 101,
+            "Width": 33,
+            "Height": 33,
+            "Visible": false,
+            "Color": {
+              "Red": 235,
+              "Green": 87,
+              "Blue": 87
+            },
+            "CenterX": 16.0,
+            "CenterY": 18.0,
+            "Radius": 14.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "r_c52",
+            "X": 171,
+            "Y": 136,
+            "Width": 33,
+            "Height": 33,
+            "Visible": false,
+            "Color": {
+              "Red": 235,
+              "Green": 87,
+              "Blue": 87
+            },
+            "CenterX": 16.0,
+            "CenterY": 18.0,
+            "Radius": 14.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "r_c51",
+            "X": 170,
+            "Y": 169,
+            "Width": 33,
+            "Height": 36,
+            "Visible": false,
+            "Color": {
+              "Red": 235,
+              "Green": 87,
+              "Blue": 87
+            },
+            "CenterX": 16.0,
+            "CenterY": 18.0,
+            "Radius": 14.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "r_c50",
+            "X": 170,
+            "Y": 204,
+            "Width": 33,
+            "Height": 36,
+            "Visible": false,
+            "Color": {
+              "Red": 235,
+              "Green": 87,
+              "Blue": 87
+            },
+            "CenterX": 16.0,
+            "CenterY": 18.0,
+            "Radius": 14.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "r_c44",
+            "X": 135,
+            "Y": 68,
+            "Width": 36,
+            "Height": 35,
+            "Visible": false,
+            "Color": {
+              "Red": 235,
+              "Green": 87,
+              "Blue": 87
+            },
+            "CenterX": 18.0,
+            "CenterY": 17.0,
+            "Radius": 14.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "r_c43",
+            "X": 135,
+            "Y": 101,
+            "Width": 36,
+            "Height": 35,
+            "Visible": false,
+            "Color": {
+              "Red": 235,
+              "Green": 87,
+              "Blue": 87
+            },
+            "CenterX": 18.0,
+            "CenterY": 18.0,
+            "Radius": 14.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "r_c42",
+            "X": 135,
+            "Y": 135,
+            "Width": 36,
+            "Height": 35,
+            "Visible": false,
+            "Color": {
+              "Red": 235,
+              "Green": 87,
+              "Blue": 87
+            },
+            "CenterX": 18.0,
+            "CenterY": 18.0,
+            "Radius": 14.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "r_c41",
+            "X": 135,
+            "Y": 170,
+            "Width": 36,
+            "Height": 35,
+            "Visible": false,
+            "Color": {
+              "Red": 235,
+              "Green": 87,
+              "Blue": 87
+            },
+            "CenterX": 18.0,
+            "CenterY": 17.0,
+            "Radius": 14.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "r_c40",
+            "X": 135,
+            "Y": 205,
+            "Width": 36,
+            "Height": 35,
+            "Visible": false,
+            "Color": {
+              "Red": 235,
+              "Green": 87,
+              "Blue": 87
+            },
+            "CenterX": 18.0,
+            "CenterY": 17.0,
+            "Radius": 14.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "r_c34",
+            "X": 102,
+            "Y": 68,
+            "Width": 36,
+            "Height": 35,
+            "Visible": false,
+            "Color": {
+              "Red": 235,
+              "Green": 87,
+              "Blue": 87
+            },
+            "CenterX": 18.0,
+            "CenterY": 17.0,
+            "Radius": 14.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "r_c33",
+            "X": 102,
+            "Y": 101,
+            "Width": 36,
+            "Height": 35,
+            "Visible": false,
+            "Color": {
+              "Red": 235,
+              "Green": 87,
+              "Blue": 87
+            },
+            "CenterX": 18.0,
+            "CenterY": 18.0,
+            "Radius": 14.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "r_c32",
+            "X": 102,
+            "Y": 135,
+            "Width": 36,
+            "Height": 35,
+            "Visible": false,
+            "Color": {
+              "Red": 235,
+              "Green": 87,
+              "Blue": 87
+            },
+            "CenterX": 18.0,
+            "CenterY": 18.0,
+            "Radius": 14.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "r_c31",
+            "X": 102,
+            "Y": 170,
+            "Width": 36,
+            "Height": 35,
+            "Visible": false,
+            "Color": {
+              "Red": 235,
+              "Green": 87,
+              "Blue": 87
+            },
+            "CenterX": 18.0,
+            "CenterY": 17.0,
+            "Radius": 14.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "r_c30",
+            "X": 102,
+            "Y": 205,
+            "Width": 36,
+            "Height": 35,
+            "Visible": false,
+            "Color": {
+              "Red": 235,
+              "Green": 87,
+              "Blue": 87
+            },
+            "CenterX": 18.0,
+            "CenterY": 17.0,
+            "Radius": 14.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "r_c24",
+            "X": 69,
+            "Y": 68,
+            "Width": 36,
+            "Height": 35,
+            "Visible": false,
+            "Color": {
+              "Red": 235,
+              "Green": 87,
+              "Blue": 87
+            },
+            "CenterX": 18.0,
+            "CenterY": 17.0,
+            "Radius": 14.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "r_c23",
+            "X": 69,
+            "Y": 101,
+            "Width": 36,
+            "Height": 35,
+            "Visible": false,
+            "Color": {
+              "Red": 235,
+              "Green": 87,
+              "Blue": 87
+            },
+            "CenterX": 18.0,
+            "CenterY": 18.0,
+            "Radius": 14.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "r_c22",
+            "X": 69,
+            "Y": 136,
+            "Width": 36,
+            "Height": 35,
+            "Visible": false,
+            "Color": {
+              "Red": 235,
+              "Green": 87,
+              "Blue": 87
+            },
+            "CenterX": 18.0,
+            "CenterY": 18.0,
+            "Radius": 14.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "r_c21",
+            "X": 69,
+            "Y": 170,
+            "Width": 36,
+            "Height": 35,
+            "Visible": false,
+            "Color": {
+              "Red": 235,
+              "Green": 87,
+              "Blue": 87
+            },
+            "CenterX": 18.0,
+            "CenterY": 17.0,
+            "Radius": 14.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "r_c20",
+            "X": 69,
+            "Y": 205,
+            "Width": 36,
+            "Height": 35,
+            "Visible": false,
+            "Color": {
+              "Red": 235,
+              "Green": 87,
+              "Blue": 87
+            },
+            "CenterX": 18.0,
+            "CenterY": 17.0,
+            "Radius": 14.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "circle2",
+            "X": 36,
+            "Width": 36,
+            "Height": 39,
+            "Color": {
+              "Red": 235,
+              "Green": 87,
+              "Blue": 87
+            },
+            "CenterX": 18.0,
+            "CenterY": 20.0,
+            "Radius": 13.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "circle3",
+            "X": 72,
+            "Width": 33,
+            "Height": 39,
+            "Color": {
+              "Red": 235,
+              "Green": 87,
+              "Blue": 87
+            },
+            "CenterX": 15.0,
+            "CenterY": 20.0,
+            "Radius": 13.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "circle4",
+            "X": 104,
+            "Width": 33,
+            "Height": 39,
+            "Color": {
+              "Red": 235,
+              "Green": 87,
+              "Blue": 87
+            },
+            "CenterX": 16.0,
+            "CenterY": 20.0,
+            "Radius": 13.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "circle5",
+            "X": 137,
+            "Width": 33,
+            "Height": 39,
+            "Color": {
+              "Red": 235,
+              "Green": 87,
+              "Blue": 87
+            },
+            "CenterX": 16.0,
+            "CenterY": 20.0,
+            "Radius": 13.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "circle6",
+            "X": 170,
+            "Width": 33,
+            "Height": 39,
+            "Color": {
+              "Red": 235,
+              "Green": 87,
+              "Blue": 87
+            },
+            "CenterX": 16.0,
+            "CenterY": 20.0,
+            "Radius": 13.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "circle7",
+            "X": 203,
+            "Width": 33,
+            "Height": 39,
+            "Color": {
+              "Red": 235,
+              "Green": 87,
+              "Blue": 87
+            },
+            "CenterX": 16.0,
+            "CenterY": 20.0,
+            "Radius": 13.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt",
+            "Clickable": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Win",
+            "X": 56,
+            "Y": 105,
+            "Width": 133,
+            "Height": 30,
+            "TextId": "__SingleUse_FEL7",
+            "TextRotation": "0",
+            "Alpha": 0,
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Lose",
+            "X": 47,
+            "Y": 105,
+            "Width": 145,
+            "Height": 30,
+            "TextId": "__SingleUse_SCWY",
+            "TextRotation": "0",
+            "Alpha": 0,
+            "AutoSize": true
+          }
+        ],
+        "Interactions": []
+      },
+      {
+        "Name": "Screen2",
+        "CanvasBufferSize": 3600,
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 240,
+            "Height": 240,
+            "Color": {
+              "Red": 168,
+              "Green": 151,
+              "Blue": 50
+            },
+            "Clickable": true
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "snapshot_image",
+            "Width": 240,
+            "Height": 240,
+            "Filename": "bg.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "Line",
+            "Name": "line1",
+            "X": 20,
+            "Width": 1,
+            "Height": 240,
+            "StartY": 5.0,
+            "EndY": 240.0,
+            "LineWidth": 10.0,
+            "LineEndingStyle": "Round"
+          },
+          {
+            "Type": "Line",
+            "Name": "line2",
+            "X": 40,
+            "Width": 1,
+            "Height": 240,
+            "StartY": 5.0,
+            "EndY": 240.0,
+            "LineWidth": 10.0,
+            "LineEndingStyle": "Round"
+          },
+          {
+            "Type": "Line",
+            "Name": "line3",
+            "X": 60,
+            "Width": 1,
+            "Height": 240,
+            "StartY": 5.0,
+            "EndY": 240.0,
+            "LineWidth": 10.0,
+            "LineEndingStyle": "Round"
+          },
+          {
+            "Type": "Line",
+            "Name": "line4",
+            "X": 80,
+            "Width": 1,
+            "Height": 240,
+            "StartY": 5.0,
+            "EndY": 240.0,
+            "LineWidth": 10.0,
+            "LineEndingStyle": "Round"
+          },
+          {
+            "Type": "Line",
+            "Name": "line5",
+            "X": 100,
+            "Width": 1,
+            "Height": 240,
+            "StartY": 5.0,
+            "EndY": 240.0,
+            "LineWidth": 10.0,
+            "LineEndingStyle": "Round"
+          },
+          {
+            "Type": "Line",
+            "Name": "line6",
+            "X": 120,
+            "Width": 1,
+            "Height": 240,
+            "StartY": 5.0,
+            "EndY": 240.0,
+            "LineWidth": 10.0,
+            "LineEndingStyle": "Round"
+          },
+          {
+            "Type": "Line",
+            "Name": "line7",
+            "X": 140,
+            "Width": 1,
+            "Height": 240,
+            "StartY": 5.0,
+            "EndY": 240.0,
+            "LineWidth": 10.0,
+            "LineEndingStyle": "Round"
+          },
+          {
+            "Type": "Line",
+            "Name": "line8",
+            "X": 160,
+            "Width": 1,
+            "Height": 240,
+            "StartY": 5.0,
+            "EndY": 240.0,
+            "LineWidth": 10.0,
+            "LineEndingStyle": "Round"
+          },
+          {
+            "Type": "Line",
+            "Name": "line9",
+            "X": 180,
+            "Width": 1,
+            "Height": 240,
+            "StartY": 5.0,
+            "EndY": 240.0,
+            "LineWidth": 10.0,
+            "LineEndingStyle": "Round"
+          },
+          {
+            "Type": "Line",
+            "Name": "line10",
+            "X": 200,
+            "Width": 1,
+            "Height": 240,
+            "StartY": 5.0,
+            "EndY": 240.0,
+            "LineWidth": 10.0,
+            "LineEndingStyle": "Round"
+          },
+          {
+            "Type": "Line",
+            "Name": "line11",
+            "X": 220,
+            "Width": 1,
+            "Height": 240,
+            "StartY": 5.0,
+            "EndY": 240.0,
+            "LineWidth": 10.0,
+            "LineEndingStyle": "Round"
+          },
+          {
+            "Type": "Line",
+            "Name": "h_line1",
+            "Y": 20,
+            "Width": 240,
+            "Height": 2,
+            "EndX": 250.0,
+            "LineWidth": 10.0,
+            "LineEndingStyle": "Round"
+          },
+          {
+            "Type": "Line",
+            "Name": "h_line2",
+            "Y": 40,
+            "Width": 240,
+            "Height": 2,
+            "EndX": 250.0,
+            "LineWidth": 10.0,
+            "LineEndingStyle": "Round"
+          },
+          {
+            "Type": "Line",
+            "Name": "h_line3",
+            "Y": 60,
+            "Width": 240,
+            "Height": 2,
+            "EndX": 250.0,
+            "LineWidth": 10.0,
+            "LineEndingStyle": "Round"
+          },
+          {
+            "Type": "Line",
+            "Name": "h_line4",
+            "Y": 80,
+            "Width": 240,
+            "Height": 2,
+            "EndX": 250.0,
+            "LineWidth": 10.0,
+            "LineEndingStyle": "Round"
+          },
+          {
+            "Type": "Line",
+            "Name": "h_line5",
+            "Y": 100,
+            "Width": 240,
+            "Height": 2,
+            "EndX": 250.0,
+            "LineWidth": 10.0,
+            "LineEndingStyle": "Round"
+          },
+          {
+            "Type": "Line",
+            "Name": "h_line6",
+            "Y": 120,
+            "Width": 240,
+            "Height": 2,
+            "EndX": 250.0,
+            "LineWidth": 10.0,
+            "LineEndingStyle": "Round"
+          },
+          {
+            "Type": "Line",
+            "Name": "h_line7",
+            "Y": 140,
+            "Width": 240,
+            "Height": 2,
+            "EndX": 250.0,
+            "LineWidth": 10.0,
+            "LineEndingStyle": "Round"
+          },
+          {
+            "Type": "Line",
+            "Name": "h_line8",
+            "Y": 160,
+            "Width": 240,
+            "Height": 2,
+            "EndX": 250.0,
+            "LineWidth": 10.0,
+            "LineEndingStyle": "Round"
+          },
+          {
+            "Type": "Line",
+            "Name": "h_line9",
+            "Y": 180,
+            "Width": 240,
+            "Height": 2,
+            "EndX": 250.0,
+            "LineWidth": 10.0,
+            "LineEndingStyle": "Round"
+          },
+          {
+            "Type": "Line",
+            "Name": "h_line10",
+            "Y": 200,
+            "Width": 240,
+            "Height": 2,
+            "EndX": 250.0,
+            "LineWidth": 10.0,
+            "LineEndingStyle": "Round"
+          },
+          {
+            "Type": "Line",
+            "Name": "h_line11",
+            "Y": 220,
+            "Width": 240,
+            "Height": 2,
+            "EndX": 250.0,
+            "LineWidth": 10.0,
+            "LineEndingStyle": "Round"
+          },
+          {
+            "Type": "Circle",
+            "Name": "circle1",
+            "X": 110,
+            "Y": 110,
+            "Width": 20,
+            "Height": 20,
+            "Visible": false,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "CenterX": 10.0,
+            "CenterY": 10.0,
+            "Radius": 10.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt"
+          },
+          {
+            "Type": "Circle",
+            "Name": "circle2",
+            "X": 110,
+            "Y": 110,
+            "Width": 20,
+            "Height": 20,
+            "Visible": false,
+            "CenterX": 10.0,
+            "CenterY": 10.0,
+            "Radius": 10.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt"
+          }
+        ],
+        "Interactions": []
+      }
+    ],
+    "CustomContainerDefinitions": [],
+    "Name": "MyApplication_1",
+    "Resolution": {
+      "Width": 240,
+      "Height": 240
+    },
+    "SelectedColorDepth": 16,
+    "StartupScreenName": "Beginner_Screen",
+    "SelectedStartupLanguage": "GB",
+    "TouchGfxPath": "../Middlewares/ST/touchgfx",
+    "UIPath": ".",
+    "AvailableColorDepths": [
+      16
+    ],
+    "AvailableLCDs": {
+      "16": "LCD16bpp"
+    },
+    "AvailableSections": [
+      "ExtFlashSection",
+      "IntFlashSection"
+    ],
+    "AvailableResolutions": [
+      {
+        "Width": 240,
+        "Height": 240
+      }
+    ],
+    "PhysicalButtons": [],
+    "FrameworkFeatures": {
+      "LCD16bpp": {
+        "Id": "LCD16bpp",
+        "IsEnabled": true
+      }
+    },
+    "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j8",
+    "PostGenerateCommand": "touchgfx update_project --project-file=simulator/msvs/Application.vcxproj",
+    "PostGenerateTargetCommand": "touchgfx update_project",
+    "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j8",
+    "RunSimulatorCommand": "build\\bin\\simulator.exe",
+    "CompileTargetCommand": "make -f ../gcc/Makefile -j8",
+    "FlashTargetCommand": "make -f ../gcc/Makefile flash",
+    "LandscapeSkinX": 0,
+    "LandscapeSkinY": 0,
+    "PortraitSkinX": 0,
+    "PortraitSkinY": 0,
+    "DisplayOrientation": "Landscape",
+    "Family": "STM32H5",
+    "SubFamily": "STM32H563/H573",
+    "Toolchain": "STM32CubeIDE",
+    "Platform": "m33",
+    "ProjectFile": "../STM32H573I-DK.ioc",
+    "OptionalComponentsRoot": "../Middlewares/ST/touchgfx_components",
+    "OptionalComponents": [],
+    "AdditionalFeatures": [
+      "CWRVector",
+      "VectorFonts"
+    ]
+  },
+  "Version": "4.23.1",
+  "CreatedBy": "4.23.1"
+}

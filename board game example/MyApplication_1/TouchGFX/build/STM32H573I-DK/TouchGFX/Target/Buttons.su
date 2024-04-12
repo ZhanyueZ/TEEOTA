@@ -1,0 +1,2 @@
+Buttons.cpp:17:6:static void touchgfx::Buttons::init()	0	static
+Buttons.cpp:21:14:static unsigned int touchgfx::Buttons::sample()	8	static

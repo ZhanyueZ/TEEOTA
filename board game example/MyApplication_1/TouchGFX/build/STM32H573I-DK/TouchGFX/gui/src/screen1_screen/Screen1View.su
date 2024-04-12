@@ -1,0 +1,13 @@
+Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	0	static
+Screen.hpp:144:18:virtual void touchgfx::Screen::handleTickEvent()	0	static
+Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	0	static
+Screen1View.cpp:21:6:virtual void Screen1View::tearDownScreen()	0	static
+Callback.hpp:290:8:touchgfx::Callback<Screen1View, const touchgfx::Circle&, const touchgfx::ClickEvent&>::~Callback()	0	static
+Callback.hpp:318:18:void touchgfx::Callback<dest_type, T1, T2, void>::execute(T1, T2) [with dest_type = Screen1View; T1 = const touchgfx::Circle&; T2 = const touchgfx::ClickEvent&]	12	static
+Callback.hpp:328:18:bool touchgfx::Callback<dest_type, T1, T2, void>::isValid() const [with dest_type = Screen1View; T1 = const touchgfx::Circle&; T2 = const touchgfx::ClickEvent&]	0	static
+Callback.hpp:290:8:virtual touchgfx::Callback<Screen1View, const touchgfx::Circle&, const touchgfx::ClickEvent&>::~Callback()	8	static
+Screen1View.hpp:13:13:Screen1View::~Screen1View()	8	static
+Screen1View.hpp:13:13:virtual Screen1View::~Screen1View()	8	static
+Screen1View.cpp:4:1:Screen1View::Screen1View()	8	static
+Screen1View.cpp:9:6:virtual void Screen1View::setupScreen()	8	static
+Screen1View.cpp:26:6:void Screen1View::circleClickHandler(const touchgfx::Circle&, const touchgfx::ClickEvent&)	0	static

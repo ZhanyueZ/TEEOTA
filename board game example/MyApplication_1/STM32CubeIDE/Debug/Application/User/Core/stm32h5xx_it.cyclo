@@ -1,0 +1,10 @@
+C:/TouchGFXProjects/MyApplication_1/Core/Src/stm32h5xx_it.c:71:6:NMI_Handler	1
+C:/TouchGFXProjects/MyApplication_1/Core/Src/stm32h5xx_it.c:86:6:HardFault_Handler	1
+C:/TouchGFXProjects/MyApplication_1/Core/Src/stm32h5xx_it.c:101:6:MemManage_Handler	1
+C:/TouchGFXProjects/MyApplication_1/Core/Src/stm32h5xx_it.c:116:6:BusFault_Handler	1
+C:/TouchGFXProjects/MyApplication_1/Core/Src/stm32h5xx_it.c:131:6:UsageFault_Handler	1
+C:/TouchGFXProjects/MyApplication_1/Core/Src/stm32h5xx_it.c:146:6:DebugMon_Handler	1
+C:/TouchGFXProjects/MyApplication_1/Core/Src/stm32h5xx_it.c:166:6:EXTI3_IRQHandler	1
+C:/TouchGFXProjects/MyApplication_1/Core/Src/stm32h5xx_it.c:180:6:EXTI7_IRQHandler	1
+C:/TouchGFXProjects/MyApplication_1/Core/Src/stm32h5xx_it.c:194:6:TIM6_IRQHandler	1
+C:/TouchGFXProjects/MyApplication_1/Core/Src/stm32h5xx_it.c:208:6:GPDMA2_Channel6_IRQHandler	1

@@ -1,0 +1,5 @@
+C:/TouchGFXProjects/MyApplication_1/TouchGFX/target/STM32TouchController.cpp:35:6:virtual void STM32TouchController::init()	1
+../../TouchGFX/target/STM32TouchController.hpp:41:7:STM32TouchController::~STM32TouchController()	1
+../../TouchGFX/target/STM32TouchController.hpp:41:7:virtual STM32TouchController::~STM32TouchController()	1
+C:/TouchGFXProjects/MyApplication_1/TouchGFX/target/STM32TouchController.cpp:44:6:virtual bool STM32TouchController::sampleTouch(int32_t&, int32_t&)	2
+C:/TouchGFXProjects/MyApplication_1/TouchGFX/target/STM32TouchController.cpp:73:6:void readTouchInput()	1

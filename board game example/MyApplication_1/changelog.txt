@@ -1,0 +1,18 @@
+3.0.2
+- Updated to TouchGFX 4.23.0
+- Updated to STM32CubeMX 6.10.0
+- Enabled support for vector fonts
+
+3.0.1
+- Updated to CubeMX 6.9.1
+
+3.0.0
+First released version
+- TouchGFX 4.22.0
+- STM32CubeMX 6.8.1
+- firmware FW_H5 V1.0.1
+- X-CUBE-FREERTOS 1.0.1
+- support for STM32CubeIDE
+- support for EWARM
+- support for MDK-ARM
+- support for "Run target" in TouchGFX Designer

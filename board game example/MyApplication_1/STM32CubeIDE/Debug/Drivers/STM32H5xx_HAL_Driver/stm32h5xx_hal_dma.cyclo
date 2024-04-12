@@ -1,0 +1,15 @@
+C:/TouchGFXProjects/MyApplication_1/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_dma.c:241:19:HAL_DMA_Init	78
+C:/TouchGFXProjects/MyApplication_1/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_dma.c:321:19:HAL_DMA_DeInit	13
+C:/TouchGFXProjects/MyApplication_1/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_dma.c:461:19:HAL_DMA_Start	4
+C:/TouchGFXProjects/MyApplication_1/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_dma.c:516:19:HAL_DMA_Start_IT	6
+C:/TouchGFXProjects/MyApplication_1/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_dma.c:588:19:HAL_DMA_Abort	7
+C:/TouchGFXProjects/MyApplication_1/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_dma.c:680:19:HAL_DMA_Abort_IT	3
+C:/TouchGFXProjects/MyApplication_1/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_dma.c:716:19:HAL_DMA_PollForTransfer	17
+C:/TouchGFXProjects/MyApplication_1/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_dma.c:888:6:HAL_DMA_IRQHandler	31
+C:/TouchGFXProjects/MyApplication_1/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_dma.c:1140:19:HAL_DMA_RegisterCallback	8
+C:/TouchGFXProjects/MyApplication_1/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_dma.c:1219:19:HAL_DMA_UnRegisterCallback	9
+C:/TouchGFXProjects/MyApplication_1/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_dma.c:1327:22:HAL_DMA_GetState	1
+C:/TouchGFXProjects/MyApplication_1/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_dma.c:1339:10:HAL_DMA_GetError	1
+C:/TouchGFXProjects/MyApplication_1/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_dma.c:1383:19:HAL_DMA_ConfigChannelAttributes	4
+C:/TouchGFXProjects/MyApplication_1/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_dma.c:1471:19:HAL_DMA_GetConfigChannelAttributes	3
+C:/TouchGFXProjects/MyApplication_1/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_dma.c:1551:19:HAL_DMA_GetLockChannelAttributes	3

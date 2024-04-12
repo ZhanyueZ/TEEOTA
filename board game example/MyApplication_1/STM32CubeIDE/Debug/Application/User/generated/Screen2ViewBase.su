@@ -1,0 +1,39 @@
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:147:23:virtual touchgfx::Drawable* touchgfx::Drawable::getFirstChild()	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:315:18:virtual void touchgfx::Drawable::setX(int16_t)	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:327:18:virtual void touchgfx::Drawable::setY(int16_t)	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:356:18:virtual void touchgfx::Drawable::setWidth(int16_t)	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:368:18:virtual void touchgfx::Drawable::setHeight(int16_t)	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:378:18:virtual void touchgfx::Drawable::childGeometryChanged()	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:389:18:virtual void touchgfx::Drawable::handleClickEvent(const touchgfx::ClickEvent&)	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:401:18:virtual void touchgfx::Drawable::handleGestureEvent(const touchgfx::GestureEvent&)	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:490:18:virtual void touchgfx::Drawable::handleDragEvent(const touchgfx::DragEvent&)	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:501:18:virtual void touchgfx::Drawable::handleTickEvent()	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:588:18:virtual void touchgfx::Drawable::moveTo(int16_t, int16_t)	4	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:703:18:virtual void touchgfx::Drawable::setupDrawChain(const touchgfx::Rect&, touchgfx::Drawable**)	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Widget.hpp:45:18:virtual void touchgfx::Widget::getLastChild(int16_t, int16_t, touchgfx::Drawable**)	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:93:18:virtual void touchgfx::Screen::setupScreen()	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:115:18:virtual void touchgfx::Screen::tearDownScreen()	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:144:18:virtual void touchgfx::Screen::handleTickEvent()	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp:61:34:virtual touchgfx::HAL::RenderingMethod touchgfx::AbstractPainter::getRenderingMethod() const	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp:78:18:virtual bool touchgfx::AbstractPainter::setup(const touchgfx::Rect&) const	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp:90:18:virtual void touchgfx::AbstractPainter::tearDown() const	0	static
+../../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:36:7:touchgfx::View<Screen2Presenter>::~View()	0	static
+C:/TouchGFXProjects/MyApplication_1/TouchGFX/generated/gui_generated/src/screen2_screen/Screen2ViewBase.cpp:250:6:virtual void Screen2ViewBase::setupScreen()	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/ClickListener.hpp:33:7:touchgfx::ClickListener<touchgfx::Box>::~ClickListener()	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/ClickListener.hpp:33:7:virtual touchgfx::ClickListener<touchgfx::Box>::~ClickListener()	8	static
+../../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:36:7:virtual touchgfx::View<Screen2Presenter>::~View()	8	static
+C:/TouchGFXProjects/MyApplication_1/TouchGFX/generated/gui_generated/src/screen2_screen/Screen2ViewBase.cpp:245:1:Screen2ViewBase::~Screen2ViewBase()	8	static
+C:/TouchGFXProjects/MyApplication_1/TouchGFX/generated/gui_generated/src/screen2_screen/Screen2ViewBase.cpp:245:1:virtual Screen2ViewBase::~Screen2ViewBase()	16	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:121:18:virtual void touchgfx::Drawable::invalidateContent() const	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp:97:18:virtual void touchgfx::Box::invalidateContent() const	8	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/ClickListener.hpp:49:18:void touchgfx::ClickListener<T>::handleClickEvent(const touchgfx::ClickEvent&) [with T = touchgfx::Box]	16	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:233:10:void touchgfx::Drawable::setPosition(int16_t, int16_t, int16_t, int16_t)	24	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp:33:5:touchgfx::Box::Box()	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp:41:5:touchgfx::AbstractPainterRGB565::AbstractPainterRGB565()	16	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB565.hpp:42:5:touchgfx::PainterRGB565::PainterRGB565(touchgfx::colortype)	16	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Line.hpp:95:10:void touchgfx::Line::setStart(T, T) [with T = int]	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Line.hpp:171:10:void touchgfx::Line::setEnd(T, T) [with T = int]	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Line.hpp:248:10:void touchgfx::Line::setLineWidth(T) [with T = int]	4	static
+C:/TouchGFXProjects/MyApplication_1/TouchGFX/generated/gui_generated/src/screen2_screen/Screen2ViewBase.cpp:9:1:Screen2ViewBase::Screen2ViewBase()	256	static

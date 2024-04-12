@@ -1,0 +1,7 @@
+C:/TouchGFXProjects/MyApplication_1/Core/Src/stm32h5xx_hal_msp.c:64:6:HAL_MspInit	1
+C:/TouchGFXProjects/MyApplication_1/Core/Src/stm32h5xx_hal_msp.c:85:6:HAL_CRC_MspInit	2
+C:/TouchGFXProjects/MyApplication_1/Core/Src/stm32h5xx_hal_msp.c:107:6:HAL_CRC_MspDeInit	2
+C:/TouchGFXProjects/MyApplication_1/Core/Src/stm32h5xx_hal_msp.c:129:6:HAL_I2C_MspInit	3
+C:/TouchGFXProjects/MyApplication_1/Core/Src/stm32h5xx_hal_msp.c:179:6:HAL_I2C_MspDeInit	2
+C:/TouchGFXProjects/MyApplication_1/Core/Src/stm32h5xx_hal_msp.c:271:6:HAL_SRAM_MspInit	2
+C:/TouchGFXProjects/MyApplication_1/Core/Src/stm32h5xx_hal_msp.c:331:6:HAL_SRAM_MspDeInit	2
